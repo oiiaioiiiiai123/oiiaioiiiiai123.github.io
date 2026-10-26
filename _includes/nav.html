@@ -1,0 +1,13 @@
+<header class="site-header">
+  <a class="brand" href="{{ '/' | relative_url }}" aria-label="{{ site.title | escape }}"><span class="brand-flower" aria-hidden="true">✳</span><span class="brand-name">{{ site.title | escape }}</span></a>
+  <div class="nav-actions">
+    <button class="menu-toggle" aria-controls="main-nav" aria-expanded="false">Menu <span aria-hidden="true">☰</span></button>
+    <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+      <a href="{{ '/' | relative_url }}" {% if page.section == 'home' %}aria-current="page"{% endif %}>Home</a>
+      <a href="{{ '/projects/' | relative_url }}" {% if page.section == 'projects' %}aria-current="page"{% endif %}>My Projects</a>
+      <a href="{{ '/writing/' | relative_url }}" {% if page.section == 'writing' %}aria-current="page"{% endif %}>Writing</a>
+      <a href="{{ '/pigs-room/' | relative_url }}" {% if page.section == 'pig' %}aria-current="page"{% endif %}>Pig’s Room <span aria-hidden="true">♡</span></a>
+    </nav>
+    <button class="theme-toggle" aria-label="Switch to dark mode" aria-pressed="false">{% include icon.html name='moon' %}</button>
+  </div>
+</header>

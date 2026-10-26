@@ -1,0 +1,24 @@
+{% assign gallery_id = include.id | default: 'project-gallery' %}
+<section class="screenshot-gallery project-section" data-gallery aria-labelledby="{{ gallery_id }}-heading">
+  <div class="gallery-heading">
+    <div><p class="eyebrow">A CLOSER LOOK</p><h2 id="{{ gallery_id }}-heading">{{ page.gallery_title | default: 'Screenshots' | escape }}</h2></div>
+    {% if include.images.size > 1 %}<div class="gallery-controls" hidden><button type="button" class="gallery-scroll" data-scroll="-1" aria-label="Scroll screenshots left">←</button><button type="button" class="gallery-scroll" data-scroll="1" aria-label="Scroll screenshots right">→</button></div>{% endif %}
+  </div>
+  {% if include.images.size > 0 %}
+  <p class="gallery-hint">Swipe or scroll to browse. Select an image to view it in full.</p>
+  <div class="screenshot-track" tabindex="0" role="region" aria-label="Project screenshots">
+    {% for shot in include.images %}<figure class="screenshot-item">
+      <a class="screenshot-link" href="{{ shot.src | relative_url }}" data-gallery-item data-caption="{{ shot.caption | default: shot.alt | escape }}" aria-label="View image {{ forloop.index }}: {{ shot.alt | escape }}">
+        <img src="{{ shot.src | relative_url }}" alt="{{ shot.alt | escape }}" {% if shot.width %}width="{{ shot.width }}"{% endif %} {% if shot.height %}height="{{ shot.height }}"{% endif %} loading="lazy" decoding="async">
+        <span class="screenshot-expand" aria-hidden="true">↗</span>
+      </a>
+      <figcaption><span class="screenshot-number">{{ forloop.index | prepend: '0' }}</span>{{ shot.caption | default: shot.alt | escape }}</figcaption>
+    </figure>{% endfor %}
+  </div>
+  <dialog class="screenshot-viewer" aria-labelledby="{{ gallery_id }}-viewer-heading">
+    <div class="viewer-toolbar"><h3 id="{{ gallery_id }}-viewer-heading">{{ page.title | escape }} — screenshots</h3><button type="button" class="viewer-close" aria-label="Close image viewer">Close ×</button></div>
+    <div class="viewer-image"><img alt=""></div>
+    <div class="viewer-footer"><button type="button" data-viewer-step="-1" aria-label="Previous image">←</button><p class="viewer-caption" aria-live="polite"></p><button type="button" data-viewer-step="1" aria-label="Next image">→</button></div>
+  </dialog>
+  {% else %}<div class="gallery-empty"><p>{{ page.screenshots_message | default: 'No screenshots yet. Images will be added when they are available.' | escape }}</p></div>{% endif %}
+</section>

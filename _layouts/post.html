@@ -1,0 +1,8 @@
+---
+layout: default
+---
+<div class="reading-progress" role="progressbar" aria-label="Reading progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div>
+<article class="reading-page"><header class="post-heading"><a class="back-link" href="{{ '/writing/' | relative_url }}">← If I Could Draw Life</a><p class="eyebrow">IF I COULD DRAW LIFE</p><h1>{{ page.title | escape }}</h1><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%Y.%m.%d' }}</time>{% if page.description %}<p class="post-description">{{ page.description | escape }}</p>{% endif %}{% if page.tags.size > 0 %}<ul class="post-tags" aria-label="Tags">{% for tag in page.tags %}<li>{{ tag | escape }}</li>{% endfor %}</ul>{% endif %}</header>
+{% if page.cover %}<figure class="post-cover"><img src="{{ page.cover | relative_url }}" alt="{{ page.cover_alt | default: page.title | escape }}">{% if page.cover_caption %}<figcaption>{{ page.cover_caption | escape }}</figcaption>{% endif %}</figure>{% endif %}
+{% if page.toc != false %}<details class="post-toc" hidden><summary>Contents <span aria-hidden="true">＋</span></summary><nav aria-label="Table of contents"><ol></ol></nav></details>{% endif %}
+<div class="prose article-body">{{ content }}</div><div class="post-bottom"><a class="text-link" href="{{ '/writing/' | relative_url }}">← Back to writing</a><a class="text-link" href="#main">Back to top ↑</a></div></article>

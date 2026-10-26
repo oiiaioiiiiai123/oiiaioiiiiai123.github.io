@@ -1,0 +1,9 @@
+---
+layout: default
+---
+{% assign category = site.data.categories | where: 'id', page.category | first %}
+<div class="page-heading"><a class="back-link" href="{{ '/projects/' | relative_url }}">← My Projects</a><p class="eyebrow">PROJECTS / {{ category.title | upcase }}</p><h1>{{ category.title }}<span class="heading-dot">.</span></h1></div>
+<nav class="category-tabs" aria-label="Project categories">{% for item in site.data.categories %}<a href="{{ item.url | relative_url }}" {% if item.id == category.id %}aria-current="page"{% endif %}>{{ item.title }}</a>{% endfor %}</nav>
+{% assign projects = site.projects | where: 'category', page.category | sort: 'order' %}
+{% if projects.size > 0 %}<div class="project-grid">{% for project in projects %}{% include project-card.html project=project %}{% endfor %}</div>
+{% else %}<div class="empty-state"><div class="empty-art">{% include icon.html name=category.icon %}<span aria-hidden="true">✧</span></div><h2>No projects yet.</h2><p>Check back for updates.</p><a class="text-link" href="{{ '/projects/' | relative_url }}">Browse other categories <span aria-hidden="true">↗</span></a></div>{% endif %}

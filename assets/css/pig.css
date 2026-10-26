@@ -1,0 +1,270 @@
+/* The original PNG and its local facial canvas share one coordinate system.
+   The body is immutable; only eyes and a small mouth receive expression pixels. */
+.pig-widget {
+  --pig-size: 232px;
+  position: relative;
+}
+.hero-art .pig-widget { --pig-size: 228px; }
+.room-scene .pig-widget { --pig-size: 256px; }
+.pig-widget .pig-stage {
+  height: 264px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pig-touch {
+  position: relative;
+  z-index: 2;
+  flex: 0 0 auto;
+  width: var(--pig-size);
+  max-width: 100%;
+  aspect-ratio: 1216 / 1181;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  line-height: 0;
+  cursor: pointer;
+  transform-origin: center;
+  display: grid;
+  place-items: center;
+}
+.pig-portrait {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 1216 / 1181;
+  object-fit: contain;
+  /* Alpha bounds (52,132)–(1169,1118): align their center, not the empty canvas. */
+  translate: -.206% -2.92%;
+  transform-origin: 50% 86%;
+  animation: pig-breathe 4.5s ease-in-out infinite;
+  pointer-events: none;
+  user-select: none;
+}
+.pig-art { display: block; width: 100%; height: auto; object-fit: contain; }
+.pig-face { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+/* Counter the existing sticker's two-degree tilt; the illustration stays level. */
+.hero-art .pig-touch {
+  rotate: -2deg;
+}
+.pig-bubble {
+  position: relative;
+  max-width: 260px;
+  min-height: 30px;
+  margin: 18px auto 0;
+  text-align: center;
+  font-size: var(--font-size-sm);
+  line-height: 1.6;
+  color: var(--muted);
+}
+.pig-controls {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-top: 7px;
+}
+.carrot-button {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 44px;
+  padding: 5px 16px 5px 10px;
+  border: 1px solid var(--line);
+  border-radius: 25px;
+  background: var(--surface);
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.carrot-button img {
+  width: 34px;
+  height: 34px;
+  image-rendering: pixelated;
+  pointer-events: none;
+}
+.carrot-button span {
+  font-size: var(--font-size-sm);
+  color: var(--muted);
+}
+.carrot-button:hover {
+  border-color: var(--sage);
+}
+.carrot-button:disabled {
+  border-style: dashed;
+}
+.carrot-button:disabled img {
+  opacity: 0;
+}
+.feed-counter {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: var(--font-size-sm);
+  color: var(--muted);
+}
+.feed-counter img {
+  image-rendering: pixelated;
+}
+.sleep-letters {
+  display: none;
+  position: absolute;
+  z-index: 3;
+  top: 9px;
+  left: calc(50% + var(--pig-size) * .32);
+  font-family: var(--serif);
+  font-size: 21px;
+  color: var(--sage);
+  pointer-events: none;
+}
+.pig-hearts {
+  position: absolute;
+  z-index: 3;
+  top: 14px;
+  left: 50%;
+  translate: -50% 0;
+  width: calc(var(--pig-size) + 20px);
+  height: calc(var(--pig-size) * .7);
+  opacity: 0;
+  color: var(--accent);
+  pointer-events: none;
+}
+.pig-hearts span {
+  position: absolute;
+  font-size: 20px;
+}
+.pig-hearts span:nth-child(1) { left: -3px; top: 29%; }
+.pig-hearts span:nth-child(2) { right: -3px; top: 48%; }
+[data-state=happy] .pig-portrait,
+[data-state=feeding][data-phase=satisfied] .pig-portrait {
+  animation: pig-hop .65s ease-in-out;
+}
+[data-state=happy] .pig-hearts,
+[data-state=feeding][data-phase=satisfied] .pig-hearts {
+  animation: pig-hearts .9s ease-out;
+}
+[data-state=feeding][data-phase=chewing] .pig-portrait {
+  animation: pig-content .6s ease-in-out 2;
+}
+[data-state=sleeping] .pig-portrait {
+  animation: pig-sleep-breathe 7s ease-in-out infinite;
+}
+[data-state=sleeping] .sleep-letters {
+  display: block;
+  animation: pig-zzz 3s ease-in-out infinite;
+}
+/* The same five-pat secret uses local smiling eyes and external hearts. */
+[data-state=special] .pig-portrait {
+  animation: pig-hop .7s ease-in-out 3;
+}
+[data-state=special] .pig-hearts {
+  opacity: 1;
+  animation: pig-celebrate .7s ease-in-out 3;
+}
+.carrot-ghost {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  width: 48px;
+  height: 48px;
+  image-rendering: pixelated;
+  pointer-events: none;
+  will-change: transform;
+}
+.is-dragging { cursor: grabbing !important; }
+.drop-ready .pig-touch { outline: 1px dashed var(--sage); outline-offset: 5px; }
+.drop-ready .pig-bubble { color: var(--accent); }
+@keyframes pig-breathe {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-1.5px) scale(1.003); }
+}
+@keyframes pig-hop {
+  0%, 100% { transform: translateY(0); }
+  30% { transform: translateY(-5px) rotate(-1deg); }
+  60% { transform: translateY(-6px) rotate(.8deg); }
+  85% { transform: translateY(-1px) rotate(-.3deg); }
+}
+@keyframes pig-content {
+  0%, 100% { transform: translateY(0); }
+  35% { transform: translateY(-1.5px) rotate(-.6deg); }
+  70% { transform: translateY(-1px) rotate(.6deg); }
+}
+@keyframes pig-sleep-breathe {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-.5px) scale(1.001); }
+}
+@keyframes pig-hearts {
+  0% { opacity: 0; transform: translateY(3px); }
+  30% { opacity: 1; }
+  100% { opacity: 0; transform: translateY(-7px); }
+}
+@keyframes pig-celebrate {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+@keyframes pig-zzz {
+  0%, 100% { opacity: .5; }
+  50% { opacity: 1; }
+}
+@media (max-width: 650px) {
+  .hero-art .pig-widget { --pig-size: 204px; }
+  .room-scene .pig-widget { --pig-size: 224px; }
+  .hero-art .pig-stage { height: 244px; }
+  .hero-art .pig-bubble { margin-top: 24px; }
+  .hero-art .pig-controls { gap: 20px; }
+}
+@media (max-width: 360px) {
+  .hero-art .pig-widget { --pig-size: 184px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pig-widget *, .pig-widget *::before, .pig-widget *::after,
+  .carrot-ghost { animation: none !important; transition: none !important; }
+  [data-state=happy] .pig-hearts,
+  [data-state=special] .pig-hearts,
+  [data-state=feeding][data-phase=satisfied] .pig-hearts { opacity: 1; }
+}
+
+/* A quiet, non-interactive use of the same sleeping portrait on the 404 page. */
+.not-found .not-found-code{font:italic 98px/1 var(--serif);letter-spacing:-5px;color:var(--sage);margin:0 0 14px}
+.not-found h1{font:400 29px/1.3 var(--serif);margin:0 0 8px}
+.not-found [data-pig-static]{--pig-size:220px;width:min(300px,100%);margin:2px 0 16px}
+.not-found [data-pig-static] .pig-stage{height:228px}
+.not-found [data-pig-static] .pig-touch{cursor:default}
+.not-found .pig-art{margin:0}.not-found .sleep-letters{top:8px}
+@media(max-width:650px){.not-found .not-found-code{font-size:80px}.not-found h1{font-size:25px}.not-found [data-pig-static]{--pig-size:200px}}
+
+/* Optional doctor portrait: the original bitmap and its local face stay aligned. */
+.hero-art .pig-bubble{margin-top:24px}
+.pig-portrait[data-character=doctorPig]{width:79%;aspect-ratio:695/859;translate:-3.24% -8%;transform-origin:50% 95%}
+.pig-transition-out{position:absolute;inset:0;margin:auto}
+.pig-widget .pig-portrait.pig-transition-out{animation:none}
+[data-state=transforming] .pig-portrait{animation:pig-arrive .4s ease-out}
+.doctor-controls{display:flex;justify-content:center;margin-top:12px}
+.doctor-toggle{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:44px;padding:7px 17px;border:1px solid var(--line);border-radius:25px;background:var(--pink);font-size:var(--font-size-sm);line-height:1.5;color:var(--ink)}
+.doctor-toggle svg{width:25px;height:25px;color:var(--sage)}
+.doctor-toggle[aria-pressed=true]{border-color:var(--sage);background:var(--surface)}
+.doctor-toggle:disabled{opacity:.65;cursor:wait}
+.four-petal-flower{display:block;pointer-events:none;color:#e2a5b6}
+.pig-flowers{position:absolute;inset:0;pointer-events:none;z-index:1}
+.pig-flower{position:absolute;display:block;pointer-events:none;animation:flower-float var(--flower-duration) ease-in-out infinite;animation-delay:var(--flower-delay)}
+.pig-flower svg{width:100%;height:100%}
+.flower-one{left:calc(50% - var(--pig-size)*.53);top:10%;width:24px;height:24px;--flower-duration:7.4s;--flower-delay:-2s;rotate:-13deg}
+.flower-two{left:calc(50% + var(--pig-size)*.47);top:38%;width:20px;height:20px;--flower-duration:9.1s;--flower-delay:-5s;rotate:16deg}
+.flower-three{left:calc(50% - var(--pig-size)*.48);top:82%;width:18px;height:18px;--flower-duration:8.3s;--flower-delay:-1s;rotate:9deg}
+.flower-four{left:calc(50% + var(--pig-size)*.43);top:80%;width:16px;height:16px;--flower-duration:10.2s;--flower-delay:-4s;rotate:-18deg}
+[data-state=transforming] .pig-flower{animation:flower-greeting .55s ease-out both;animation-delay:0s}
+[data-state=transforming] .flower-two{animation-delay:.06s}
+[data-state=transforming] .flower-three{animation-delay:.12s}
+[data-state=transforming] .flower-four{animation-delay:.18s}
+.room-scene .room-flower{width:30px;height:30px}
+@keyframes flower-float{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-3px) rotate(4deg)}}
+@keyframes flower-greeting{0%,100%{transform:scale(1)}50%{transform:translateY(-4px) scale(1.1)}}
+@keyframes pig-arrive{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+@media(max-width:650px){.room-scene .room-flower{width:24px;height:24px}.pig-controls{gap:15px}.doctor-controls{margin-top:12px}}

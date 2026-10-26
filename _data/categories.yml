@@ -1,0 +1,24 @@
+- id: app
+  title: App
+  icon: app
+  number: "01"
+  color: pink
+  url: /projects/app/
+- id: website
+  title: Website
+  icon: window
+  number: "02"
+  color: green
+  url: /projects/website/
+- id: games
+  title: Games
+  icon: game
+  number: "03"
+  color: yellow
+  url: /projects/games/
+- id: more
+  title: More to Come
+  icon: spark
+  number: "04"
+  color: lavender
+  url: /projects/more/

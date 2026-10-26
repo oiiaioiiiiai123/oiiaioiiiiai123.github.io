@@ -1,0 +1,20 @@
+<div class="pig-widget" data-pig data-character="normalPig" {% if include.sleeping %}data-pig-static data-state="sleeping"{% else %}data-sleep-after="45000" data-state="idle"{% endif %}>
+  <p class="pig-bubble" {% if include.sleeping %}hidden{% endif %} role="status" aria-live="polite" aria-atomic="true">Hi!</p>
+  <div class="pig-stage">
+    {% if include.flowers %}{% include pig-flowers.html %}{% endif %}
+    <span class="pig-hearts" aria-hidden="true"><span>♡</span><span>♡</span></span>
+    <span class="sleep-letters" aria-hidden="true">z z Z</span>
+    {% if include.sleeping %}<div class="pig-touch" role="img" aria-label="The original little pig sleeping">{% else %}<button class="pig-touch" type="button" aria-label="Pet the pig, or wake it if asleep">{% endif %}
+      <span class="pig-portrait" data-character="normalPig">
+      <img class="pig-art" src="{{ '/assets/images/pig/pig-original.png' | relative_url }}?v={{ site.time | date: '%s' }}" width="1216" height="1181" alt="The original pig illustration" draggable="false">
+      <canvas class="pig-face" width="1216" height="1181" aria-hidden="true"></canvas>
+      </span>
+    {% if include.sleeping %}</div>{% else %}</button>{% endif %}
+  </div>
+  {% unless include.sleeping %}<div class="pig-controls">
+    <button class="carrot-button" type="button" aria-label="Feed a carrot: click or drag it to the pig's mouth" title="Click to feed or drag to its mouth"><img src="{{ '/assets/images/carrot/carrot.svg' | relative_url }}" width="38" height="38" alt="" draggable="false"><span>Feed</span></button>
+    <span class="feed-counter"><span data-feed-count>0</span> <span aria-hidden="true">×</span><span class="sr-only">carrots fed this session</span><img src="{{ '/assets/images/carrot/carrot.svg' | relative_url }}" width="20" height="20" alt=""></span>
+  </div>
+  {% if include.doctor %}<div class="doctor-controls"><button type="button" class="doctor-toggle" aria-label="Switch to doctor pig" aria-pressed="false" data-doctor-src="{{ '/assets/images/pig/doctor/doctor-original.png' | relative_url }}?v={{ site.time | date: '%s' }}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3v5a4 4 0 0 0 8 0V3M5 3h2m6 0h-2M9 12v4a4 4 0 0 0 8 0v-2"/><circle cx="17" cy="12" r="2"/></svg><span>Doctor pig</span></button></div>{% endif %}
+  <noscript><p class="muted small">Enable JavaScript to interact with the pig.</p></noscript>{% endunless %}
+</div>

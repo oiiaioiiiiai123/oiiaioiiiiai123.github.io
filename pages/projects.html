@@ -1,0 +1,7 @@
+---
+title: My Projects
+section: projects
+permalink: /projects/
+---
+<div class="page-heading"><a class="back-link" href="{{ '/' | relative_url }}">← Home</a><p class="eyebrow">A PLACE FOR SMALL IDEAS</p><h1>My Projects<span class="heading-dot">.</span></h1><p>Apps, websites, games, and other projects.</p></div>
+<div class="category-grid">{% for category in site.data.categories %}{% include category-card.html category=category %}{% endfor %}</div>

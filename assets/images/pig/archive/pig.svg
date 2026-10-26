@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="260" viewBox="0 0 320 260" fill="none">
+  <title>A little pink pig</title>
+  <desc>A compact, soft pink pig with small folded ears, a rounded snout, short legs, and a curled tail.</desc>
+  <g transform="translate(0 18)">
+  <g class="pig-body">
+    <g class="pig-tail" stroke="#f4bbce" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M236 105c9-1 13-5 12-10-1-5-8-6-9-1-2 6 7 8 12 3 4-4 3-11-1-13"/>
+    </g>
+    <g fill="#efbbce">
+      <path d="M121 163h12v21c0 8-12 8-12 0Z"/>
+      <path d="M215 157h12v25c0 8-12 8-12 0Z"/>
+    </g>
+    <path d="M111 105c8-17 31-25 59-25 29-2 57 3 68 17 13 15 10 30 2 45-5 10-6 22-12 28-12 11-37 10-61 5-21 3-42 0-54-10-12-13-13-41-2-60Z" fill="#ffd5df"/>
+    <path d="M88 115c-7-7-3-15 8-13 13-2 28 8 37 19 11 11 12 25 4 35-8 12-28 16-44 11-17-3-27-13-24-27 2-10 9-18 19-25Z" fill="#ffd5df"/>
+    <g fill="#ffd5df">
+      <path d="M94 163h14v27c0 10-14 10-14 0Z"/>
+      <path d="M182 168h14v21c0 10-14 10-14 0Z"/>
+    </g>
+    <g class="ear">
+      <path d="M87 112c-8-3-12-11-9-20 2-8 10-10 15-5 4 4 0 15-6 25Z" fill="#ffcadb"/>
+      <path d="M88 89c-7-2-11 12-6 14 3 1 7-3 9-7" stroke="#e780a5" stroke-width="4.2" stroke-linecap="round"/>
+    </g>
+    <g class="ear">
+      <path d="M146 106c-5-2-9 2-9 10-1 10 5 16 12 14 7-3 8-12 5-18" fill="#ffc9dc"/>
+      <path d="M142 107c-3 10-1 19 6 18 4-1 5-5 4-8" stroke="#e980a6" stroke-width="4.5" stroke-linecap="round"/>
+    </g>
+    <g class="eye-open" fill="#59483f">
+      <ellipse cx="85" cy="129" rx="3" ry="4.2"/>
+      <ellipse cx="119" cy="133" rx="2.8" ry="3.8"/>
+      <circle cx="84.2" cy="127.8" r=".8" fill="#fff8fa"/>
+      <circle cx="118.4" cy="132" r=".7" fill="#fff8fa"/>
+    </g>
+    <g class="eye-happy" opacity="0" stroke="#705047" stroke-width="3.2" stroke-linecap="round">
+      <path d="M80 130q5-7 10 0m24 4q5-7 10 0"/>
+    </g>
+    <g class="eye-sleep" opacity="0" stroke="#705047" stroke-width="3" stroke-linecap="round">
+      <path d="M80 131q5 4 10 0m24 4q5 4 10 0"/>
+    </g>
+    <ellipse class="cheek" cx="75" cy="143" rx="5.5" ry="3.5" fill="#f1a5bd" opacity=".6"/>
+    <ellipse class="cheek" cx="128" cy="149" rx="6" ry="3.6" fill="#f1a5bd" opacity=".6"/>
+    <g class="snout">
+      <path d="M72 145c0-8 7-12 17-11 11 0 18 6 17 13-1 8-8 12-18 11-10 0-17-6-16-13Z" fill="#ee9eb8"/>
+      <ellipse cx="82" cy="145" rx="2.4" ry="3.6" fill="#a75d79"/>
+      <ellipse cx="95" cy="147" rx="2.3" ry="3.4" fill="#a75d79"/>
+    </g>
+    <path class="mouth-rest" d="M96 162q5 4 9-1" stroke="#b5788e" stroke-width="2.5" stroke-linecap="round"/>
+    <g class="mouth-open" opacity="0">
+      <ellipse cx="100" cy="163" rx="7" ry="6.5" fill="#96546d"/>
+      <path d="M96 166q4-3 8 0" stroke="#ed9ab7" stroke-width="2.7" stroke-linecap="round"/>
+    </g>
+    <g class="flower-crown" opacity="0">
+      <path d="M80 102q25-21 52 1" stroke="#9cae80" stroke-width="3.5" stroke-linecap="round"/>
+      <g fill="#e998b2"><circle cx="88" cy="95" r="6.5"/><circle cx="106" cy="91" r="7"/><circle cx="124" cy="97" r="6.5"/></g>
+      <g fill="#f7dca0"><circle cx="88" cy="95" r="2.5"/><circle cx="106" cy="91" r="2.6"/><circle cx="124" cy="97" r="2.5"/></g>
+    </g>
+  </g>
+  </g>
+</svg>

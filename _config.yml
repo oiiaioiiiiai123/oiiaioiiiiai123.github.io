@@ -1,0 +1,53 @@
+title: "oiiaioiiiiai's HomePage"
+description: "A medical student’s little corner for creative projects and If I Could Draw Life."
+url: "https://oiiaioiiiiai123.github.io"
+github_username: "oiiaioiiiiai123"
+github_url: "https://github.com/oiiaioiiiiai123"
+baseurl: ""
+social_image: /assets/images/social/home.png
+social_image_alt: "oiiaioiiiiai's HomePage with the original little pig"
+lang: zh-CN
+timezone: Asia/Shanghai
+markdown: kramdown
+highlighter: rouge
+permalink: /writing/:year/:month/:day/:title/
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+      section: projects
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      section: writing
+      toc: true
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
+strict_front_matter: true
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - AGENTS.md
+  - templates
+  - scripts
+  - tests
+  - vendor
+  - .bundle
+  - node_modules
+  - package.json
+  - package-lock.json

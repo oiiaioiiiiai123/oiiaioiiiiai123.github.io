@@ -1,0 +1,14 @@
+<svg class="icon icon-{{ include.name }}" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+{% case include.name %}
+{% when 'app' %}<rect x="13" y="5" width="23" height="37" rx="6"/><path d="M21 10h7M22 36h5"/><path d="M19 22c0-7 9-7 10-1 0 6-5 8-5 8s-5-3-5-7Z"/>
+{% when 'window' %}<rect x="5" y="9" width="38" height="30" rx="5"/><path d="M5 18h38M11 14h1m4 0h1m4 0h1M17 25l-4 4 4 4m14-8 4 4-4 4m-5-9-4 11"/>
+{% when 'game' %}<path d="M15 15h18c6 0 9 17 7 20-3 5-9-4-11-4H19c-2 0-8 9-11 4-2-3 1-20 7-20Z"/><path d="M13 23h10m-5-5v10M31 21h.1M35 25h.1M23 15v-5h6V6"/>
+{% when 'spark' %}<path d="m24 6 4 13 13 5-13 4-4 14-4-14-13-4 13-5ZM38 5v8m-4-4h8M7 35v7m-3-4h7"/>
+{% when 'book' %}<path d="M24 12C18 7 9 7 5 9v30c7-2 13-2 19 3 6-5 12-5 19-3V9c-4-2-13-2-19 3v30ZM11 16l7 1m-7 7 7 1m-7 7 7 1m13-15 6-1m-6 9 6-1"/>
+{% when 'arrow' %}<path d="M10 24h27M27 14l10 10-10 10"/>
+{% when 'sun' %}<circle cx="24" cy="24" r="8"/><path d="M24 5v5m0 28v5M5 24h5m28 0h5M11 11l4 4m18 18 4 4M11 37l4-4m18-18 4-4"/>
+{% when 'moon' %}<path d="M36 30A16 16 0 0 1 18 9a16 16 0 1 0 18 21Z"/>
+{% when 'leaf' %}<path d="M13 36C3 18 22 9 38 10c1 17-7 31-25 26Zm0 0 17-18M10 42l3-6m10-9v-8m0 8 8 1"/>
+{% else %}<circle cx="24" cy="24" r="15"/>
+{% endcase %}
+</svg>

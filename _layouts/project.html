@@ -1,0 +1,25 @@
+---
+layout: default
+---
+{% assign category = site.data.categories | where: 'id', page.category | first %}
+<article class="project-detail">
+  <header class="page-heading project-heading">
+    <a class="back-link" href="{{ category.url | relative_url }}">← {{ category.title }}</a>
+    <p class="eyebrow">{{ category.title | upcase }} / {{ page.type | escape }}</p>
+    <div class="project-badges"><span class="status">{{ page.status | escape }}</span>{% if page.platform %}<span class="platform-badge">{{ page.platform | escape }}{% if page.version %} · v{{ page.version | escape }}{% endif %}</span>{% endif %}</div>
+    <div class="project-identity">{% if page.icon %}<img class="app-icon" src="{{ page.icon | relative_url }}" width="88" height="88" alt="{{ page.icon_alt | default: page.title | escape }}">{% endif %}<div><h1>{{ page.title | escape }}</h1><p>{{ page.description | escape }}</p></div></div>
+    {% if page.github_url or page.live_url or page.release_url or page.download_url %}<div class="project-links">
+      {% if page.github_url %}<a class="pill-link" href="{{ page.github_url | escape }}" target="_blank" rel="noopener noreferrer">GitHub ↗</a>{% endif %}
+      {% if page.live_url %}<a class="pill-link" href="{{ page.live_url | escape }}" target="_blank" rel="noopener noreferrer">Try it online ↗</a>{% endif %}
+      {% if page.release_url %}<a class="pill-link" href="{{ page.release_url | escape }}" target="_blank" rel="noopener noreferrer">{% if page.platform == 'Android' %}Android release{% else %}View release{% endif %} ↗</a>{% endif %}
+      {% if page.download_url %}<a class="pill-link" href="{{ page.download_url | escape }}">{% if page.platform == 'Android' %}Download Android APK{% else %}Download{% endif %} ↓</a>{% endif %}
+    </div>{% endif %}
+    {% if page.platform == 'Android' and page.download_url %}<p class="download-note">For Android devices. Cannot be installed on iPhone or iPad.</p>{% endif %}
+  </header>
+  {% if page.cover %}<figure class="detail-cover"><img src="{{ page.cover | relative_url }}" width="1200" height="750" alt="{{ page.cover_alt | default: page.title | escape }}">{% if page.cover_caption %}<figcaption>{{ page.cover_caption | escape }}</figcaption>{% endif %}</figure>{% endif %}
+  <div class="prose project-prose">{{ content }}</div>
+  {% include screenshot-gallery.html images=page.screenshots %}
+  {% if page.features.size > 0 %}<section class="project-section project-features" aria-labelledby="features-heading"><p class="eyebrow">IN THIS BUILD</p><h2 id="features-heading">Features</h2><div class="feature-grid">{% for feature in page.features %}<div class="feature-item"><span class="feature-number" aria-hidden="true">{{ forloop.index | prepend: '0' }}</span><h3>{{ feature.title | escape }}</h3><p>{{ feature.description | escape }}</p></div>{% endfor %}</div></section>{% endif %}
+  {% if page.version %}<section class="project-section version-section" aria-labelledby="version-heading"><p class="eyebrow">CURRENT SNAPSHOT</p><h2 id="version-heading">Version information</h2><dl class="version-grid"><div><dt>Version</dt><dd>{{ page.version | escape }}</dd></div>{% if page.platform %}<div><dt>Platform</dt><dd>{{ page.minimum_os | default: page.platform | escape }}</dd></div>{% endif %}<div><dt>Development status</dt><dd>{{ page.status | escape }}</dd></div>{% if page.updated_at %}<div><dt>Updated</dt><dd>{{ page.updated_at | date: '%B %-d, %Y' }}</dd></div>{% endif %}</dl>{% unless page.release_url or page.download_url %}<p class="version-note">Preview only. A public download is not available yet.</p>{% endunless %}</section>{% endif %}
+  <a class="text-link project-back" href="{{ category.url | relative_url }}">← Back to {{ category.title }}</a>
+</article>

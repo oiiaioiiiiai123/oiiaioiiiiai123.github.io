@@ -1,0 +1,19 @@
+---
+section: home
+pig: true
+---
+<section class="hero" aria-labelledby="home-title">
+  <div class="hero-copy">
+    <p class="eyebrow"><span class="tiny-line"></span> A LITTLE CORNER OF MY WORLD</p>
+    <h1 id="home-title">oiiaioiiiiai's<br><span class="serif-italic">HomePage<span class="title-flower" aria-hidden="true">✳</span></span></h1>
+    <div id="about" class="about"><p class="intro">Hi, I'm oiiaioiiiiai!</p><p>A medical student at Shanghai Jiao Tong University.</p></div>
+    <a class="text-link hero-link" href="#my-projects">View projects <span aria-hidden="true">↓</span></a>
+  </div>
+  <div class="hero-art"><div class="pig-sticker"><span class="sticker-label">a little hello</span>{% include pig.html flowers=true %}<a class="room-link" href="{{ '/pigs-room/' | relative_url }}">Pig’s Room <span aria-hidden="true">↗</span></a></div><span class="handwritten hero-note">make room for little joys</span><svg class="hero-scribble" viewBox="0 0 120 60" fill="none" aria-hidden="true"><path d="M8 9c14 30 52 35 83 12M80 20l14-2-5 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+</section>
+<section id="my-projects" class="home-projects" aria-labelledby="project-heading">
+  <div class="section-heading"><div><p class="eyebrow">IDEAS, MADE INTO LITTLE THINGS</p><h2 id="project-heading">My Projects<span class="heading-dot">.</span></h2></div></div>
+  <div class="category-grid">{% for category in site.data.categories %}{% include category-card.html category=category %}{% endfor %}</div>
+</section>
+<section class="writing-home" aria-labelledby="writing-heading"><div class="writing-drawing" aria-hidden="true">{% include icon.html name='book' %}<span>✧</span></div><div class="writing-copy"><p class="eyebrow">WRITING</p><h2 id="writing-heading">If I Could Draw Life</h2><p>Notes and essays.</p></div><a class="round-link" href="{{ '/writing/' | relative_url }}" aria-label="Browse If I Could Draw Life">{% include icon.html name='arrow' %}</a></section>
+

@@ -1,0 +1,20 @@
+{% assign social_title = site.title %}
+{% if page.title %}{% assign social_title = page.title | append: ' · ' | append: site.title %}{% endif %}
+{% assign social_description = page.description | default: site.description %}
+{% assign social_image = page.social_image | default: site.social_image %}
+{% assign social_alt = page.social_image_alt | default: site.social_image_alt | default: social_title %}
+<meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+<meta property="og:site_name" content="{{ site.title | escape }}">
+<meta property="og:title" content="{{ social_title | escape }}">
+<meta property="og:description" content="{{ social_description | escape }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+{% if social_image %}<meta property="og:image" content="{{ social_image | absolute_url }}">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{ social_alt | escape }}">{% endif %}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ social_title | escape }}">
+<meta name="twitter:description" content="{{ social_description | escape }}">
+{% if social_image %}<meta name="twitter:image" content="{{ social_image | absolute_url }}">
+<meta name="twitter:image:alt" content="{{ social_alt | escape }}">{% endif %}

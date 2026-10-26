@@ -1,0 +1,11 @@
+---
+title: Page not found
+permalink: /404.html
+pig: true
+---
+<section class="empty-state not-found" aria-labelledby="not-found-title">
+  <p class="not-found-code">404</p>
+  <h1 id="not-found-title">Oops! Page not found.</h1>
+  {% include pig.html sleeping=true %}
+  <a class="pill-link" href="{{ '/' | relative_url }}">Back to Home</a>
+</section>

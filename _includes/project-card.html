@@ -1,0 +1,5 @@
+{% assign project = include.project %}
+<a class="project-card" href="{{ project.url | relative_url }}">
+  {% if project.cover %}<div class="project-cover"><img src="{{ project.cover | relative_url }}" width="800" height="500" alt="{{ project.cover_alt | default: project.title | escape }}" loading="lazy"></div>{% endif %}
+  <div class="project-card-body"><span class="status">{{ project.status | escape }}</span><h2>{{ project.title | escape }} <span aria-hidden="true">↗</span></h2><p class="project-type">{{ project.type | escape }}</p><p>{{ project.description | escape }}</p><span class="text-link">View project <span aria-hidden="true">→</span></span></div>
+</a>

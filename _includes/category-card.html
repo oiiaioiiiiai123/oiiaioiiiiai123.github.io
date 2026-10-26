@@ -1,0 +1,5 @@
+{% assign category = include.category %}
+<a class="category-card {{ category.color }}" href="{{ category.url | relative_url }}">
+  <div class="card-top"><span class="category-icon">{% include icon.html name=category.icon %}</span><span class="card-number">{{ category.number }}</span></div>
+  <div class="card-bottom"><div><h3>{{ category.title }}</h3></div><span class="card-arrow">{% include icon.html name='arrow' %}</span></div>
+</a>

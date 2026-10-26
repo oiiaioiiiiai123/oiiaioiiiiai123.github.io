@@ -1,0 +1,8 @@
+---
+title: If I Could Draw Life
+section: writing
+permalink: /writing/
+---
+<div class="page-heading writing-heading"><a class="back-link" href="{{ '/' | relative_url }}">← Home</a><p class="eyebrow">WRITING</p><h1>If I Could<br><span class="serif-italic">Draw Life</span><span class="heading-dot">.</span></h1><p>Notes and essays.</p></div>
+{% if site.posts.size > 0 %}<div class="post-list">{% for post in site.posts %}<article class="post-preview"><a href="{{ post.url | relative_url }}">{% if post.cover %}<img class="post-thumb" src="{{ post.cover | relative_url }}" alt="{{ post.cover_alt | default: post.title | escape }}" loading="lazy">{% endif %}<div><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y.%m.%d' }}</time><h2>{{ post.title | escape }} <span aria-hidden="true">↗</span></h2>{% if post.description %}<p>{{ post.description | escape }}</p>{% endif %}</div></a></article>{% endfor %}</div>
+{% else %}<div class="empty-state writing-empty"><div class="empty-art">{% include icon.html name='book' %}<span aria-hidden="true">✧</span></div><h2>No posts yet.</h2><p>New posts will appear here.</p></div>{% endif %}
