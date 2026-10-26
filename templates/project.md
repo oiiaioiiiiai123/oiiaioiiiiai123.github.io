@@ -17,6 +17,8 @@ social_image:
 social_image_alt:
 github_url:
 live_url:
+# 可选填 live，让项目卡片直接在新标签页打开 live_url；默认打开项目详情。
+card_action:
 release_url:
 download_url:
 features: []

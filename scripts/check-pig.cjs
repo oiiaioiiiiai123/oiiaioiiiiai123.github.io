@@ -186,7 +186,7 @@ const clockPage = async (browser, options={}) => {
     for(const route of ['/','/projects/','/projects/app/','/projects/website/','/projects/games/','/projects/more/','/projects/eggplant/','/projects/shanghai-metro-test/','/writing/','/pigs-room/','/404.html']) {
       const r=await links.goto(url+route);ok('page resolves '+route,r.status()===200);
       ok('new title and GitHub on '+route,(await links.title()).endsWith("oiiaioiiiiai's HomePage")&&await links.locator('.site-footer a[href="https://github.com/oiiaioiiiiai123"]').count()===1);
-      if(route==='/projects/website/')ok('Chinese metro title and Coming Soon preserved',(await links.locator('main').innerText()).includes('测测你是哪条上海地铁')&&(await links.locator('main').innerText()).includes('Coming Soon'));
+      if(route==='/projects/website/')ok('released metro card opens the real HTTPS test',(await links.locator('main').innerText()).includes('测测你是哪条上海地铁')&&(await links.locator('main').innerText()).includes('Released')&&await links.locator('.project-card[href="https://oiiaioiiiiai123.github.io/shmetro-personality/"]').count()===1);
       if(route==='/projects/eggplant/')ok('eggplant description and status preserved',(await links.locator('main').innerText()).includes('An English reading app.')&&(await links.locator('main').innerText()).includes('In Development'));
       if(route==='/writing/')ok('writing collection preserved',(await links.locator('h1').innerText()).replace(/\s+/g,' ').includes('If I Could Draw Life'));
     }

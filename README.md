@@ -2,7 +2,7 @@
 
 奶油白、樱花粉与鼠尾草绿的个人网站。Jekyll + Liquid + 原生 CSS/JavaScript + 原始 PNG 与原创像素素材；无数据库、API Key、Node 构建或外部字体依赖。
 
-本地目录名保持 `oiiaioiiiiai.github.io`，未来对应远程 `oiiaioiiiiai123.github.io` 仓库。旁边的 `oiiaioiiiiai/` 对应未来远程 Profile 仓库 `oiiaioiiiiai123`；不要将它们合并，也不要把父目录发布成第三个仓库。
+本地目录名保持 `oiiaioiiiiai.github.io`，对应远程 `oiiaioiiiiai123.github.io` 仓库。旁边的 `oiiaioiiiiai/` 对应未来远程 Profile 仓库 `oiiaioiiiiai123`；不要将它们合并，也不要把父目录发布成第三个仓库。
 
 ## 立即查看本次已构建的版本
 
@@ -93,7 +93,7 @@ screenshots:
     caption: 阅读界面
 ```
 
-要更改封面，更新同一文件的 `cover`、`cover_alt`、`cover_caption`。封面来源以项目的 cover_caption 为准：eggplant 已使用真实图标和实际界面合成封面；地铁项目仍是标明来源的概念图，不是完成界面。没有真实 URL 时字段留空，页面不显示无效按钮。新项目文件名会生成稳定 URL，例如 `_projects/my-app.md` → `/projects/my-app/`；发布后尽量不要改文件名。
+要更改封面，更新同一文件的 `cover`、`cover_alt`、`cover_caption`。封面来源以项目的 cover_caption 为准：eggplant 已使用真实图标和实际界面合成封面；地铁项目已使用 V4.2 原封面，Website 分类卡片直接打开真实在线测试；项目详情仍可通过 `/projects/shanghai-metro-test/` 直接访问。没有真实 URL 时字段留空，页面不显示无效按钮。新项目文件名会生成稳定 URL，例如 `_projects/my-app.md` → `/projects/my-app/`；发布后尽量不要改文件名。
 
 ## 写新文章
 
@@ -144,15 +144,15 @@ python3 scripts/check-site.py /private/tmp/oiia-subpath-site --baseurl /preview
 发布使用 GitHub Pages 的 `main` 分支根目录，无需 Actions、`.nojekyll` 或 `_site` 提交。`_config.yml` 中的项目 Collection 已设置 `output: true` 和稳定 permalink。参考 [Jekyll Collections](https://jekyllrb.com/docs/collections/) 与 [GitHub Pages 发布来源](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)。
 
 
-## 单独打开本仓库时如何发布
+## 单独维护本仓库
 
-此仓库可以独立维护，不依赖父目录文档才能构建。需要发布时，在 GitHub Desktop 中为当前目录创建本地 Git 仓库，检查并提交源码，然后发布为 `oiiaioiiiiai123.github.io`（本地文件夹不必改名）；不要把 `_site/` 或 `vendor/` 加入提交。若 GitHub 上已有同名仓库，先获取并整合已有内容。
+此仓库已独立初始化 Git，origin 为 `https://github.com/oiiaioiiiiai123/oiiaioiiiiai123.github.io.git`，默认分支为 main，本地文件夹不必改名。更新时检查 git status，构建验证后提交并普通推送；不要重新初始化、强推或把 `_site/`、`vendor/` 加入提交。
 
-在该仓库的 Settings → Pages → Build and deployment 中选择 **Deploy from a branch**，分支 **main**、目录 **/(root)**，保存并等待 GitHub 完成构建。具体依据见 [GitHub 官方发布来源说明](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)。本次没有执行这些远程操作。
+在该仓库的 Settings → Pages → Build and deployment 中选择 **Deploy from a branch**，分支 **main**、目录 **/(root)**，保存并等待 GitHub 完成构建。具体依据见 [GitHub 官方发布来源说明](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)。2026-10-26 已创建本站仓库、普通推送并启用 main 根目录 Pages 发布。
 
 维护依赖时保留 Jekyll 3.10 和 `kramdown-parser-gfm`；后者是 GFM Markdown 解析所必需的依赖。`Gemfile.lock` 已包含通用 Ruby、Mac 与 Linux 平台。
 
-实际 GitHub 个人资料：[oiiaioiiiiai123](https://github.com/oiiaioiiiiai123)。未来 Pages 地址为 https://oiiaioiiiiai123.github.io/，尚未发布。网站显示标题保持 `oiiaioiiiiai's HomePage`，与 GitHub 用户名不同。
+实际 GitHub 个人资料：[oiiaioiiiiai123](https://github.com/oiiaioiiiiai123)。Pages 地址为 [oiiaioiiiiai123.github.io](https://oiiaioiiiiai123.github.io/)。网站显示标题保持 `oiiaioiiiiai's HomePage`，与 GitHub 用户名不同。
 
 ## eggplant 第一版展示与通用画廊
 
@@ -168,10 +168,16 @@ eggplant 当前实际 versionName 为 1.0、versionCode 为 1；App → eggplant
 
 当前只有 debug APK，没有 release APK 或可用的项目仓库/下载 URL，所以网页未显示下载按钮。未来填写真实 release_url 可链接 Release 页面，填写真实 download_url 可下载 APK；Android 下载会注明不适用于 iPhone/iPad。不要将 APK 放在本网站目录。
 
-完整的本地审计与验收、发布步骤在工作空间 `../docs/eggplant-showcase.md` 与 `../docs/eggplant-publishing.md`。本次没有创建 GitHub 仓库、Release、tag、push 或部署。
+完整的本地审计与验收、发布步骤在工作空间 `../docs/eggplant-showcase.md` 与 `../docs/eggplant-publishing.md`。此前 eggplant 展示整理没有发布 App 源码、Release 或 APK。本站本身已独立通过 GitHub Pages 发布。
 
 ## 排版与医生猪验收
 
 全站沿用原字体，辅助标签 13px、说明/页脚 15px、导航/正文/主要链接 16px、阅读正文 17px，统一 rem 变量。大标题保持原有层级。
 
 新增验收脚本 `scripts/check-typography-doctor.cjs`：运行前需要网站预览服务及隔离的临时文章预览（不把测试文章放入正式 `_posts`）。设置 `PLAYWRIGHT_MODULE`、`CHROME_PATH`、`VISUAL_QA_URL`、`ARTICLE_QA_URL` 和 `VISUAL_QA_OUT` 后运行。七种视口、深色/减少动态、真实 Chrome 200% 缩放及医生局部像素/互动均在同一脚本检查；具体本机环境、截图和结果见工作空间 `../docs/typography-doctor.md`。
+
+## 地铁测试入口
+
+[测测你是哪条上海地铁](https://oiiaioiiiiai123.github.io/shmetro-personality/) 使用独立仓库 [shmetro-personality](https://github.com/oiiaioiiiiai123/shmetro-personality)，支持独立更新。主页保留四分类，入口位于 Home → Website；现有 `_projects/shanghai-metro-test.md` 是介绍、状态、封面及真实链接的唯一内容来源。`card_action: live` 让卡片直接在新标签页打开 live_url，并显示可访问性提示及安全 rel 属性。其他卡片继续打开各自详情页。
+
+`scripts/check-deployment.cjs` 在真实浏览器中点击 Home → Website → 地铁卡片并进入答题，检查桌面、平板和手机、详情/文章合集/房间的直接访问与刷新。使用 `DEPLOY_QA_HOME` 指定待验证主页，`DEPLOY_QA_OUT` 指定证据目录；默认验证公开 Pages 地址。与现有浏览器脚本一样，支持 `PLAYWRIGHT_MODULE` 和 `CHROME_PATH`，正式网站不依赖这些测试工具。

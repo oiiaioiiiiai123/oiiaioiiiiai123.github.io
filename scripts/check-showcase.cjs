@@ -58,7 +58,7 @@ const eagerGallery=async page=>{
       await page.locator('.viewer-close').click();
       await page.reload();ok(`eggplant ${width}: direct refresh resolves`,await page.locator('h1').innerText()==='eggplant');
       await load(page,'/projects/shanghai-metro-test/');
-      ok(`shared gallery ${width}: unfinished project has an honest empty state`,await page.locator('h1').innerText()==='测测你是哪条上海地铁'&&await page.locator('.screenshot-link').count()===0&&await page.locator('.gallery-empty').isVisible());
+      ok(`metro ${width}: released test has its real HTTPS entry`,await page.locator('h1').innerText()==='测测你是哪条上海地铁'&&await page.locator('.status').first().innerText()==='Released'&&await page.locator('.project-links a[href="https://oiiaioiiiiai123.github.io/shmetro-personality/"]').count()===1);
       await load(page,'/404.html');await page.waitForSelector('[data-face-ready=true]');
       ok(`404 ${width}: requested copy and sleeping original PNG`,await page.locator('.not-found-code').innerText()==='404'&&await page.locator('h1').innerText()==='Oops! Page not found.'&&await page.locator('[data-pig-static]').getAttribute('data-state')==='sleeping'&&await page.locator('.pig-art').evaluate(i=>i.naturalWidth===1216&&i.naturalHeight===1181));
       ok(`404 ${width}: closed-eye layer and no feeding controls`,await page.locator('.pig-face').getAttribute('data-expression')==='sleeping'&&await page.locator('.carrot-button').count()===0);
@@ -85,7 +85,7 @@ const eagerGallery=async page=>{
       ok('social tags: one non-conflicting set '+route,await page.locator('meta[name="twitter:card"]').count()===1&&await page.locator('meta[name="twitter:card"]').getAttribute('content')==='summary_large_image');
       const image=await page.locator('meta[property="og:image"]').getAttribute('content');const imageUrl=new URL(image);
       const response=await page.request.get(url+imageUrl.pathname);const bytes=await response.body();
-      ok('social image: absolute future URL and real 1200×630 PNG '+route,imageUrl.origin==='https://oiiaioiiiiai123.github.io'&&response.status()===200&&bytes.readUInt32BE(16)===1200&&bytes.readUInt32BE(20)===630);
+      ok('social image: absolute live URL and real 1200×630 PNG '+route,imageUrl.origin==='https://oiiaioiiiiai123.github.io'&&response.status()===200&&bytes.readUInt32BE(16)===1200&&bytes.readUInt32BE(20)===630);
       ok('social URL and real profile '+route,(await page.locator('meta[property="og:url"]').getAttribute('content'))==='https://oiiaioiiiiai123.github.io'+route&&await page.locator('.site-footer a[href="https://github.com/oiiaioiiiiai123"]').count()===1);
       if(route==='/projects/eggplant/')ok('eggplant has its own social image',imageUrl.pathname==='/assets/images/projects/eggplant/share.png');
       if(route==='/writing/')ok('If I Could Draw Life collection remains usable',(await page.locator('h1').innerText()).replace(/\s+/g,' ').includes('If I Could Draw Life'));
