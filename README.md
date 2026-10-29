@@ -181,3 +181,7 @@ eggplant 当前实际 versionName 为 1.0、versionCode 为 1；App → eggplant
 [测测你是哪条上海地铁](https://oiiaioiiiiai123.github.io/shmetro-personality/) 使用独立仓库 [shmetro-personality](https://github.com/oiiaioiiiiai123/shmetro-personality)，支持独立更新。主页保留四分类，入口位于 Home → Website；现有 `_projects/shanghai-metro-test.md` 是介绍、状态、封面及真实链接的唯一内容来源。`card_action: live` 让卡片直接在新标签页打开 live_url，并显示可访问性提示及安全 rel 属性。其他卡片继续打开各自详情页。
 
 `scripts/check-deployment.cjs` 在真实浏览器中点击 Home → Website → 地铁卡片并进入答题，检查桌面、平板和手机、详情/文章合集/房间的直接访问与刷新。使用 `DEPLOY_QA_HOME` 指定待验证主页，`DEPLOY_QA_OUT` 指定证据目录；默认验证公开 Pages 地址。与现有浏览器脚本一样，支持 `PLAYWRIGHT_MODULE` 和 `CHROME_PATH`，正式网站不依赖这些测试工具。
+
+## yuri的衣橱
+
+Games 的项目资料为 `_projects/yuris-closet.md`，公开游戏在 `/yuris-closet/`。源码位置、明确同步清单和打包命令见 [游戏发布说明](scripts/yuris-closet/README.md)。打包只使用当前 PNG，不调用美术生成器；本仓库 `main` 推送后由既有 GitHub Pages 构建完整站点。

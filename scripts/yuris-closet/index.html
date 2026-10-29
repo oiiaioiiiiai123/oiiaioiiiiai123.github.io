@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#33323d" />
+  <meta name="description" content="yuri的衣橱：尤莉的像素换装小游戏。搭配套装、发型、上衣、下装、帽子与配饰，离线游玩。" />
+  <title>yuri的衣橱 · 像素换装小游戏</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="titlebar">
+      <span class="app-mark" aria-hidden="true">✦</span>
+      <div class="app-brand"><strong>yuri的衣橱</strong><small>YURI'S CLOSET.EXE <span>— pixel dress-up</span></small></div>
+      <span class="top-spacer"></span>
+      <span class="offline-indicator"><i></i> OFFLINE READY</span>
+      <span class="window-buttons" aria-hidden="true"><b>―</b><b>□</b><b>×</b></span>
+    </header>
+
+    <main>
+      <section class="intro" aria-label="游戏介绍">
+        <div>
+          <div class="intro-kicker"><span class="little-square"></span> WELCOME BACK TO THE WARDROBE <span class="line-deco"></span> BUILD / 05.0</div>
+          <h1>yuri<span>的衣橱</span><em>✳</em></h1>
+          <p>给尤莉换上喜欢的衣服，也试试她平时没有扎过的发型。<br class="desktop-break">眼睛、绷带和熟悉的刘海，依然是她自己。</p>
+        </div>
+        <div class="intro-note"><span>CHARACTER FILE</span><strong>YURI <sup>01</sup></strong><small>red hair · gentle eyes · little bandages</small></div>
+      </section>
+
+      <div class="main-grid">
+        <section class="preview-panel" aria-label="尤莉角色实时预览">
+          <div class="panel-title"><span><i class="square-light"></i> CHARACTER PREVIEW</span><span>256 × 384 PX</span></div>
+          <div class="stage-wrap"><canvas id="stage" width="256" height="384" aria-label="换装后的尤莉像素人物" role="img"></canvas>
+            <span class="stage-sticker" aria-hidden="true">YURI<br/>01</span></div>
+          <div class="look-info"><div><span class="tiny-caption">TODAY'S LOOK</span><strong id="lookNameDisplay">原作 · 初始立绘</strong></div><span class="tiny-star">✦ ✦ ✦</span></div>
+          <div class="stage-actions">
+            <button id="randomBtn" type="button" class="btn btn-cream">✧ 随机穿搭</button>
+            <button id="resetBtn" type="button" class="btn btn-quiet">↺ 恢复原作</button>
+            <button id="saveBtn" type="button" class="btn btn-dark">♡ 收藏搭配</button>
+          </div>
+          <div class="preview-foot"><span><i class="tiny-dot"></i> 柔和神态 · 统一像素站姿</span><span>HAIR / OUTFIT / DETAILS</span></div>
+        </section>
+
+        <section class="wardrobe-panel" aria-labelledby="menuTitle">
+          <div class="wardrobe-head"><div><span class="label-overline">DRESS-UP MENU / 02</span><h2 id="menuTitle">换装室<span class="dot-red">.</span></h2><p>挑选一个分类，点击图案就能替尤莉换上。</p></div><div class="tiny-stats"><span>ITEM INDEX</span><strong id="choiceCount">01 / 05</strong></div></div>
+          <div class="tabbar" id="tabs" role="tablist" aria-label="衣橱分类">
+            <button type="button" class="tab active" data-tab="preset" role="tab" aria-selected="true">♜ <span>套装</span></button>
+            <button type="button" class="tab" data-tab="hair" role="tab" aria-selected="false">✿ <span>发型</span></button>
+            <button type="button" class="tab" data-tab="top" role="tab" aria-selected="false">▤ <span>上衣</span></button>
+            <button type="button" class="tab" data-tab="bottom" role="tab" aria-selected="false">▥ <span>下装</span></button>
+            <button type="button" class="tab" data-tab="socks" role="tab" aria-selected="false">⌁ <span>袜子</span></button>
+            <button type="button" class="tab" data-tab="shoes" role="tab" aria-selected="false">◪ <span>鞋子</span></button>
+            <button type="button" class="tab" data-tab="hat" role="tab" aria-selected="false">✧ <span>帽饰</span></button>
+            <button type="button" class="tab" data-tab="accessory" role="tab" aria-selected="false">✦ <span>配饰</span></button>
+            <button type="button" class="tab" data-tab="scene" role="tab" aria-selected="false">▧ <span>背景</span></button>
+          </div>
+          <div class="category-head"><span id="categoryHeading">COMPLETE LOOKS / 收藏套装</span><span id="categoryHint">还原你提供的三套造型</span></div>
+          <div class="items-grid" id="itemsGrid" role="group" aria-label="换装选项"><div class="loading-placeholder">衣橱正在打开……</div></div>
+          <div class="bottom-editor">
+            <div class="split-label"><span>KEEP THIS OUTFIT</span><span>✳</span></div>
+            <div class="look-name"><label for="lookName">搭配命名</label><input id="lookName" type="text" maxlength="30" spellcheck="false" value="原作 · 初始立绘" placeholder="给这身穿搭取个名字" /></div>
+            <div class="export-actions"><button id="exportSprite" type="button" class="btn btn-dark">↓ 导出透明 PNG</button><button id="exportCard" type="button" class="btn btn-outline">▣ 导出角色卡片</button></div>
+            <p class="helper">搭配会自动保存在本地浏览器。长裤会遮住袜子，露出的部分随裤脚与鞋口变化。</p>
+          </div>
+        </section>
+      </div>
+
+      <div class="lower-grid">
+        <section class="lower-card" aria-labelledby="savedTitle"><div class="small-heading"><div><span>MY LITTLE COLLECTION</span><h3 id="savedTitle">我的搭配存档</h3></div><span class="counter-pill" id="savedCount">0 / 12</span></div><div class="saved-grid" id="savedGrid"><div class="no-saves">还没有保存的搭配。点击左侧「♡ 收藏搭配」留下喜欢的一套。</div></div></section>
+        <section class="lower-card" aria-labelledby="customTitle"><div class="small-heading"><div><span>DRAW IT YOURSELF</span><h3 id="customTitle">你画的服装也能穿</h3></div><span class="counter-pill">PNG LAYER</span></div><p>导入自己画的透明 PNG，叠加在角色最上层；建议沿用相同的像素坐标。</p><div class="import-actions"><label class="btn btn-outline import-label" for="customFile">＋ 导入透明 PNG <input id="customFile" type="file" accept="image/png" hidden /></label><button id="clearCustom" type="button" class="btn btn-quiet" disabled>移除</button><button id="guideBtn" type="button" class="btn btn-quiet">下载绘制参考</button></div><div class="file-note">画布大小：256 × 384 px。<span id="customName"></span></div></section>
+      </div>
+    </main>
+    <footer><span>✳ yuri的衣橱</span><span>Non-commercial Limbus Company fan dress-up · fan-made pixel reinterpretation</span><span>LOCAL / AUTOSAVE</span></footer>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="assets.js"></script><script src="rig.js"></script><script src="app.js"></script>
+</body>
+</html>

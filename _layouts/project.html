@@ -10,7 +10,7 @@ layout: default
     <div class="project-identity">{% if page.icon %}<img class="app-icon" src="{{ page.icon | relative_url }}" width="88" height="88" alt="{{ page.icon_alt | default: page.title | escape }}">{% endif %}<div><h1>{{ page.title | escape }}</h1><p>{{ page.description | escape }}</p></div></div>
     {% if page.github_url or page.live_url or page.release_url or page.download_url %}<div class="project-links">
       {% if page.github_url %}<a class="pill-link" href="{{ page.github_url | escape }}" target="_blank" rel="noopener noreferrer">GitHub ↗</a>{% endif %}
-      {% if page.live_url %}<a class="pill-link" href="{{ page.live_url | escape }}" target="_blank" rel="noopener noreferrer">Try it online ↗</a>{% endif %}
+      {% if page.live_url %}<a class="pill-link" href="{{ page.live_url | escape }}" target="_blank" rel="noopener noreferrer">{{ page.live_label | default: 'Try it online' | escape }} ↗</a>{% endif %}
       {% if page.release_url %}<a class="pill-link" href="{{ page.release_url | escape }}" target="_blank" rel="noopener noreferrer">{% if page.platform == 'Android' %}Android release{% else %}View release{% endif %} ↗</a>{% endif %}
       {% if page.download_url %}<a class="pill-link" href="{{ page.download_url | escape }}">{% if page.platform == 'Android' %}Download Android APK{% else %}Download{% endif %} ↓</a>{% endif %}
     </div>{% endif %}
