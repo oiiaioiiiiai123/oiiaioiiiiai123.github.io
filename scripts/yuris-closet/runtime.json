@@ -1,0 +1,4146 @@
+{
+  "version": "8.0-painted-poses",
+  "canvas": [
+    1024,
+    1536
+  ],
+  "anchors": {
+    "neck": [
+      530,
+      510
+    ],
+    "shoulderLeft": [
+      420,
+      535
+    ],
+    "shoulderRight": [
+      650,
+      541
+    ],
+    "elbowLeft": [
+      365,
+      850
+    ],
+    "elbowRight": [
+      690,
+      850
+    ],
+    "wristLeft": [
+      340,
+      940
+    ],
+    "wristRight": [
+      715,
+      950
+    ],
+    "waist": [
+      520,
+      800
+    ],
+    "hips": [
+      520,
+      900
+    ],
+    "kneeLeft": [
+      450,
+      1110
+    ],
+    "kneeRight": [
+      625,
+      1110
+    ],
+    "ankleLeft": [
+      490,
+      1390
+    ],
+    "ankleRight": [
+      685,
+      1420
+    ],
+    "soleLeft": [
+      450,
+      1490
+    ],
+    "soleRight": [
+      685,
+      1500
+    ]
+  },
+  "poseSystem": {
+    "version": "8.0",
+    "canvas": [
+      1024,
+      1536
+    ],
+    "reference": "https://lovenikki.fandom.com/wiki/Poses/Items",
+    "poses": {
+      "relaxed": {
+        "id": "relaxed",
+        "anchors": {
+          "neck": [
+            530,
+            510
+          ],
+          "shoulderLeft": [
+            420,
+            535
+          ],
+          "shoulderRight": [
+            650,
+            541
+          ],
+          "elbowLeft": [
+            365,
+            850
+          ],
+          "elbowRight": [
+            690,
+            850
+          ],
+          "wristLeft": [
+            340,
+            940
+          ],
+          "wristRight": [
+            715,
+            950
+          ],
+          "waist": [
+            520,
+            800
+          ],
+          "hips": [
+            520,
+            900
+          ],
+          "kneeLeft": [
+            450,
+            1110
+          ],
+          "kneeRight": [
+            625,
+            1110
+          ],
+          "ankleLeft": [
+            490,
+            1390
+          ],
+          "ankleRight": [
+            685,
+            1420
+          ],
+          "soleLeft": [
+            450,
+            1490
+          ],
+          "soleRight": [
+            685,
+            1500
+          ],
+          "head": [
+            530,
+            300
+          ]
+        },
+        "occupiedHands": [],
+        "replaces": [
+          "upperBody"
+        ],
+        "sourceFamily": "approved-mannequin"
+      },
+      "hoodie-pocket": {
+        "id": "hoodie-pocket",
+        "anchors": {
+          "neck": [
+            530,
+            510
+          ],
+          "shoulderLeft": [
+            420,
+            535
+          ],
+          "shoulderRight": [
+            650,
+            541
+          ],
+          "elbowLeft": [
+            350,
+            710
+          ],
+          "elbowRight": [
+            680,
+            710
+          ],
+          "wristLeft": [
+            410,
+            780
+          ],
+          "wristRight": [
+            610,
+            780
+          ],
+          "waist": [
+            520,
+            800
+          ],
+          "hips": [
+            520,
+            900
+          ],
+          "kneeLeft": [
+            450,
+            1110
+          ],
+          "kneeRight": [
+            625,
+            1110
+          ],
+          "ankleLeft": [
+            490,
+            1390
+          ],
+          "ankleRight": [
+            685,
+            1420
+          ],
+          "soleLeft": [
+            450,
+            1490
+          ],
+          "soleRight": [
+            685,
+            1500
+          ],
+          "head": [
+            530,
+            300
+          ]
+        },
+        "occupiedHands": [
+          "left",
+          "right"
+        ],
+        "upper": "pose_upper_pocket",
+        "replaces": [
+          "upperBody",
+          "arms",
+          "hands"
+        ],
+        "frontRegions": [
+          [
+            [
+              305,
+              650
+            ],
+            [
+              440,
+              720
+            ],
+            [
+              440,
+              835
+            ],
+            [
+              315,
+              835
+            ]
+          ],
+          [
+            [
+              600,
+              720
+            ],
+            [
+              745,
+              650
+            ],
+            [
+              735,
+              835
+            ],
+            [
+              600,
+              835
+            ]
+          ]
+        ]
+      },
+      "coat-collar": {
+        "id": "coat-collar",
+        "anchors": {
+          "neck": [
+            530,
+            510
+          ],
+          "shoulderLeft": [
+            420,
+            535
+          ],
+          "shoulderRight": [
+            650,
+            541
+          ],
+          "elbowLeft": [
+            360,
+            675
+          ],
+          "elbowRight": [
+            690,
+            850
+          ],
+          "wristLeft": [
+            440,
+            580
+          ],
+          "wristRight": [
+            715,
+            950
+          ],
+          "waist": [
+            520,
+            800
+          ],
+          "hips": [
+            520,
+            900
+          ],
+          "kneeLeft": [
+            450,
+            1110
+          ],
+          "kneeRight": [
+            625,
+            1110
+          ],
+          "ankleLeft": [
+            490,
+            1390
+          ],
+          "ankleRight": [
+            685,
+            1420
+          ],
+          "soleLeft": [
+            450,
+            1490
+          ],
+          "soleRight": [
+            685,
+            1500
+          ],
+          "head": [
+            530,
+            300
+          ]
+        },
+        "occupiedHands": [
+          "left"
+        ],
+        "upper": "pose_upper_coat",
+        "replaces": [
+          "upperBody",
+          "arms",
+          "hands"
+        ],
+        "frontRegions": [
+          [
+            [
+              300,
+              510
+            ],
+            [
+              490,
+              510
+            ],
+            [
+              490,
+              730
+            ],
+            [
+              300,
+              730
+            ]
+          ]
+        ]
+      },
+      "uniform-sword": {
+        "id": "uniform-sword",
+        "anchors": {
+          "neck": [
+            530,
+            510
+          ],
+          "shoulderLeft": [
+            420,
+            535
+          ],
+          "shoulderRight": [
+            650,
+            541
+          ],
+          "elbowLeft": [
+            365,
+            850
+          ],
+          "elbowRight": [
+            685,
+            675
+          ],
+          "wristLeft": [
+            330,
+            960
+          ],
+          "wristRight": [
+            573,
+            580
+          ],
+          "waist": [
+            520,
+            760
+          ],
+          "hips": [
+            520,
+            900
+          ],
+          "kneeLeft": [
+            450,
+            1110
+          ],
+          "kneeRight": [
+            625,
+            1110
+          ],
+          "ankleLeft": [
+            490,
+            1390
+          ],
+          "ankleRight": [
+            685,
+            1420
+          ],
+          "soleLeft": [
+            450,
+            1490
+          ],
+          "soleRight": [
+            685,
+            1500
+          ],
+          "head": [
+            530,
+            300
+          ],
+          "hip": [
+            520,
+            980
+          ]
+        },
+        "occupiedHands": [
+          "right"
+        ],
+        "upper": "pose_upper_uniform",
+        "requiresAccessory": 1,
+        "replaces": [
+          "upperBody",
+          "arms",
+          "hands",
+          "heldProp"
+        ]
+      },
+      "shoe-0": {
+        "id": "shoe-0",
+        "anchors": {
+          "neck": [
+            530,
+            510
+          ],
+          "shoulderLeft": [
+            420,
+            535
+          ],
+          "shoulderRight": [
+            650,
+            541
+          ],
+          "elbowLeft": [
+            365,
+            850
+          ],
+          "elbowRight": [
+            690,
+            850
+          ],
+          "wristLeft": [
+            340,
+            940
+          ],
+          "wristRight": [
+            715,
+            950
+          ],
+          "waist": [
+            520,
+            800
+          ],
+          "hips": [
+            520,
+            900
+          ],
+          "kneeLeft": [
+            474,
+            1100
+          ],
+          "kneeRight": [
+            618,
+            1100
+          ],
+          "ankleLeft": [
+            488,
+            1360
+          ],
+          "ankleRight": [
+            650,
+            1360
+          ],
+          "soleLeft": [
+            410,
+            1486
+          ],
+          "soleRight": [
+            680,
+            1508
+          ],
+          "head": [
+            530,
+            300
+          ]
+        },
+        "occupiedHands": [],
+        "replaces": [
+          "legs",
+          "feet"
+        ],
+        "lower": "lower_shoes_0",
+        "footwear": 0
+      },
+      "shoe-1": {
+        "id": "shoe-1",
+        "anchors": {
+          "neck": [
+            530,
+            510
+          ],
+          "shoulderLeft": [
+            420,
+            535
+          ],
+          "shoulderRight": [
+            650,
+            541
+          ],
+          "elbowLeft": [
+            365,
+            850
+          ],
+          "elbowRight": [
+            690,
+            850
+          ],
+          "wristLeft": [
+            340,
+            940
+          ],
+          "wristRight": [
+            715,
+            950
+          ],
+          "waist": [
+            520,
+            800
+          ],
+          "hips": [
+            520,
+            900
+          ],
+          "kneeLeft": [
+            473,
+            1100
+          ],
+          "kneeRight": [
+            617,
+            1100
+          ],
+          "ankleLeft": [
+            471,
+            1360
+          ],
+          "ankleRight": [
+            673,
+            1360
+          ],
+          "soleLeft": [
+            424,
+            1494
+          ],
+          "soleRight": [
+            673,
+            1496
+          ],
+          "head": [
+            530,
+            300
+          ]
+        },
+        "occupiedHands": [],
+        "replaces": [
+          "legs",
+          "feet"
+        ],
+        "lower": "lower_shoes_1",
+        "footwear": 1
+      },
+      "shoe-2": {
+        "id": "shoe-2",
+        "anchors": {
+          "neck": [
+            530,
+            510
+          ],
+          "shoulderLeft": [
+            420,
+            535
+          ],
+          "shoulderRight": [
+            650,
+            541
+          ],
+          "elbowLeft": [
+            365,
+            850
+          ],
+          "elbowRight": [
+            690,
+            850
+          ],
+          "wristLeft": [
+            340,
+            940
+          ],
+          "wristRight": [
+            715,
+            950
+          ],
+          "waist": [
+            520,
+            800
+          ],
+          "hips": [
+            520,
+            900
+          ],
+          "kneeLeft": [
+            473,
+            1100
+          ],
+          "kneeRight": [
+            617,
+            1100
+          ],
+          "ankleLeft": [
+            487,
+            1360
+          ],
+          "ankleRight": [
+            675,
+            1360
+          ],
+          "soleLeft": [
+            432,
+            1502
+          ],
+          "soleRight": [
+            671,
+            1504
+          ],
+          "head": [
+            530,
+            300
+          ]
+        },
+        "occupiedHands": [],
+        "replaces": [
+          "legs",
+          "feet"
+        ],
+        "lower": "lower_shoes_2",
+        "footwear": 2
+      },
+      "shoe-3": {
+        "id": "shoe-3",
+        "anchors": {
+          "neck": [
+            530,
+            510
+          ],
+          "shoulderLeft": [
+            420,
+            535
+          ],
+          "shoulderRight": [
+            650,
+            541
+          ],
+          "elbowLeft": [
+            365,
+            850
+          ],
+          "elbowRight": [
+            690,
+            850
+          ],
+          "wristLeft": [
+            340,
+            940
+          ],
+          "wristRight": [
+            715,
+            950
+          ],
+          "waist": [
+            520,
+            800
+          ],
+          "hips": [
+            520,
+            900
+          ],
+          "kneeLeft": [
+            473,
+            1100
+          ],
+          "kneeRight": [
+            617,
+            1100
+          ],
+          "ankleLeft": [
+            489,
+            1360
+          ],
+          "ankleRight": [
+            675,
+            1360
+          ],
+          "soleLeft": [
+            418,
+            1490
+          ],
+          "soleRight": [
+            681,
+            1500
+          ],
+          "head": [
+            530,
+            300
+          ]
+        },
+        "occupiedHands": [],
+        "replaces": [
+          "legs",
+          "feet"
+        ],
+        "lower": "lower_shoes_3",
+        "footwear": 3
+      },
+      "shoe-4": {
+        "id": "shoe-4",
+        "anchors": {
+          "neck": [
+            530,
+            510
+          ],
+          "shoulderLeft": [
+            420,
+            535
+          ],
+          "shoulderRight": [
+            650,
+            541
+          ],
+          "elbowLeft": [
+            365,
+            850
+          ],
+          "elbowRight": [
+            690,
+            850
+          ],
+          "wristLeft": [
+            340,
+            940
+          ],
+          "wristRight": [
+            715,
+            950
+          ],
+          "waist": [
+            520,
+            800
+          ],
+          "hips": [
+            520,
+            900
+          ],
+          "kneeLeft": [
+            473,
+            1100
+          ],
+          "kneeRight": [
+            617,
+            1100
+          ],
+          "ankleLeft": [
+            491,
+            1360
+          ],
+          "ankleRight": [
+            675,
+            1360
+          ],
+          "soleLeft": [
+            418,
+            1496
+          ],
+          "soleRight": [
+            676,
+            1507
+          ],
+          "head": [
+            530,
+            300
+          ]
+        },
+        "occupiedHands": [],
+        "replaces": [
+          "legs",
+          "feet"
+        ],
+        "lower": "lower_shoes_4",
+        "footwear": 4
+      },
+      "shoe-5": {
+        "id": "shoe-5",
+        "anchors": {
+          "neck": [
+            530,
+            510
+          ],
+          "shoulderLeft": [
+            420,
+            535
+          ],
+          "shoulderRight": [
+            650,
+            541
+          ],
+          "elbowLeft": [
+            365,
+            850
+          ],
+          "elbowRight": [
+            690,
+            850
+          ],
+          "wristLeft": [
+            340,
+            940
+          ],
+          "wristRight": [
+            715,
+            950
+          ],
+          "waist": [
+            520,
+            800
+          ],
+          "hips": [
+            520,
+            900
+          ],
+          "kneeLeft": [
+            472,
+            1100
+          ],
+          "kneeRight": [
+            617,
+            1100
+          ],
+          "ankleLeft": [
+            489,
+            1360
+          ],
+          "ankleRight": [
+            676,
+            1360
+          ],
+          "soleLeft": [
+            414,
+            1490
+          ],
+          "soleRight": [
+            676,
+            1497
+          ],
+          "head": [
+            530,
+            300
+          ]
+        },
+        "occupiedHands": [],
+        "replaces": [
+          "legs",
+          "feet"
+        ],
+        "lower": "lower_shoes_5",
+        "footwear": 5
+      },
+      "shoe-6": {
+        "id": "shoe-6",
+        "anchors": {
+          "neck": [
+            530,
+            510
+          ],
+          "shoulderLeft": [
+            420,
+            535
+          ],
+          "shoulderRight": [
+            650,
+            541
+          ],
+          "elbowLeft": [
+            365,
+            850
+          ],
+          "elbowRight": [
+            690,
+            850
+          ],
+          "wristLeft": [
+            340,
+            940
+          ],
+          "wristRight": [
+            715,
+            950
+          ],
+          "waist": [
+            520,
+            800
+          ],
+          "hips": [
+            520,
+            900
+          ],
+          "kneeLeft": [
+            473,
+            1100
+          ],
+          "kneeRight": [
+            617,
+            1100
+          ],
+          "ankleLeft": [
+            492,
+            1360
+          ],
+          "ankleRight": [
+            675,
+            1360
+          ],
+          "soleLeft": [
+            419,
+            1494
+          ],
+          "soleRight": [
+            675,
+            1507
+          ],
+          "head": [
+            530,
+            300
+          ]
+        },
+        "occupiedHands": [],
+        "replaces": [
+          "legs",
+          "feet"
+        ],
+        "lower": "lower_shoes_6",
+        "footwear": 6
+      },
+      "shoe-7": {
+        "id": "shoe-7",
+        "anchors": {
+          "neck": [
+            530,
+            510
+          ],
+          "shoulderLeft": [
+            420,
+            535
+          ],
+          "shoulderRight": [
+            650,
+            541
+          ],
+          "elbowLeft": [
+            365,
+            850
+          ],
+          "elbowRight": [
+            690,
+            850
+          ],
+          "wristLeft": [
+            340,
+            940
+          ],
+          "wristRight": [
+            715,
+            950
+          ],
+          "waist": [
+            520,
+            800
+          ],
+          "hips": [
+            520,
+            900
+          ],
+          "kneeLeft": [
+            471,
+            1100
+          ],
+          "kneeRight": [
+            617,
+            1100
+          ],
+          "ankleLeft": [
+            481,
+            1360
+          ],
+          "ankleRight": [
+            676,
+            1360
+          ],
+          "soleLeft": [
+            415,
+            1492
+          ],
+          "soleRight": [
+            677,
+            1502
+          ],
+          "head": [
+            530,
+            300
+          ]
+        },
+        "occupiedHands": [],
+        "replaces": [
+          "legs",
+          "feet"
+        ],
+        "lower": "lower_shoes_7",
+        "footwear": 7
+      },
+      "shoe-8": {
+        "id": "shoe-8",
+        "anchors": {
+          "neck": [
+            530,
+            510
+          ],
+          "shoulderLeft": [
+            420,
+            535
+          ],
+          "shoulderRight": [
+            650,
+            541
+          ],
+          "elbowLeft": [
+            365,
+            850
+          ],
+          "elbowRight": [
+            690,
+            850
+          ],
+          "wristLeft": [
+            340,
+            940
+          ],
+          "wristRight": [
+            715,
+            950
+          ],
+          "waist": [
+            520,
+            800
+          ],
+          "hips": [
+            520,
+            900
+          ],
+          "kneeLeft": [
+            473,
+            1100
+          ],
+          "kneeRight": [
+            617,
+            1100
+          ],
+          "ankleLeft": [
+            483,
+            1360
+          ],
+          "ankleRight": [
+            667,
+            1360
+          ],
+          "soleLeft": [
+            427,
+            1488
+          ],
+          "soleRight": [
+            669,
+            1494
+          ],
+          "head": [
+            530,
+            300
+          ]
+        },
+        "occupiedHands": [],
+        "replaces": [
+          "legs",
+          "feet"
+        ],
+        "lower": "lower_shoes_8",
+        "footwear": 8
+      },
+      "boots-outturn": {
+        "id": "boots-outturn",
+        "anchors": {
+          "neck": [
+            530,
+            510
+          ],
+          "shoulderLeft": [
+            420,
+            535
+          ],
+          "shoulderRight": [
+            650,
+            541
+          ],
+          "elbowLeft": [
+            365,
+            850
+          ],
+          "elbowRight": [
+            690,
+            850
+          ],
+          "wristLeft": [
+            340,
+            940
+          ],
+          "wristRight": [
+            715,
+            950
+          ],
+          "waist": [
+            520,
+            800
+          ],
+          "hips": [
+            520,
+            900
+          ],
+          "kneeLeft": [
+            420,
+            1090
+          ],
+          "kneeRight": [
+            610,
+            1095
+          ],
+          "ankleLeft": [
+            430,
+            1340
+          ],
+          "ankleRight": [
+            640,
+            1340
+          ],
+          "soleLeft": [
+            425,
+            1490
+          ],
+          "soleRight": [
+            640,
+            1490
+          ],
+          "head": [
+            530,
+            300
+          ]
+        },
+        "occupiedHands": [],
+        "replaces": [
+          "legs",
+          "feet"
+        ],
+        "lower": "pose_lower_boots"
+      },
+      "garden-crossed": {
+        "id": "garden-crossed",
+        "anchors": {
+          "neck": [
+            530,
+            510
+          ],
+          "shoulderLeft": [
+            420,
+            535
+          ],
+          "shoulderRight": [
+            650,
+            541
+          ],
+          "elbowLeft": [
+            365,
+            850
+          ],
+          "elbowRight": [
+            690,
+            850
+          ],
+          "wristLeft": [
+            340,
+            940
+          ],
+          "wristRight": [
+            715,
+            950
+          ],
+          "waist": [
+            520,
+            845
+          ],
+          "hips": [
+            520,
+            900
+          ],
+          "kneeLeft": [
+            450,
+            1110
+          ],
+          "kneeRight": [
+            625,
+            1110
+          ],
+          "ankleLeft": [
+            495,
+            1400
+          ],
+          "ankleRight": [
+            545,
+            1400
+          ],
+          "soleLeft": [
+            470,
+            1490
+          ],
+          "soleRight": [
+            570,
+            1490
+          ],
+          "head": [
+            530,
+            300
+          ]
+        },
+        "occupiedHands": [],
+        "replaces": [
+          "legs",
+          "feet",
+          "bottom"
+        ],
+        "lower": "pose_lower_garden"
+      },
+      "suit-uniform": {
+        "id": "suit-uniform",
+        "anchors": {
+          "neck": [
+            530,
+            510
+          ],
+          "shoulderLeft": [
+            420,
+            535
+          ],
+          "shoulderRight": [
+            650,
+            541
+          ],
+          "elbowLeft": [
+            365,
+            850
+          ],
+          "elbowRight": [
+            685,
+            675
+          ],
+          "wristLeft": [
+            330,
+            960
+          ],
+          "wristRight": [
+            573,
+            580
+          ],
+          "waist": [
+            520,
+            760
+          ],
+          "hips": [
+            520,
+            900
+          ],
+          "kneeLeft": [
+            450,
+            1110
+          ],
+          "kneeRight": [
+            625,
+            1110
+          ],
+          "ankleLeft": [
+            490,
+            1390
+          ],
+          "ankleRight": [
+            685,
+            1420
+          ],
+          "soleLeft": [
+            450,
+            1490
+          ],
+          "soleRight": [
+            685,
+            1500
+          ],
+          "head": [
+            530,
+            300
+          ],
+          "hip": [
+            520,
+            980
+          ]
+        },
+        "occupiedHands": [],
+        "replaces": [
+          "body",
+          "arms",
+          "hands",
+          "legs",
+          "feet"
+        ]
+      },
+      "suit-apron": {
+        "id": "suit-apron",
+        "anchors": {
+          "neck": [
+            530,
+            510
+          ],
+          "shoulderLeft": [
+            420,
+            535
+          ],
+          "shoulderRight": [
+            650,
+            541
+          ],
+          "elbowLeft": [
+            365,
+            850
+          ],
+          "elbowRight": [
+            690,
+            850
+          ],
+          "wristLeft": [
+            358,
+            840
+          ],
+          "wristRight": [
+            650,
+            850
+          ],
+          "waist": [
+            520,
+            730
+          ],
+          "hips": [
+            520,
+            900
+          ],
+          "kneeLeft": [
+            440,
+            1170
+          ],
+          "kneeRight": [
+            605,
+            1170
+          ],
+          "ankleLeft": [
+            490,
+            1390
+          ],
+          "ankleRight": [
+            685,
+            1420
+          ],
+          "soleLeft": [
+            420,
+            1490
+          ],
+          "soleRight": [
+            650,
+            1490
+          ],
+          "head": [
+            530,
+            300
+          ]
+        },
+        "occupiedHands": [],
+        "replaces": [
+          "body",
+          "arms",
+          "hands",
+          "legs",
+          "feet"
+        ]
+      },
+      "suit-school": {
+        "id": "suit-school",
+        "anchors": {
+          "neck": [
+            530,
+            510
+          ],
+          "shoulderLeft": [
+            420,
+            535
+          ],
+          "shoulderRight": [
+            650,
+            541
+          ],
+          "elbowLeft": [
+            365,
+            850
+          ],
+          "elbowRight": [
+            690,
+            850
+          ],
+          "wristLeft": [
+            320,
+            940
+          ],
+          "wristRight": [
+            658,
+            900
+          ],
+          "waist": [
+            520,
+            800
+          ],
+          "hips": [
+            520,
+            900
+          ],
+          "kneeLeft": [
+            480,
+            1170
+          ],
+          "kneeRight": [
+            620,
+            1170
+          ],
+          "ankleLeft": [
+            490,
+            1390
+          ],
+          "ankleRight": [
+            685,
+            1420
+          ],
+          "soleLeft": [
+            455,
+            1490
+          ],
+          "soleRight": [
+            645,
+            1490
+          ],
+          "head": [
+            530,
+            300
+          ]
+        },
+        "occupiedHands": [],
+        "replaces": [
+          "body",
+          "arms",
+          "hands",
+          "legs",
+          "feet"
+        ]
+      },
+      "suit-garden": {
+        "id": "suit-garden",
+        "anchors": {
+          "neck": [
+            530,
+            510
+          ],
+          "shoulderLeft": [
+            420,
+            535
+          ],
+          "shoulderRight": [
+            650,
+            541
+          ],
+          "elbowLeft": [
+            365,
+            850
+          ],
+          "elbowRight": [
+            690,
+            850
+          ],
+          "wristLeft": [
+            340,
+            940
+          ],
+          "wristRight": [
+            650,
+            860
+          ],
+          "waist": [
+            520,
+            800
+          ],
+          "hips": [
+            520,
+            900
+          ],
+          "kneeLeft": [
+            450,
+            1110
+          ],
+          "kneeRight": [
+            625,
+            1110
+          ],
+          "ankleLeft": [
+            495,
+            1400
+          ],
+          "ankleRight": [
+            545,
+            1400
+          ],
+          "soleLeft": [
+            470,
+            1490
+          ],
+          "soleRight": [
+            570,
+            1490
+          ],
+          "head": [
+            530,
+            300
+          ]
+        },
+        "occupiedHands": [],
+        "replaces": [
+          "body",
+          "arms",
+          "hands",
+          "legs",
+          "feet"
+        ]
+      }
+    },
+    "items": {
+      "top": {
+        "0": {
+          "id": "top-0",
+          "type": "ordinary",
+          "layer": "upper_top_0",
+          "poseId": "relaxed",
+          "covers": [
+            "torso",
+            "leftArm",
+            "rightArm",
+            "leftHand",
+            "rightHand"
+          ],
+          "handMasks": {
+            "left": [
+              [
+                278,
+                943
+              ],
+              [
+                375,
+                943
+              ],
+              [
+                392,
+                1060
+              ],
+              [
+                270,
+                1060
+              ]
+            ],
+            "right": [
+              [
+                678,
+                944
+              ],
+              [
+                756,
+                944
+              ],
+              [
+                790,
+                1060
+              ],
+              [
+                666,
+                1060
+              ]
+            ]
+          },
+          "fallback": "same-garment-relaxed"
+        },
+        "1": {
+          "id": "top-1",
+          "type": "posed-upper",
+          "layer": "upper_top_1",
+          "poseId": "relaxed",
+          "covers": [
+            "torso",
+            "leftArm",
+            "rightArm",
+            "leftHand",
+            "rightHand"
+          ],
+          "handMasks": {
+            "left": [
+              [
+                278,
+                943
+              ],
+              [
+                375,
+                943
+              ],
+              [
+                392,
+                1060
+              ],
+              [
+                270,
+                1060
+              ]
+            ],
+            "right": [
+              [
+                678,
+                944
+              ],
+              [
+                756,
+                944
+              ],
+              [
+                790,
+                1060
+              ],
+              [
+                666,
+                1060
+              ]
+            ]
+          },
+          "fallback": "same-garment-relaxed",
+          "preferredPose": "uniform-sword"
+        },
+        "2": {
+          "id": "top-2",
+          "type": "ordinary",
+          "layer": "upper_top_2",
+          "poseId": "relaxed",
+          "covers": [
+            "torso",
+            "leftArm",
+            "rightArm",
+            "leftHand",
+            "rightHand"
+          ],
+          "handMasks": {
+            "left": [
+              [
+                278,
+                943
+              ],
+              [
+                375,
+                943
+              ],
+              [
+                392,
+                1060
+              ],
+              [
+                270,
+                1060
+              ]
+            ],
+            "right": [
+              [
+                678,
+                944
+              ],
+              [
+                756,
+                944
+              ],
+              [
+                790,
+                1060
+              ],
+              [
+                666,
+                1060
+              ]
+            ]
+          },
+          "fallback": "same-garment-relaxed"
+        },
+        "3": {
+          "id": "top-3",
+          "type": "ordinary",
+          "layer": "upper_top_3",
+          "poseId": "relaxed",
+          "covers": [
+            "torso",
+            "leftArm",
+            "rightArm",
+            "leftHand",
+            "rightHand"
+          ],
+          "handMasks": {
+            "left": [
+              [
+                278,
+                943
+              ],
+              [
+                375,
+                943
+              ],
+              [
+                392,
+                1060
+              ],
+              [
+                270,
+                1060
+              ]
+            ],
+            "right": [
+              [
+                678,
+                944
+              ],
+              [
+                756,
+                944
+              ],
+              [
+                790,
+                1060
+              ],
+              [
+                666,
+                1060
+              ]
+            ]
+          },
+          "fallback": "same-garment-relaxed"
+        },
+        "4": {
+          "id": "top-4",
+          "type": "ordinary",
+          "layer": "upper_top_4",
+          "poseId": "relaxed",
+          "covers": [
+            "torso",
+            "leftArm",
+            "rightArm",
+            "leftHand",
+            "rightHand"
+          ],
+          "handMasks": {
+            "left": [
+              [
+                278,
+                943
+              ],
+              [
+                375,
+                943
+              ],
+              [
+                392,
+                1060
+              ],
+              [
+                270,
+                1060
+              ]
+            ],
+            "right": [
+              [
+                678,
+                944
+              ],
+              [
+                756,
+                944
+              ],
+              [
+                790,
+                1060
+              ],
+              [
+                666,
+                1060
+              ]
+            ]
+          },
+          "fallback": "same-garment-relaxed"
+        },
+        "5": {
+          "id": "top-5",
+          "type": "ordinary",
+          "layer": "upper_top_5",
+          "poseId": "relaxed",
+          "covers": [
+            "torso",
+            "leftArm",
+            "rightArm",
+            "leftHand",
+            "rightHand"
+          ],
+          "handMasks": {
+            "left": [
+              [
+                278,
+                943
+              ],
+              [
+                375,
+                943
+              ],
+              [
+                392,
+                1060
+              ],
+              [
+                270,
+                1060
+              ]
+            ],
+            "right": [
+              [
+                678,
+                944
+              ],
+              [
+                756,
+                944
+              ],
+              [
+                790,
+                1060
+              ],
+              [
+                666,
+                1060
+              ]
+            ]
+          },
+          "fallback": "same-garment-relaxed"
+        },
+        "6": {
+          "id": "top-6",
+          "type": "ordinary",
+          "layer": "upper_top_6",
+          "poseId": "relaxed",
+          "covers": [
+            "torso",
+            "leftArm",
+            "rightArm",
+            "leftHand",
+            "rightHand"
+          ],
+          "handMasks": {
+            "left": [
+              [
+                278,
+                943
+              ],
+              [
+                375,
+                943
+              ],
+              [
+                392,
+                1060
+              ],
+              [
+                270,
+                1060
+              ]
+            ],
+            "right": [
+              [
+                678,
+                944
+              ],
+              [
+                756,
+                944
+              ],
+              [
+                790,
+                1060
+              ],
+              [
+                666,
+                1060
+              ]
+            ]
+          },
+          "fallback": "same-garment-relaxed"
+        },
+        "7": {
+          "id": "top-7",
+          "type": "ordinary",
+          "layer": "upper_top_7",
+          "poseId": "relaxed",
+          "covers": [
+            "torso",
+            "leftArm",
+            "rightArm",
+            "leftHand",
+            "rightHand"
+          ],
+          "handMasks": {
+            "left": [
+              [
+                278,
+                943
+              ],
+              [
+                375,
+                943
+              ],
+              [
+                392,
+                1060
+              ],
+              [
+                270,
+                1060
+              ]
+            ],
+            "right": [
+              [
+                678,
+                944
+              ],
+              [
+                756,
+                944
+              ],
+              [
+                790,
+                1060
+              ],
+              [
+                666,
+                1060
+              ]
+            ]
+          },
+          "fallback": "same-garment-relaxed"
+        },
+        "8": {
+          "id": "top-8",
+          "type": "ordinary",
+          "layer": "upper_top_8",
+          "poseId": "relaxed",
+          "covers": [
+            "torso",
+            "leftArm",
+            "rightArm",
+            "leftHand",
+            "rightHand"
+          ],
+          "handMasks": {
+            "left": [
+              [
+                278,
+                943
+              ],
+              [
+                375,
+                943
+              ],
+              [
+                392,
+                1060
+              ],
+              [
+                270,
+                1060
+              ]
+            ],
+            "right": [
+              [
+                678,
+                944
+              ],
+              [
+                756,
+                944
+              ],
+              [
+                790,
+                1060
+              ],
+              [
+                666,
+                1060
+              ]
+            ]
+          },
+          "fallback": "same-garment-relaxed"
+        },
+        "9": {
+          "id": "top-9",
+          "type": "posed-upper",
+          "layer": "upper_top_9",
+          "poseId": "relaxed",
+          "covers": [
+            "torso",
+            "leftArm",
+            "rightArm",
+            "leftHand",
+            "rightHand"
+          ],
+          "handMasks": {
+            "left": [
+              [
+                278,
+                943
+              ],
+              [
+                375,
+                943
+              ],
+              [
+                392,
+                1060
+              ],
+              [
+                270,
+                1060
+              ]
+            ],
+            "right": [
+              [
+                678,
+                944
+              ],
+              [
+                756,
+                944
+              ],
+              [
+                790,
+                1060
+              ],
+              [
+                666,
+                1060
+              ]
+            ]
+          },
+          "fallback": "same-garment-relaxed",
+          "preferredPose": "hoodie-pocket"
+        },
+        "10": {
+          "id": "top-10",
+          "type": "ordinary",
+          "layer": "upper_top_10",
+          "poseId": "relaxed",
+          "covers": [
+            "torso",
+            "leftArm",
+            "rightArm",
+            "leftHand",
+            "rightHand"
+          ],
+          "handMasks": {
+            "left": [
+              [
+                278,
+                943
+              ],
+              [
+                375,
+                943
+              ],
+              [
+                392,
+                1060
+              ],
+              [
+                270,
+                1060
+              ]
+            ],
+            "right": [
+              [
+                678,
+                944
+              ],
+              [
+                756,
+                944
+              ],
+              [
+                790,
+                1060
+              ],
+              [
+                666,
+                1060
+              ]
+            ]
+          },
+          "fallback": "same-garment-relaxed"
+        },
+        "11": {
+          "id": "top-11",
+          "type": "posed-upper",
+          "layer": "upper_top_11",
+          "poseId": "relaxed",
+          "covers": [
+            "torso",
+            "leftArm",
+            "rightArm",
+            "leftHand",
+            "rightHand"
+          ],
+          "handMasks": {
+            "left": [
+              [
+                278,
+                943
+              ],
+              [
+                375,
+                943
+              ],
+              [
+                392,
+                1060
+              ],
+              [
+                270,
+                1060
+              ]
+            ],
+            "right": [
+              [
+                678,
+                944
+              ],
+              [
+                756,
+                944
+              ],
+              [
+                790,
+                1060
+              ],
+              [
+                666,
+                1060
+              ]
+            ]
+          },
+          "fallback": "same-garment-relaxed",
+          "preferredPose": "coat-collar"
+        },
+        "12": {
+          "id": "top-12",
+          "type": "ordinary",
+          "layer": "upper_top_12",
+          "poseId": "relaxed",
+          "covers": [
+            "torso",
+            "leftArm",
+            "rightArm",
+            "leftHand",
+            "rightHand"
+          ],
+          "handMasks": {
+            "left": [
+              [
+                278,
+                943
+              ],
+              [
+                375,
+                943
+              ],
+              [
+                392,
+                1060
+              ],
+              [
+                270,
+                1060
+              ]
+            ],
+            "right": [
+              [
+                678,
+                944
+              ],
+              [
+                756,
+                944
+              ],
+              [
+                790,
+                1060
+              ],
+              [
+                666,
+                1060
+              ]
+            ]
+          },
+          "fallback": "same-garment-relaxed"
+        },
+        "13": {
+          "id": "top-13",
+          "type": "ordinary",
+          "layer": "upper_top_13",
+          "poseId": "relaxed",
+          "covers": [
+            "torso",
+            "leftArm",
+            "rightArm",
+            "leftHand",
+            "rightHand"
+          ],
+          "handMasks": {
+            "left": [
+              [
+                278,
+                943
+              ],
+              [
+                375,
+                943
+              ],
+              [
+                392,
+                1060
+              ],
+              [
+                270,
+                1060
+              ]
+            ],
+            "right": [
+              [
+                678,
+                944
+              ],
+              [
+                756,
+                944
+              ],
+              [
+                790,
+                1060
+              ],
+              [
+                666,
+                1060
+              ]
+            ]
+          },
+          "fallback": "same-garment-relaxed"
+        },
+        "14": {
+          "id": "top-14",
+          "type": "ordinary",
+          "layer": "upper_top_14",
+          "poseId": "relaxed",
+          "covers": [
+            "torso",
+            "leftArm",
+            "rightArm",
+            "leftHand",
+            "rightHand"
+          ],
+          "handMasks": {
+            "left": [
+              [
+                278,
+                943
+              ],
+              [
+                375,
+                943
+              ],
+              [
+                392,
+                1060
+              ],
+              [
+                270,
+                1060
+              ]
+            ],
+            "right": [
+              [
+                678,
+                944
+              ],
+              [
+                756,
+                944
+              ],
+              [
+                790,
+                1060
+              ],
+              [
+                666,
+                1060
+              ]
+            ]
+          },
+          "fallback": "same-garment-relaxed"
+        },
+        "15": {
+          "id": "top-15",
+          "type": "ordinary",
+          "layer": "upper_top_15",
+          "poseId": "relaxed",
+          "covers": [
+            "torso",
+            "leftArm",
+            "rightArm",
+            "leftHand",
+            "rightHand"
+          ],
+          "handMasks": {
+            "left": [
+              [
+                278,
+                943
+              ],
+              [
+                375,
+                943
+              ],
+              [
+                392,
+                1060
+              ],
+              [
+                270,
+                1060
+              ]
+            ],
+            "right": [
+              [
+                678,
+                944
+              ],
+              [
+                756,
+                944
+              ],
+              [
+                790,
+                1060
+              ],
+              [
+                666,
+                1060
+              ]
+            ]
+          },
+          "fallback": "same-garment-relaxed"
+        },
+        "16": {
+          "id": "top-16",
+          "type": "ordinary",
+          "layer": "upper_top_16",
+          "poseId": "relaxed",
+          "covers": [
+            "torso",
+            "leftArm",
+            "rightArm",
+            "leftHand",
+            "rightHand"
+          ],
+          "handMasks": {
+            "left": [
+              [
+                278,
+                943
+              ],
+              [
+                375,
+                943
+              ],
+              [
+                392,
+                1060
+              ],
+              [
+                270,
+                1060
+              ]
+            ],
+            "right": [
+              [
+                678,
+                944
+              ],
+              [
+                756,
+                944
+              ],
+              [
+                790,
+                1060
+              ],
+              [
+                666,
+                1060
+              ]
+            ]
+          },
+          "fallback": "same-garment-relaxed"
+        },
+        "17": {
+          "id": "top-17",
+          "type": "ordinary",
+          "layer": "upper_top_17",
+          "poseId": "relaxed",
+          "covers": [
+            "torso",
+            "leftArm",
+            "rightArm",
+            "leftHand",
+            "rightHand"
+          ],
+          "handMasks": {
+            "left": [
+              [
+                278,
+                943
+              ],
+              [
+                375,
+                943
+              ],
+              [
+                392,
+                1060
+              ],
+              [
+                270,
+                1060
+              ]
+            ],
+            "right": [
+              [
+                678,
+                944
+              ],
+              [
+                756,
+                944
+              ],
+              [
+                790,
+                1060
+              ],
+              [
+                666,
+                1060
+              ]
+            ]
+          },
+          "fallback": "same-garment-relaxed"
+        }
+      },
+      "bottom": {
+        "0": {
+          "id": "bottom-0",
+          "type": "ordinary",
+          "layer": "bottom_0",
+          "poseId": "relaxed",
+          "covers": [
+            "hips"
+          ],
+          "fallback": "same-garment-relaxed"
+        },
+        "1": {
+          "id": "bottom-1",
+          "type": "ordinary",
+          "layer": "bottom_1",
+          "poseId": "relaxed",
+          "covers": [
+            "hips",
+            "legs"
+          ],
+          "fallback": "same-garment-relaxed"
+        },
+        "2": {
+          "id": "bottom-2",
+          "type": "ordinary",
+          "layer": "bottom_2",
+          "poseId": "relaxed",
+          "covers": [
+            "hips"
+          ],
+          "fallback": "same-garment-relaxed"
+        },
+        "3": {
+          "id": "bottom-3",
+          "type": "ordinary",
+          "layer": "bottom_3",
+          "poseId": "relaxed",
+          "covers": [
+            "hips"
+          ],
+          "fallback": "same-garment-relaxed"
+        },
+        "4": {
+          "id": "bottom-4",
+          "type": "ordinary",
+          "layer": "bottom_4",
+          "poseId": "relaxed",
+          "covers": [
+            "hips"
+          ],
+          "fallback": "same-garment-relaxed"
+        },
+        "5": {
+          "id": "bottom-5",
+          "type": "posed-lower",
+          "layer": "bottom_5",
+          "poseId": "garden-crossed",
+          "covers": [
+            "hips"
+          ],
+          "fallback": "same-garment-relaxed"
+        },
+        "6": {
+          "id": "bottom-6",
+          "type": "ordinary",
+          "layer": "bottom_6",
+          "poseId": "relaxed",
+          "covers": [
+            "hips"
+          ],
+          "fallback": "same-garment-relaxed"
+        },
+        "7": {
+          "id": "bottom-7",
+          "type": "ordinary",
+          "layer": "bottom_7",
+          "poseId": "relaxed",
+          "covers": [
+            "hips"
+          ],
+          "fallback": "same-garment-relaxed"
+        },
+        "8": {
+          "id": "bottom-8",
+          "type": "ordinary",
+          "layer": "bottom_8",
+          "poseId": "relaxed",
+          "covers": [
+            "hips",
+            "legs"
+          ],
+          "fallback": "same-garment-relaxed"
+        },
+        "9": {
+          "id": "bottom-9",
+          "type": "ordinary",
+          "layer": "bottom_9",
+          "poseId": "relaxed",
+          "covers": [
+            "hips",
+            "legs"
+          ],
+          "fallback": "same-garment-relaxed"
+        },
+        "10": {
+          "id": "bottom-10",
+          "type": "ordinary",
+          "layer": "bottom_10",
+          "poseId": "relaxed",
+          "covers": [
+            "hips"
+          ],
+          "fallback": "same-garment-relaxed"
+        },
+        "11": {
+          "id": "bottom-11",
+          "type": "ordinary",
+          "layer": "bottom_11",
+          "poseId": "relaxed",
+          "covers": [
+            "hips"
+          ],
+          "fallback": "same-garment-relaxed"
+        },
+        "12": {
+          "id": "bottom-12",
+          "type": "ordinary",
+          "layer": "bottom_12",
+          "poseId": "relaxed",
+          "covers": [
+            "hips",
+            "legs"
+          ],
+          "fallback": "same-garment-relaxed"
+        },
+        "13": {
+          "id": "bottom-13",
+          "type": "ordinary",
+          "layer": "bottom_13",
+          "poseId": "relaxed",
+          "covers": [
+            "hips"
+          ],
+          "fallback": "same-garment-relaxed"
+        },
+        "14": {
+          "id": "bottom-14",
+          "type": "ordinary",
+          "layer": "bottom_14",
+          "poseId": "relaxed",
+          "covers": [
+            "hips"
+          ],
+          "fallback": "same-garment-relaxed"
+        }
+      },
+      "shoes": {
+        "0": {
+          "id": "shoes-0",
+          "type": "posed-lower",
+          "layer": "lower_shoes_0",
+          "poseId": "shoe-0",
+          "covers": [
+            "legs",
+            "feet"
+          ],
+          "preferredPose": "shoe-0",
+          "fallback": "same-shoes-relaxed"
+        },
+        "1": {
+          "id": "shoes-1",
+          "type": "posed-lower",
+          "layer": "lower_shoes_1",
+          "poseId": "shoe-1",
+          "covers": [
+            "legs",
+            "feet"
+          ],
+          "preferredPose": "shoe-1",
+          "fallback": "same-shoes-relaxed"
+        },
+        "2": {
+          "id": "shoes-2",
+          "type": "posed-lower",
+          "layer": "lower_shoes_2",
+          "poseId": "shoe-2",
+          "covers": [
+            "legs",
+            "feet"
+          ],
+          "preferredPose": "shoe-2",
+          "fallback": "same-shoes-relaxed"
+        },
+        "3": {
+          "id": "shoes-3",
+          "type": "posed-lower",
+          "layer": "lower_shoes_3",
+          "poseId": "shoe-3",
+          "covers": [
+            "legs",
+            "feet"
+          ],
+          "preferredPose": "shoe-3",
+          "fallback": "same-shoes-relaxed"
+        },
+        "4": {
+          "id": "shoes-4",
+          "type": "posed-lower",
+          "layer": "lower_shoes_4",
+          "poseId": "shoe-4",
+          "covers": [
+            "legs",
+            "feet"
+          ],
+          "preferredPose": "shoe-4",
+          "fallback": "same-shoes-relaxed"
+        },
+        "5": {
+          "id": "shoes-5",
+          "type": "posed-lower",
+          "layer": "lower_shoes_5",
+          "poseId": "shoe-5",
+          "covers": [
+            "legs",
+            "feet"
+          ],
+          "preferredPose": "shoe-5",
+          "fallback": "same-shoes-relaxed"
+        },
+        "6": {
+          "id": "shoes-6",
+          "type": "posed-lower",
+          "layer": "lower_shoes_6",
+          "poseId": "shoe-6",
+          "covers": [
+            "legs",
+            "feet"
+          ],
+          "preferredPose": "shoe-6",
+          "fallback": "same-shoes-relaxed"
+        },
+        "7": {
+          "id": "shoes-7",
+          "type": "posed-lower",
+          "layer": "lower_shoes_7",
+          "poseId": "shoe-7",
+          "covers": [
+            "legs",
+            "feet"
+          ],
+          "preferredPose": "boots-outturn",
+          "fallback": "same-shoes-relaxed"
+        },
+        "8": {
+          "id": "shoes-8",
+          "type": "posed-lower",
+          "layer": "lower_shoes_8",
+          "poseId": "shoe-8",
+          "covers": [
+            "legs",
+            "feet"
+          ],
+          "preferredPose": "shoe-8",
+          "fallback": "same-shoes-relaxed"
+        }
+      }
+    },
+    "suits": {
+      "0": {
+        "poseId": "suit-uniform",
+        "body": "pose_suit_uniform",
+        "requires": {
+          "top": 1,
+          "bottom": 1,
+          "socks": 0,
+          "shoes": 0,
+          "accessory": 1
+        }
+      },
+      "1": {
+        "poseId": "suit-apron",
+        "body": "pose_suit_apron",
+        "requires": {
+          "top": 2,
+          "bottom": 1,
+          "socks": 0,
+          "shoes": 0,
+          "accessory": 0
+        }
+      },
+      "2": {
+        "poseId": "suit-school",
+        "body": "pose_suit_school",
+        "requires": {
+          "top": 3,
+          "bottom": 2,
+          "socks": 3,
+          "shoes": 3,
+          "accessory": 1
+        }
+      },
+      "5": {
+        "poseId": "suit-garden",
+        "body": "pose_suit_garden",
+        "requires": {
+          "top": 7,
+          "bottom": 5,
+          "socks": 1,
+          "shoes": 1,
+          "accessory": 0
+        }
+      }
+    },
+    "rules": {
+      "headRegistration": "All painted masters intentionally share the approved head/neck origin; no moving faces.",
+      "poseFallback": "Same garment/shoe ordinary painting; never delete options.",
+      "ownership": "Each body region has exactly one painted owner; full suit replaces all body regions.",
+      "sourceMasks": "Anatomical contour selections only, no silhouette-scaled garments or global body row truncation."
+    }
+  },
+  "layers": {
+    "accessory_back_10": {
+      "file": "assets/images/projects/yuris-closet/layers/accessory_back_10.png",
+      "origin": [
+        370,
+        530
+      ],
+      "size": [
+        300,
+        341
+      ],
+      "sha256": "7b2e19f7291a4e9b37dfb9cb1c325cd777ed6e9e25dc803f00b276811a84de97"
+    },
+    "accessory_front_1": {
+      "file": "assets/images/projects/yuris-closet/layers/accessory_front_1.png",
+      "origin": [
+        60,
+        934
+      ],
+      "size": [
+        330,
+        505
+      ],
+      "sha256": "4519b1ebbb91b544f060d8599d17139c54eb9db42af7d3cc21cdd9e62f6f144d"
+    },
+    "accessory_front_10": {
+      "file": "assets/images/projects/yuris-closet/layers/accessory_front_10.png",
+      "origin": [
+        372,
+        530
+      ],
+      "size": [
+        298,
+        205
+      ],
+      "sha256": "caf85ed344c70ff74a1f6812185566ab4b84b42e6a3e5f95da1227bcbc037c40"
+    },
+    "accessory_front_11": {
+      "file": "assets/images/projects/yuris-closet/layers/accessory_front_11.png",
+      "origin": [
+        654,
+        947
+      ],
+      "size": [
+        99,
+        199
+      ],
+      "sha256": "2094742640fb11b294d9739c397207bcce16be424a989c1f253b52c44ba2b71f"
+    },
+    "accessory_front_2": {
+      "file": "assets/images/projects/yuris-closet/layers/accessory_front_2.png",
+      "origin": [
+        452,
+        502
+      ],
+      "size": [
+        135,
+        126
+      ],
+      "sha256": "3d94787733be92868609a98da7ad127bf67e01a0ef639ba3cc896e2f9d3efceb"
+    },
+    "accessory_front_3": {
+      "file": "assets/images/projects/yuris-closet/layers/accessory_front_3.png",
+      "origin": [
+        435,
+        530
+      ],
+      "size": [
+        310,
+        471
+      ],
+      "sha256": "3f00a1691680a1ebf3bee515045e7948e74d2f6b528b9030e893f69dbc291c4e"
+    },
+    "accessory_front_4": {
+      "file": "assets/images/projects/yuris-closet/layers/accessory_front_4.png",
+      "origin": [
+        422,
+        480
+      ],
+      "size": [
+        215,
+        343
+      ],
+      "sha256": "c5effe2c9fb73f4869d314a386866a80e424c762c692941a95ec0370f0287d09"
+    },
+    "accessory_front_5": {
+      "file": "assets/images/projects/yuris-closet/layers/accessory_front_5.png",
+      "origin": [
+        523,
+        626
+      ],
+      "size": [
+        62,
+        48
+      ],
+      "sha256": "aaf4d89c6f5b214d91e4f5af12722707ed8c2c1076f161416c292b281e3e4609"
+    },
+    "accessory_front_6": {
+      "file": "assets/images/projects/yuris-closet/layers/accessory_front_6.png",
+      "origin": [
+        280,
+        261
+      ],
+      "size": [
+        100,
+        98
+      ],
+      "sha256": "7b2d044de8d98945abaf2f08cd005e04f0fa655ccf9f368ace7bc482d89ef3ca"
+    },
+    "accessory_front_7": {
+      "file": "assets/images/projects/yuris-closet/layers/accessory_front_7.png",
+      "origin": [
+        516,
+        665
+      ],
+      "size": [
+        67,
+        50
+      ],
+      "sha256": "f434ea9a0a306efd2f69f10a281bca0946d6d9f71f55a6169d58351f8dc8e469"
+    },
+    "accessory_front_8": {
+      "file": "assets/images/projects/yuris-closet/layers/accessory_front_8.png",
+      "origin": [
+        284,
+        934
+      ],
+      "size": [
+        127,
+        230
+      ],
+      "sha256": "7a17138ba006c33ecddd43a1ab7b6e576e1abfa146838d9d3d615bcfe9bc97a2"
+    },
+    "accessory_front_9": {
+      "file": "assets/images/projects/yuris-closet/layers/accessory_front_9.png",
+      "origin": [
+        286,
+        875
+      ],
+      "size": [
+        475,
+        187
+      ],
+      "sha256": "9f6b7866539e8e8f35b9f4472dfe9d911acf36108250eca8ae3395d8b34a4f75"
+    },
+    "bottom_0": {
+      "file": "assets/images/projects/yuris-closet/layers/bottom_0.png",
+      "origin": [
+        364,
+        773
+      ],
+      "size": [
+        309,
+        192
+      ],
+      "sha256": "4079d7cf191f6a61d9768a6f3197c5e24c5999831134b4706809d3c45d9cd014"
+    },
+    "bottom_1": {
+      "file": "assets/images/projects/yuris-closet/layers/bottom_1.png",
+      "origin": [
+        357,
+        795
+      ],
+      "size": [
+        366,
+        647
+      ],
+      "sha256": "69eb24d614839273c2ae4a7a745b9b7410940409d79d1cd77d980610043b0e1c"
+    },
+    "bottom_10": {
+      "file": "assets/images/projects/yuris-closet/layers/bottom_10.png",
+      "origin": [
+        234,
+        795
+      ],
+      "size": [
+        572,
+        411
+      ],
+      "sha256": "399a6e7676c6b6153b5e7df9deff7e3c6b1491de25a741a5b9ced7c25708a4e3"
+    },
+    "bottom_11": {
+      "file": "assets/images/projects/yuris-closet/layers/bottom_11.png",
+      "origin": [
+        246,
+        795
+      ],
+      "size": [
+        548,
+        387
+      ],
+      "sha256": "74fad9beaa52a4692d94e13650406b58b12a29bb9d421def1a3d3f93cb2ef682"
+    },
+    "bottom_12": {
+      "file": "assets/images/projects/yuris-closet/layers/bottom_12.png",
+      "origin": [
+        358,
+        722
+      ],
+      "size": [
+        411,
+        714
+      ],
+      "sha256": "1b77b0a5b87c1227a5a37f2c6e7af24603e80bd8e8e2b6386ead7a46afc892b2"
+    },
+    "bottom_13": {
+      "file": "assets/images/projects/yuris-closet/layers/bottom_13.png",
+      "origin": [
+        298,
+        795
+      ],
+      "size": [
+        443,
+        291
+      ],
+      "sha256": "e85d84062bda6f102c754ca30034cc63e3151e756688066c49f08155d1f8aad3"
+    },
+    "bottom_14": {
+      "file": "assets/images/projects/yuris-closet/layers/bottom_14.png",
+      "origin": [
+        218,
+        795
+      ],
+      "size": [
+        603,
+        445
+      ],
+      "sha256": "1952cac850b86171a4f1cc4b14afe029179b912072c0251b92540bec440d7b0b"
+    },
+    "bottom_2": {
+      "file": "assets/images/projects/yuris-closet/layers/bottom_2.png",
+      "origin": [
+        268,
+        795
+      ],
+      "size": [
+        504,
+        322
+      ],
+      "sha256": "b4a241227ef5f5a639535ae9e32fc2ee56175a433011ba37af126f3589e3d907"
+    },
+    "bottom_3": {
+      "file": "assets/images/projects/yuris-closet/layers/bottom_3.png",
+      "origin": [
+        248,
+        795
+      ],
+      "size": [
+        543,
+        440
+      ],
+      "sha256": "9516b8880caf117289ec9b5fcf70e9cffde632c419143d10ba813d6c899c803a"
+    },
+    "bottom_4": {
+      "file": "assets/images/projects/yuris-closet/layers/bottom_4.png",
+      "origin": [
+        188,
+        795
+      ],
+      "size": [
+        663,
+        485
+      ],
+      "sha256": "007fcdeb00a130631476ee9df2ffbc2f8c61f3d065a51ecc46581306042adbd9"
+    },
+    "bottom_5": {
+      "file": "assets/images/projects/yuris-closet/layers/bottom_5.png",
+      "origin": [
+        226,
+        825
+      ],
+      "size": [
+        582,
+        592
+      ],
+      "sha256": "e51e52a8ca374073f350d8d25dd50a66686ec30ee32438501d15cd69df3bac1c"
+    },
+    "bottom_6": {
+      "file": "assets/images/projects/yuris-closet/layers/bottom_6.png",
+      "origin": [
+        326,
+        795
+      ],
+      "size": [
+        389,
+        250
+      ],
+      "sha256": "7e24d6d03fa1161e2266f1f19eafa70663e86a92a272e70938a1d5ec1170a4a8"
+    },
+    "bottom_7": {
+      "file": "assets/images/projects/yuris-closet/layers/bottom_7.png",
+      "origin": [
+        273,
+        795
+      ],
+      "size": [
+        494,
+        378
+      ],
+      "sha256": "4cff7a8fb01a1813a81d583865a3f0e5a428cbb0961f5ffb00b7695e63cd3465"
+    },
+    "bottom_8": {
+      "file": "assets/images/projects/yuris-closet/layers/bottom_8.png",
+      "origin": [
+        357,
+        795
+      ],
+      "size": [
+        367,
+        647
+      ],
+      "sha256": "19c148f2cafc5115689afd9305338bb01c7055a178687f95362052c63d9ef2f1"
+    },
+    "bottom_9": {
+      "file": "assets/images/projects/yuris-closet/layers/bottom_9.png",
+      "origin": [
+        372,
+        825
+      ],
+      "size": [
+        355,
+        672
+      ],
+      "sha256": "3cee880e312345e1198ea71a73cfb0ab93f5cedc3cae27a316483fc9347e0f14"
+    },
+    "hair_back_0": {
+      "file": "assets/images/projects/yuris-closet/layers/hair_back_0.png",
+      "origin": [
+        236,
+        60
+      ],
+      "size": [
+        616,
+        855
+      ],
+      "sha256": "b811044046ebe0b70a0b237b9802e4299cb3e12497b1e2a02921f2d7c6f3329b"
+    },
+    "hair_back_1": {
+      "file": "assets/images/projects/yuris-closet/layers/hair_back_1.png",
+      "origin": [
+        338,
+        62
+      ],
+      "size": [
+        587,
+        870
+      ],
+      "sha256": "3647a9c9ec8655d1fc40d6f4f36f9981723c479f520ffeed4c0577dffc0124ca"
+    },
+    "hair_back_2": {
+      "file": "assets/images/projects/yuris-closet/layers/hair_back_2.png",
+      "origin": [
+        136,
+        62
+      ],
+      "size": [
+        766,
+        916
+      ],
+      "sha256": "8c850e37d8b5442c42d3f9e65612eab4eed30feba28919bba276943052a95cdb"
+    },
+    "hair_back_3": {
+      "file": "assets/images/projects/yuris-closet/layers/hair_back_3.png",
+      "origin": [
+        250,
+        62
+      ],
+      "size": [
+        541,
+        918
+      ],
+      "sha256": "a31df4bd6658b718053ab681ec4ed3637fcff819ac8e8d9ba21c888d9e90094d"
+    },
+    "hair_back_4": {
+      "file": "assets/images/projects/yuris-closet/layers/hair_back_4.png",
+      "origin": [
+        258,
+        62
+      ],
+      "size": [
+        519,
+        849
+      ],
+      "sha256": "eac006347c1417285934ab7e536cc25b022057141fb0c6fa0ae08dfcb84a005e"
+    },
+    "hair_back_5": {
+      "file": "assets/images/projects/yuris-closet/layers/hair_back_5.png",
+      "origin": [
+        212,
+        62
+      ],
+      "size": [
+        615,
+        878
+      ],
+      "sha256": "9c6afa48bd15529fc7183924ccf9b62f5549fa2a4f4571bb4f2d96e9b959b82b"
+    },
+    "hair_back_6": {
+      "file": "assets/images/projects/yuris-closet/layers/hair_back_6.png",
+      "origin": [
+        189,
+        62
+      ],
+      "size": [
+        652,
+        663
+      ],
+      "sha256": "7177fae3a34d0a54e8f8be2f44514822bb46e245a652abb455938e639ec93306"
+    },
+    "hair_back_7": {
+      "file": "assets/images/projects/yuris-closet/layers/hair_back_7.png",
+      "origin": [
+        176,
+        62
+      ],
+      "size": [
+        691,
+        586
+      ],
+      "sha256": "1d1f98a7f5a78c289b3f70dd57360bcbeeecc914d01c6c16cdeecb409ddcfab4"
+    },
+    "hair_back_8": {
+      "file": "assets/images/projects/yuris-closet/layers/hair_back_8.png",
+      "origin": [
+        266,
+        62
+      ],
+      "size": [
+        568,
+        936
+      ],
+      "sha256": "5f00065ee03cfac858675c6a98f758946d34a2fda84ea6a4460c8a85c4223364"
+    },
+    "hair_back_9": {
+      "file": "assets/images/projects/yuris-closet/layers/hair_back_9.png",
+      "origin": [
+        211,
+        62
+      ],
+      "size": [
+        612,
+        896
+      ],
+      "sha256": "d94a658b9a697e62db29337611cee99be1efa7166cbd30777aac9c72add1b401"
+    },
+    "hair_front_0": {
+      "file": "assets/images/projects/yuris-closet/layers/hair_front_0.png",
+      "origin": [
+        333,
+        402
+      ],
+      "size": [
+        327,
+        349
+      ],
+      "sha256": "d8bcc6e8b4b37fd23396660296a385362f7b7c5bc58afd46ee708c7712299f69"
+    },
+    "hair_front_4": {
+      "file": "assets/images/projects/yuris-closet/layers/hair_front_4.png",
+      "origin": [
+        308,
+        460
+      ],
+      "size": [
+        167,
+        451
+      ],
+      "sha256": "0820a11caff2787d316140682ff4af18d92e75bf025302015c7994c312fa5bb1"
+    },
+    "hair_front_5": {
+      "file": "assets/images/projects/yuris-closet/layers/hair_front_5.png",
+      "origin": [
+        333,
+        402
+      ],
+      "size": [
+        327,
+        349
+      ],
+      "sha256": "d8bcc6e8b4b37fd23396660296a385362f7b7c5bc58afd46ee708c7712299f69"
+    },
+    "hair_front_9": {
+      "file": "assets/images/projects/yuris-closet/layers/hair_front_9.png",
+      "origin": [
+        333,
+        402
+      ],
+      "size": [
+        327,
+        349
+      ],
+      "sha256": "d8bcc6e8b4b37fd23396660296a385362f7b7c5bc58afd46ee708c7712299f69"
+    },
+    "hair_nape": {
+      "file": "assets/images/projects/yuris-closet/layers/hair_nape.png",
+      "origin": [
+        375,
+        420
+      ],
+      "size": [
+        292,
+        166
+      ],
+      "sha256": "4309b5b5b9114fe4ff3c6eca704c5fc488642e3a0c6fc9b37131ade1ece2e79c"
+    },
+    "hat_1": {
+      "file": "assets/images/projects/yuris-closet/layers/hat_1.png",
+      "origin": [
+        205,
+        21
+      ],
+      "size": [
+        630,
+        219
+      ],
+      "sha256": "8c6e1cdd528dab15032a1643c16473532ef93cb1cd4e6920d97a3a1e6ee322a0"
+    },
+    "hat_2": {
+      "file": "assets/images/projects/yuris-closet/layers/hat_2.png",
+      "origin": [
+        265,
+        48
+      ],
+      "size": [
+        510,
+        371
+      ],
+      "sha256": "edfacd0d3deaf0f84d9e149958b794fd4760019e90510c1e5c3a88ce163747d6"
+    },
+    "hat_3": {
+      "file": "assets/images/projects/yuris-closet/layers/hat_3.png",
+      "origin": [
+        265,
+        8
+      ],
+      "size": [
+        510,
+        362
+      ],
+      "sha256": "f2582eeee23364bc180ddd0967977a33f5cacbed80df17608a87c5bd727c852b"
+    },
+    "hat_4": {
+      "file": "assets/images/projects/yuris-closet/layers/hat_4.png",
+      "origin": [
+        210,
+        8
+      ],
+      "size": [
+        620,
+        388
+      ],
+      "sha256": "683030382025121f0a402fc7254d87a6b0d36d4861ccec129d9c419e3a8644ad"
+    },
+    "hat_5": {
+      "file": "assets/images/projects/yuris-closet/layers/hat_5.png",
+      "origin": [
+        610,
+        320
+      ],
+      "size": [
+        170,
+        138
+      ],
+      "sha256": "9aa2e18485491a07dadf6b3deeae02785addb4206091405524207811aa79fc9c"
+    },
+    "hat_6": {
+      "file": "assets/images/projects/yuris-closet/layers/hat_6.png",
+      "origin": [
+        265,
+        8
+      ],
+      "size": [
+        510,
+        319
+      ],
+      "sha256": "f87382c53e0eb9588b023375e1437ec4bfd4942ff36003668c31a53d542e885d"
+    },
+    "hat_7": {
+      "file": "assets/images/projects/yuris-closet/layers/hat_7.png",
+      "origin": [
+        265,
+        8
+      ],
+      "size": [
+        510,
+        349
+      ],
+      "sha256": "b18b9da1f71d1b15303a937edb97bb4060ea520bb781f130de107bd02d7df5b6"
+    },
+    "head": {
+      "file": "assets/images/projects/yuris-closet/layers/head.png",
+      "origin": [
+        242,
+        63
+      ],
+      "size": [
+        524,
+        412
+      ],
+      "sha256": "a61d10f8843ed43ae01ec01d9e90ef0fe74ee84c7a9208104860dc3ed62dc21a"
+    },
+    "lower_shoes_0": {
+      "file": "assets/images/projects/yuris-closet/layers/lower_shoes_0.png",
+      "origin": [
+        344,
+        943
+      ],
+      "size": [
+        423,
+        566
+      ],
+      "sha256": "7e3a6c4f92bbcc37ceafc35d7df004303db6d903a79bdc47d38986c44930009c"
+    },
+    "lower_shoes_1": {
+      "file": "assets/images/projects/yuris-closet/layers/lower_shoes_1.png",
+      "origin": [
+        374,
+        943
+      ],
+      "size": [
+        354,
+        554
+      ],
+      "sha256": "ba5e84786c943f37f0c552da2f0d6a36e3d3ccf5893ff231a4737de58d3363ea"
+    },
+    "lower_shoes_2": {
+      "file": "assets/images/projects/yuris-closet/layers/lower_shoes_2.png",
+      "origin": [
+        376,
+        943
+      ],
+      "size": [
+        354,
+        562
+      ],
+      "sha256": "790591e7a845cf10d58f1ae8c786de917f087bdfa2b21951ee2ddb7962b4126d"
+    },
+    "lower_shoes_3": {
+      "file": "assets/images/projects/yuris-closet/layers/lower_shoes_3.png",
+      "origin": [
+        372,
+        943
+      ],
+      "size": [
+        364,
+        558
+      ],
+      "sha256": "70fc2277841b829af92f358105e9c4a709517a58b932045a052c1275a7e902db"
+    },
+    "lower_shoes_4": {
+      "file": "assets/images/projects/yuris-closet/layers/lower_shoes_4.png",
+      "origin": [
+        376,
+        943
+      ],
+      "size": [
+        356,
+        565
+      ],
+      "sha256": "0cb81ef2febfd24d0c78c0f215a0d77bea095ea6ae31fe53727a9c3321112117"
+    },
+    "lower_shoes_5": {
+      "file": "assets/images/projects/yuris-closet/layers/lower_shoes_5.png",
+      "origin": [
+        368,
+        943
+      ],
+      "size": [
+        365,
+        555
+      ],
+      "sha256": "5d7e4fcd31f2d93d5deac76e1a44a250cf2825ad66d5ae321e676c3bf520d2ad"
+    },
+    "lower_shoes_6": {
+      "file": "assets/images/projects/yuris-closet/layers/lower_shoes_6.png",
+      "origin": [
+        373,
+        943
+      ],
+      "size": [
+        358,
+        565
+      ],
+      "sha256": "ca130cc0c8b2d20e6997e1f3d0e0e0e3c0d0e36672ef00b0b50092d5ac20e814"
+    },
+    "lower_shoes_7": {
+      "file": "assets/images/projects/yuris-closet/layers/lower_shoes_7.png",
+      "origin": [
+        358,
+        943
+      ],
+      "size": [
+        385,
+        560
+      ],
+      "sha256": "c0cc5a1ca603d5484c1fed9a1e5a485785fe1540d6639f0af06c0457fff849e6"
+    },
+    "lower_shoes_8": {
+      "file": "assets/images/projects/yuris-closet/layers/lower_shoes_8.png",
+      "origin": [
+        377,
+        943
+      ],
+      "size": [
+        352,
+        552
+      ],
+      "sha256": "7ee4ad0b3e186ff8c7ed75c6b088deed9dbd983e0c2bb22d585af51eeae1bed1"
+    },
+    "master_formal": {
+      "file": "assets/images/projects/yuris-closet/layers/master_formal.png",
+      "origin": [
+        0,
+        0
+      ],
+      "size": [
+        1024,
+        1536
+      ],
+      "sha256": "ff83f4103b4151e77f12e9837c6064c4422ff93edb6d46cafc855f29409633a9"
+    },
+    "master_original": {
+      "file": "assets/images/projects/yuris-closet/layers/master_original.png",
+      "origin": [
+        0,
+        0
+      ],
+      "size": [
+        1024,
+        1536
+      ],
+      "sha256": "2fc71755cd40a0e6fa26c05b6e6f7cbd984948eef7a0ddf36696fddfcedd818d"
+    },
+    "pose_lower_boots": {
+      "file": "assets/images/projects/yuris-closet/layers/pose_lower_boots.png",
+      "origin": [
+        332,
+        943
+      ],
+      "size": [
+        366,
+        546
+      ],
+      "sha256": "442593f30fca60361aa406337da6e2bf9d0071d00d43e7e5b017e7924fb8a144"
+    },
+    "pose_lower_garden": {
+      "file": "assets/images/projects/yuris-closet/layers/pose_lower_garden.png",
+      "origin": [
+        255,
+        830
+      ],
+      "size": [
+        507,
+        674
+      ],
+      "sha256": "ea1a06a366d94b216a6d6b261469e193618114ef626d8410c0df39692a7d1438"
+    },
+    "pose_suit_apron": {
+      "file": "assets/images/projects/yuris-closet/layers/pose_suit_apron.png",
+      "origin": [
+        310,
+        470
+      ],
+      "size": [
+        419,
+        1028
+      ],
+      "sha256": "6b9a32d47b85a90630e715ebe550b56637b598f5cc5dbd4822c0abe183dd6efd"
+    },
+    "pose_suit_garden": {
+      "file": "assets/images/projects/yuris-closet/layers/pose_suit_garden.png",
+      "origin": [
+        255,
+        470
+      ],
+      "size": [
+        508,
+        1034
+      ],
+      "sha256": "686a6dc06b649d188c5488360cb19b303f9916083e49c972e98c9e15aa3c24c5"
+    },
+    "pose_suit_school": {
+      "file": "assets/images/projects/yuris-closet/layers/pose_suit_school.png",
+      "origin": [
+        31,
+        470
+      ],
+      "size": [
+        727,
+        1026
+      ],
+      "sha256": "06df6e3cdf1c47c010227e78b87c0417d44e7802effb18a20b97a53c8cc3acc1"
+    },
+    "pose_suit_uniform": {
+      "file": "assets/images/projects/yuris-closet/layers/pose_suit_uniform.png",
+      "origin": [
+        33,
+        470
+      ],
+      "size": [
+        708,
+        1035
+      ],
+      "sha256": "c319d7fc74f83299edee2adfd47dca5d6a7e9fff9960966444c7278cd275e4d9"
+    },
+    "pose_upper_coat": {
+      "file": "assets/images/projects/yuris-closet/layers/pose_upper_coat.png",
+      "origin": [
+        322,
+        466
+      ],
+      "size": [
+        438,
+        585
+      ],
+      "sha256": "8047c6d2433bf1c62c5a536a2c0e5a954de92275eff8aa93070a946f3cb4ecac"
+    },
+    "pose_upper_pocket": {
+      "file": "assets/images/projects/yuris-closet/layers/pose_upper_pocket.png",
+      "origin": [
+        314,
+        466
+      ],
+      "size": [
+        414,
+        440
+      ],
+      "sha256": "f1929135ed12c7abb1db33600f05983ad5ca816171bcda86533921959718429a"
+    },
+    "pose_upper_uniform": {
+      "file": "assets/images/projects/yuris-closet/layers/pose_upper_uniform.png",
+      "origin": [
+        33,
+        470
+      ],
+      "size": [
+        708,
+        984
+      ],
+      "sha256": "9440a393136bca425477ac64620c5a4d99b7f30b6060d3a84bbaea760ad6baa8"
+    },
+    "shoes_0": {
+      "file": "assets/images/projects/yuris-closet/layers/shoes_0.png",
+      "origin": [
+        344,
+        1225
+      ],
+      "size": [
+        423,
+        277
+      ],
+      "sha256": "33b40b38b98890f357f03d963c58fe5e1cf506277315105225a645e29c7506f1"
+    },
+    "shoes_0_foot": {
+      "file": "assets/images/projects/yuris-closet/layers/shoes_0_foot.png",
+      "origin": [
+        344,
+        1360
+      ],
+      "size": [
+        423,
+        149
+      ],
+      "sha256": "47ad5cbd72fbc978946649708c258fd11c80f659f134af30eabaa5d717b9f16a"
+    },
+    "shoes_1": {
+      "file": "assets/images/projects/yuris-closet/layers/shoes_1.png",
+      "origin": [
+        374,
+        1290
+      ],
+      "size": [
+        354,
+        207
+      ],
+      "sha256": "03ef7f73633e91519cbd60be3a906e0cd4eab148edd3a9cbe4e9153395955931"
+    },
+    "shoes_1_foot": {
+      "file": "assets/images/projects/yuris-closet/layers/shoes_1_foot.png",
+      "origin": [
+        374,
+        1360
+      ],
+      "size": [
+        354,
+        137
+      ],
+      "sha256": "7e49c3338afb42c9463da6700c4b153803f9a496a8734b835163347579b2fae5"
+    },
+    "shoes_2": {
+      "file": "assets/images/projects/yuris-closet/layers/shoes_2.png",
+      "origin": [
+        376,
+        1290
+      ],
+      "size": [
+        354,
+        215
+      ],
+      "sha256": "712f8811ae1a46421bc9e3bb6da0d8ff3513437d40402746346738b0d4975691"
+    },
+    "shoes_2_foot": {
+      "file": "assets/images/projects/yuris-closet/layers/shoes_2_foot.png",
+      "origin": [
+        376,
+        1360
+      ],
+      "size": [
+        354,
+        145
+      ],
+      "sha256": "e65495a51ef63498a8b47225877f76a6997ac1109f45781d6543e29591d55cea"
+    },
+    "shoes_3": {
+      "file": "assets/images/projects/yuris-closet/layers/shoes_3.png",
+      "origin": [
+        372,
+        1340
+      ],
+      "size": [
+        364,
+        161
+      ],
+      "sha256": "0f1cc68867600464363fb57c1a61d83ca0284e6b7c2e54cb10fd2c3b32bb6dda"
+    },
+    "shoes_4": {
+      "file": "assets/images/projects/yuris-closet/layers/shoes_4.png",
+      "origin": [
+        376,
+        1340
+      ],
+      "size": [
+        356,
+        168
+      ],
+      "sha256": "d4b28b2b04c1bc61b222a6d2e3ba05e5409a745c96a0c977731bf4a2e0f80626"
+    },
+    "shoes_5": {
+      "file": "assets/images/projects/yuris-closet/layers/shoes_5.png",
+      "origin": [
+        368,
+        1330
+      ],
+      "size": [
+        365,
+        168
+      ],
+      "sha256": "40ddf1799d7899635ca3f21277eb12e5fba4a8cd74b8e72fced8dce9ef202c68"
+    },
+    "shoes_6": {
+      "file": "assets/images/projects/yuris-closet/layers/shoes_6.png",
+      "origin": [
+        373,
+        1330
+      ],
+      "size": [
+        358,
+        178
+      ],
+      "sha256": "3385186347af8d13fcb54fd5b9c332283cb39f652397fd3eb01d8ba91187bcfb"
+    },
+    "shoes_7": {
+      "file": "assets/images/projects/yuris-closet/layers/shoes_7.png",
+      "origin": [
+        358,
+        1100
+      ],
+      "size": [
+        385,
+        403
+      ],
+      "sha256": "d0cfb82a5b8a5733342682e6a486a9be00a748fd6c58dfc343385b0c58dc2746"
+    },
+    "shoes_7_foot": {
+      "file": "assets/images/projects/yuris-closet/layers/shoes_7_foot.png",
+      "origin": [
+        358,
+        1360
+      ],
+      "size": [
+        385,
+        143
+      ],
+      "sha256": "c2a174c317940e564c8f37891f1c4f6e62a60cbc10b87fa725270c934cd8291b"
+    },
+    "shoes_8": {
+      "file": "assets/images/projects/yuris-closet/layers/shoes_8.png",
+      "origin": [
+        377,
+        1290
+      ],
+      "size": [
+        352,
+        205
+      ],
+      "sha256": "540229be2281509a17fa4edc82bf68d919890073a5d1a6a9117af2ec3d8a0e3d"
+    },
+    "shoes_8_foot": {
+      "file": "assets/images/projects/yuris-closet/layers/shoes_8_foot.png",
+      "origin": [
+        377,
+        1360
+      ],
+      "size": [
+        352,
+        135
+      ],
+      "sha256": "1634219af1e05170e20fc03e9b8bc5202df4f48b0477e392e2759493f831e64e"
+    },
+    "socks_1": {
+      "file": "assets/images/projects/yuris-closet/layers/socks_1.png",
+      "origin": [
+        370,
+        1320
+      ],
+      "size": [
+        362,
+        177
+      ],
+      "sha256": "a169d27a5150077705256770e82f66423d50d8f6478eec6f6d43f5d6cf920090"
+    },
+    "socks_2": {
+      "file": "assets/images/projects/yuris-closet/layers/socks_2.png",
+      "origin": [
+        376,
+        1010
+      ],
+      "size": [
+        375,
+        494
+      ],
+      "sha256": "51e0730122a3c32ed65c0494cbfbdeae740139eaf95729880ed4c1c88b3d413b"
+    },
+    "socks_3": {
+      "file": "assets/images/projects/yuris-closet/layers/socks_3.png",
+      "origin": [
+        370,
+        1135
+      ],
+      "size": [
+        360,
+        365
+      ],
+      "sha256": "65aef454185205c4103451c9ae65ac88623da46742501260aa1814a0d24eb851"
+    },
+    "socks_4": {
+      "file": "assets/images/projects/yuris-closet/layers/socks_4.png",
+      "origin": [
+        372,
+        825
+      ],
+      "size": [
+        361,
+        674
+      ],
+      "sha256": "dde8490a17b113e29cc8b6df1b8e52bb91681a970de3df4173c1d5227fc388f9"
+    },
+    "socks_5": {
+      "file": "assets/images/projects/yuris-closet/layers/socks_5.png",
+      "origin": [
+        372,
+        825
+      ],
+      "size": [
+        358,
+        677
+      ],
+      "sha256": "fba66c6b47e4ad0d43e0dd3189219e5646f192f3350df5148bf055466252f26f"
+    },
+    "upper_top_0": {
+      "file": "assets/images/projects/yuris-closet/layers/upper_top_0.png",
+      "origin": [
+        294,
+        466
+      ],
+      "size": [
+        467,
+        585
+      ],
+      "sha256": "e90ba1c8c19a3442cd4442ae4b38d381e02b4e30bb674c8e40c6a2176b359ea2"
+    },
+    "upper_top_1": {
+      "file": "assets/images/projects/yuris-closet/layers/upper_top_1.png",
+      "origin": [
+        296,
+        466
+      ],
+      "size": [
+        458,
+        585
+      ],
+      "sha256": "2e3ad65677226fa270e307b33bd287ce28c0bf93a771cf27edcebe2df28e7ec6"
+    },
+    "upper_top_10": {
+      "file": "assets/images/projects/yuris-closet/layers/upper_top_10.png",
+      "origin": [
+        294,
+        466
+      ],
+      "size": [
+        466,
+        585
+      ],
+      "sha256": "f3d7e5e7e8db0f3db0cd52396905b5bbb6021a880e86cf53d4ba211d3bbbf7b3"
+    },
+    "upper_top_11": {
+      "file": "assets/images/projects/yuris-closet/layers/upper_top_11.png",
+      "origin": [
+        294,
+        466
+      ],
+      "size": [
+        466,
+        585
+      ],
+      "sha256": "f725ce3aea9ddac8d9449b4531a88804d3a1bd249a17a825be7c795951b42d40"
+    },
+    "upper_top_12": {
+      "file": "assets/images/projects/yuris-closet/layers/upper_top_12.png",
+      "origin": [
+        295,
+        466
+      ],
+      "size": [
+        465,
+        585
+      ],
+      "sha256": "4a5e998c5fcb8ed28ec180420316249668ff398226642a7c623248aa0973bdf9"
+    },
+    "upper_top_13": {
+      "file": "assets/images/projects/yuris-closet/layers/upper_top_13.png",
+      "origin": [
+        295,
+        450
+      ],
+      "size": [
+        465,
+        601
+      ],
+      "sha256": "6457ec93bb1843f2f53e6bd685bc6344487b5c5f62e0b9edeed7116417bfdba9"
+    },
+    "upper_top_14": {
+      "file": "assets/images/projects/yuris-closet/layers/upper_top_14.png",
+      "origin": [
+        296,
+        466
+      ],
+      "size": [
+        464,
+        585
+      ],
+      "sha256": "39dcc8bc2933a4d2a37d599f983fb69c4494bb06be554923ddf023a8eb1488fd"
+    },
+    "upper_top_15": {
+      "file": "assets/images/projects/yuris-closet/layers/upper_top_15.png",
+      "origin": [
+        295,
+        450
+      ],
+      "size": [
+        465,
+        601
+      ],
+      "sha256": "ad38aa24ea81d00e228e3f00a4ca9ba9766d0ee048de054d858f141345fbb660"
+    },
+    "upper_top_16": {
+      "file": "assets/images/projects/yuris-closet/layers/upper_top_16.png",
+      "origin": [
+        295,
+        466
+      ],
+      "size": [
+        465,
+        585
+      ],
+      "sha256": "a5fbc182fbf89dafb8e7be7ac6aed876ffe292014cbaf2cc4ddbb00d44fa8dc4"
+    },
+    "upper_top_17": {
+      "file": "assets/images/projects/yuris-closet/layers/upper_top_17.png",
+      "origin": [
+        295,
+        466
+      ],
+      "size": [
+        466,
+        585
+      ],
+      "sha256": "599dfe068b1f6dc357512a75ab0b0eac62b9e751a6e8802b7b3e2837ae3ad6ac"
+    },
+    "upper_top_2": {
+      "file": "assets/images/projects/yuris-closet/layers/upper_top_2.png",
+      "origin": [
+        289,
+        450
+      ],
+      "size": [
+        471,
+        601
+      ],
+      "sha256": "2e2c9ab7396370601f6d1f57179f8cbdb88243b4328a80e68c4bcc35138689fe"
+    },
+    "upper_top_3": {
+      "file": "assets/images/projects/yuris-closet/layers/upper_top_3.png",
+      "origin": [
+        289,
+        450
+      ],
+      "size": [
+        471,
+        601
+      ],
+      "sha256": "1e8dd1425b7bc6b1253f44edfe614ebdae8587990cd133b4891c08a8ff078e65"
+    },
+    "upper_top_4": {
+      "file": "assets/images/projects/yuris-closet/layers/upper_top_4.png",
+      "origin": [
+        294,
+        466
+      ],
+      "size": [
+        466,
+        585
+      ],
+      "sha256": "a06c262ce7c853c8cc4ad4ce8c590f7ae88e707287e49b98567094ea5270798b"
+    },
+    "upper_top_5": {
+      "file": "assets/images/projects/yuris-closet/layers/upper_top_5.png",
+      "origin": [
+        295,
+        466
+      ],
+      "size": [
+        465,
+        585
+      ],
+      "sha256": "fdbf5eb2fb1f7b19be872ecedfb290e4b74d7e8079ab46f4ecf5bb3e9ac56fe8"
+    },
+    "upper_top_6": {
+      "file": "assets/images/projects/yuris-closet/layers/upper_top_6.png",
+      "origin": [
+        289,
+        450
+      ],
+      "size": [
+        472,
+        601
+      ],
+      "sha256": "b5a094467e106b8d0a2869f8088e695ca75c81e84c27843280fdaf6e5aab6c22"
+    },
+    "upper_top_7": {
+      "file": "assets/images/projects/yuris-closet/layers/upper_top_7.png",
+      "origin": [
+        289,
+        450
+      ],
+      "size": [
+        472,
+        601
+      ],
+      "sha256": "b14c65fa8670e201e70805de2f4b35a5be906e08a244a5b2a2109609e170adb2"
+    },
+    "upper_top_8": {
+      "file": "assets/images/projects/yuris-closet/layers/upper_top_8.png",
+      "origin": [
+        295,
+        450
+      ],
+      "size": [
+        466,
+        601
+      ],
+      "sha256": "36ff0ab33d08c8f64df90db3bc52ead939028fa6059ba8c1f104a16c45f1faef"
+    },
+    "upper_top_9": {
+      "file": "assets/images/projects/yuris-closet/layers/upper_top_9.png",
+      "origin": [
+        294,
+        455
+      ],
+      "size": [
+        458,
+        596
+      ],
+      "sha256": "e961102493f5411482b735abc5cfe62172295f38a56046279f0009ede3e2c146"
+    }
+  }
+}

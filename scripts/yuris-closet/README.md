@@ -1,33 +1,30 @@
-# yuri的衣橱发布源
+# yuri的衣橱 · 08.0 绘稿姿势版发布源
 
-公开试玩：https://oiiaioiiiiai123.github.io/yuris-closet/
+试玩：https://oiiaioiiiiai123.github.io/yuris-closet/
 
-本项目沿用个人主页仓库的 GitHub Pages 原生 Jekyll 发布。只打包已存在的精修 PNG，不运行美术生成器。
+沿用此个人主页仓库的 GitHub Pages 原生 Jekyll。游戏页面自包含，现有主页、分类和其他项目不变。
 
-源码分布：
-- `scripts/yuris-closet/index.html`：游戏 HTML 源模板。
-- `assets/css/yuris-closet.css`：游戏样式。
-- `assets/js/yuris-closet/app.js`、`rig.js`：交互、合成和锚点。
-- `assets/images/projects/yuris-closet/layers/`：147 个当前透明像素图层。
-- `scripts/yuris-closet/artwork/`：可继续编辑的路径记录与整理后的面部像素。
-- `yuris-closet/index.html`：发布用完整内嵌页面；`release.json` 为校验清单。
-- `_projects/yuris-closet.md`：Games 卡片与项目详情的唯一内容源。
+- `scripts/yuris-closet/index.html`：HTML 源模板。
+- `assets/css/yuris-closet.css`：样式。
+- `assets/js/yuris-closet/`：app.js、rig.js、pose-engine.js 和生成的 assets.js。
+- `scripts/yuris-closet/runtime.json`、`poses.json`：原生裁切坐标、身体区域所有权和姿势兼容配置。
+- `assets/images/projects/yuris-closet/layers/`：运行清单明确列出的 107 个 PNG；历史文件不自动打包。
+- `yuris-closet/index.html`：实际发布页面，`release.json` 记录输入及页面 SHA-256。
+- `_projects/yuris-closet.md`：Games 项目入口唯一内容源，cover.png 来自真实游戏画布。
 
-在网站仓库根目录运行：
+采用先前生成并恢复的 Yuri 原稿，统一 1024×1536；上衣、鞋腿与完整套装可以拥有不同绘制姿势。卫衣插兜、白外套扶领、制服持剑和交错裙腿使用绘稿，运行时不旋转拉伸人体。冲突时选择同款兼容手势。脸、刘海及多数发型、下装与配件继续沿用原批素材。此目录不包含第三方原始参考图、开发日志或私人工作文件。
+
+在原本地项目完成绘稿／代码编辑、构建及实际浏览器验收后，于网站仓库运行：
 
 ```sh
-python3 scripts/publish-yuris-closet.py
+python3 scripts/publish-yuris-closet.py --source "../yuri's closet/yuri的衣橱"
 python3 scripts/publish-yuris-closet.py --check
 bundle exec jekyll build --strict_front_matter
 python3 scripts/check-site.py
 ```
 
-修改上述仓库中的源码／PNG 后，运行这些命令，检查差异，提交对应文件并推送本仓库 `main`。GitHub Pages 会自动重建整个主页，游戏不会替代首页。
+发布器只同步明确运行文件和封面，验证源码、PNG 与本地最终网页验收的哈希一致，不运行美术生成器。只提交游戏相关文件，然后正常推送 `origin/main`；Pages 自动重建完整站点。不要提交 `_site` 或修改 DNS／发布平台。
 
-若仍在原本地「yuri的衣橱」中编辑，用 `python3 scripts/publish-yuris-closet.py --source "游戏目录的实际路径"` 同步明确清单并打包；无需手工搬运文件。该命令核对嵌入素材与 PNG 一致，拒绝符号链接，不复制原始 ZIP、参考图、开发日志、私人文件或测试数据。
+如直接修改仓库中的代码，可运行不带 `--source` 的发布命令重新打包。编辑 PNG 时同步 runtime.json 的尺寸、原点与 SHA-256；姿势配置同时更新 poses.json 与 runtime.json.poseSystem。推荐在原项目保留的分层绘稿中编辑，再通过上述同步命令更新，避免两份源码分叉。
 
-卡片封面来自修复后发后的真实游戏画布。重新编辑美术时应重新提供实际画布封面。当前发布保留 05.0 的连续颈后发片，不重绘人物。
-
-浏览器收藏仅保存在本机 localStorage；自定义导入和 PNG 导出在浏览器完成，无后台服务或数据收集。原本地离线版与 ZIP 保留不动。
-
-非官方、非商业 Limbus Company 粉丝换装作品。角色、相关参考及各素材的权利属于各自权利人；本目录没有将第三方内容声明为原创或统一授予开源许可。第三方原始参考图未上传。
+浏览器本地收藏、随机、导入、透明 PNG 和角色卡导出均保留。没有账号、服务器或数据收集。非官方、非商业 Limbus Company 粉丝作品；相关权利属于各自权利人，不声明原角色或全部素材原创，不另授第三方内容开源许可。

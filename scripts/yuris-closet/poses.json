@@ -1,0 +1,2791 @@
+{
+  "version": "8.0",
+  "canvas": [
+    1024,
+    1536
+  ],
+  "reference": "https://lovenikki.fandom.com/wiki/Poses/Items",
+  "poses": {
+    "relaxed": {
+      "id": "relaxed",
+      "anchors": {
+        "neck": [
+          530,
+          510
+        ],
+        "shoulderLeft": [
+          420,
+          535
+        ],
+        "shoulderRight": [
+          650,
+          541
+        ],
+        "elbowLeft": [
+          365,
+          850
+        ],
+        "elbowRight": [
+          690,
+          850
+        ],
+        "wristLeft": [
+          340,
+          940
+        ],
+        "wristRight": [
+          715,
+          950
+        ],
+        "waist": [
+          520,
+          800
+        ],
+        "hips": [
+          520,
+          900
+        ],
+        "kneeLeft": [
+          450,
+          1110
+        ],
+        "kneeRight": [
+          625,
+          1110
+        ],
+        "ankleLeft": [
+          490,
+          1390
+        ],
+        "ankleRight": [
+          685,
+          1420
+        ],
+        "soleLeft": [
+          450,
+          1490
+        ],
+        "soleRight": [
+          685,
+          1500
+        ],
+        "head": [
+          530,
+          300
+        ]
+      },
+      "occupiedHands": [],
+      "replaces": [
+        "upperBody"
+      ],
+      "sourceFamily": "approved-mannequin"
+    },
+    "hoodie-pocket": {
+      "id": "hoodie-pocket",
+      "anchors": {
+        "neck": [
+          530,
+          510
+        ],
+        "shoulderLeft": [
+          420,
+          535
+        ],
+        "shoulderRight": [
+          650,
+          541
+        ],
+        "elbowLeft": [
+          350,
+          710
+        ],
+        "elbowRight": [
+          680,
+          710
+        ],
+        "wristLeft": [
+          410,
+          780
+        ],
+        "wristRight": [
+          610,
+          780
+        ],
+        "waist": [
+          520,
+          800
+        ],
+        "hips": [
+          520,
+          900
+        ],
+        "kneeLeft": [
+          450,
+          1110
+        ],
+        "kneeRight": [
+          625,
+          1110
+        ],
+        "ankleLeft": [
+          490,
+          1390
+        ],
+        "ankleRight": [
+          685,
+          1420
+        ],
+        "soleLeft": [
+          450,
+          1490
+        ],
+        "soleRight": [
+          685,
+          1500
+        ],
+        "head": [
+          530,
+          300
+        ]
+      },
+      "occupiedHands": [
+        "left",
+        "right"
+      ],
+      "upper": "pose_upper_pocket",
+      "replaces": [
+        "upperBody",
+        "arms",
+        "hands"
+      ],
+      "frontRegions": [
+        [
+          [
+            305,
+            650
+          ],
+          [
+            440,
+            720
+          ],
+          [
+            440,
+            835
+          ],
+          [
+            315,
+            835
+          ]
+        ],
+        [
+          [
+            600,
+            720
+          ],
+          [
+            745,
+            650
+          ],
+          [
+            735,
+            835
+          ],
+          [
+            600,
+            835
+          ]
+        ]
+      ]
+    },
+    "coat-collar": {
+      "id": "coat-collar",
+      "anchors": {
+        "neck": [
+          530,
+          510
+        ],
+        "shoulderLeft": [
+          420,
+          535
+        ],
+        "shoulderRight": [
+          650,
+          541
+        ],
+        "elbowLeft": [
+          360,
+          675
+        ],
+        "elbowRight": [
+          690,
+          850
+        ],
+        "wristLeft": [
+          440,
+          580
+        ],
+        "wristRight": [
+          715,
+          950
+        ],
+        "waist": [
+          520,
+          800
+        ],
+        "hips": [
+          520,
+          900
+        ],
+        "kneeLeft": [
+          450,
+          1110
+        ],
+        "kneeRight": [
+          625,
+          1110
+        ],
+        "ankleLeft": [
+          490,
+          1390
+        ],
+        "ankleRight": [
+          685,
+          1420
+        ],
+        "soleLeft": [
+          450,
+          1490
+        ],
+        "soleRight": [
+          685,
+          1500
+        ],
+        "head": [
+          530,
+          300
+        ]
+      },
+      "occupiedHands": [
+        "left"
+      ],
+      "upper": "pose_upper_coat",
+      "replaces": [
+        "upperBody",
+        "arms",
+        "hands"
+      ],
+      "frontRegions": [
+        [
+          [
+            300,
+            510
+          ],
+          [
+            490,
+            510
+          ],
+          [
+            490,
+            730
+          ],
+          [
+            300,
+            730
+          ]
+        ]
+      ]
+    },
+    "uniform-sword": {
+      "id": "uniform-sword",
+      "anchors": {
+        "neck": [
+          530,
+          510
+        ],
+        "shoulderLeft": [
+          420,
+          535
+        ],
+        "shoulderRight": [
+          650,
+          541
+        ],
+        "elbowLeft": [
+          365,
+          850
+        ],
+        "elbowRight": [
+          685,
+          675
+        ],
+        "wristLeft": [
+          330,
+          960
+        ],
+        "wristRight": [
+          573,
+          580
+        ],
+        "waist": [
+          520,
+          760
+        ],
+        "hips": [
+          520,
+          900
+        ],
+        "kneeLeft": [
+          450,
+          1110
+        ],
+        "kneeRight": [
+          625,
+          1110
+        ],
+        "ankleLeft": [
+          490,
+          1390
+        ],
+        "ankleRight": [
+          685,
+          1420
+        ],
+        "soleLeft": [
+          450,
+          1490
+        ],
+        "soleRight": [
+          685,
+          1500
+        ],
+        "head": [
+          530,
+          300
+        ],
+        "hip": [
+          520,
+          980
+        ]
+      },
+      "occupiedHands": [
+        "right"
+      ],
+      "upper": "pose_upper_uniform",
+      "requiresAccessory": 1,
+      "replaces": [
+        "upperBody",
+        "arms",
+        "hands",
+        "heldProp"
+      ]
+    },
+    "shoe-0": {
+      "id": "shoe-0",
+      "anchors": {
+        "neck": [
+          530,
+          510
+        ],
+        "shoulderLeft": [
+          420,
+          535
+        ],
+        "shoulderRight": [
+          650,
+          541
+        ],
+        "elbowLeft": [
+          365,
+          850
+        ],
+        "elbowRight": [
+          690,
+          850
+        ],
+        "wristLeft": [
+          340,
+          940
+        ],
+        "wristRight": [
+          715,
+          950
+        ],
+        "waist": [
+          520,
+          800
+        ],
+        "hips": [
+          520,
+          900
+        ],
+        "kneeLeft": [
+          474,
+          1100
+        ],
+        "kneeRight": [
+          618,
+          1100
+        ],
+        "ankleLeft": [
+          488,
+          1360
+        ],
+        "ankleRight": [
+          650,
+          1360
+        ],
+        "soleLeft": [
+          410,
+          1486
+        ],
+        "soleRight": [
+          680,
+          1508
+        ],
+        "head": [
+          530,
+          300
+        ]
+      },
+      "occupiedHands": [],
+      "replaces": [
+        "legs",
+        "feet"
+      ],
+      "lower": "lower_shoes_0",
+      "footwear": 0
+    },
+    "shoe-1": {
+      "id": "shoe-1",
+      "anchors": {
+        "neck": [
+          530,
+          510
+        ],
+        "shoulderLeft": [
+          420,
+          535
+        ],
+        "shoulderRight": [
+          650,
+          541
+        ],
+        "elbowLeft": [
+          365,
+          850
+        ],
+        "elbowRight": [
+          690,
+          850
+        ],
+        "wristLeft": [
+          340,
+          940
+        ],
+        "wristRight": [
+          715,
+          950
+        ],
+        "waist": [
+          520,
+          800
+        ],
+        "hips": [
+          520,
+          900
+        ],
+        "kneeLeft": [
+          473,
+          1100
+        ],
+        "kneeRight": [
+          617,
+          1100
+        ],
+        "ankleLeft": [
+          471,
+          1360
+        ],
+        "ankleRight": [
+          673,
+          1360
+        ],
+        "soleLeft": [
+          424,
+          1494
+        ],
+        "soleRight": [
+          673,
+          1496
+        ],
+        "head": [
+          530,
+          300
+        ]
+      },
+      "occupiedHands": [],
+      "replaces": [
+        "legs",
+        "feet"
+      ],
+      "lower": "lower_shoes_1",
+      "footwear": 1
+    },
+    "shoe-2": {
+      "id": "shoe-2",
+      "anchors": {
+        "neck": [
+          530,
+          510
+        ],
+        "shoulderLeft": [
+          420,
+          535
+        ],
+        "shoulderRight": [
+          650,
+          541
+        ],
+        "elbowLeft": [
+          365,
+          850
+        ],
+        "elbowRight": [
+          690,
+          850
+        ],
+        "wristLeft": [
+          340,
+          940
+        ],
+        "wristRight": [
+          715,
+          950
+        ],
+        "waist": [
+          520,
+          800
+        ],
+        "hips": [
+          520,
+          900
+        ],
+        "kneeLeft": [
+          473,
+          1100
+        ],
+        "kneeRight": [
+          617,
+          1100
+        ],
+        "ankleLeft": [
+          487,
+          1360
+        ],
+        "ankleRight": [
+          675,
+          1360
+        ],
+        "soleLeft": [
+          432,
+          1502
+        ],
+        "soleRight": [
+          671,
+          1504
+        ],
+        "head": [
+          530,
+          300
+        ]
+      },
+      "occupiedHands": [],
+      "replaces": [
+        "legs",
+        "feet"
+      ],
+      "lower": "lower_shoes_2",
+      "footwear": 2
+    },
+    "shoe-3": {
+      "id": "shoe-3",
+      "anchors": {
+        "neck": [
+          530,
+          510
+        ],
+        "shoulderLeft": [
+          420,
+          535
+        ],
+        "shoulderRight": [
+          650,
+          541
+        ],
+        "elbowLeft": [
+          365,
+          850
+        ],
+        "elbowRight": [
+          690,
+          850
+        ],
+        "wristLeft": [
+          340,
+          940
+        ],
+        "wristRight": [
+          715,
+          950
+        ],
+        "waist": [
+          520,
+          800
+        ],
+        "hips": [
+          520,
+          900
+        ],
+        "kneeLeft": [
+          473,
+          1100
+        ],
+        "kneeRight": [
+          617,
+          1100
+        ],
+        "ankleLeft": [
+          489,
+          1360
+        ],
+        "ankleRight": [
+          675,
+          1360
+        ],
+        "soleLeft": [
+          418,
+          1490
+        ],
+        "soleRight": [
+          681,
+          1500
+        ],
+        "head": [
+          530,
+          300
+        ]
+      },
+      "occupiedHands": [],
+      "replaces": [
+        "legs",
+        "feet"
+      ],
+      "lower": "lower_shoes_3",
+      "footwear": 3
+    },
+    "shoe-4": {
+      "id": "shoe-4",
+      "anchors": {
+        "neck": [
+          530,
+          510
+        ],
+        "shoulderLeft": [
+          420,
+          535
+        ],
+        "shoulderRight": [
+          650,
+          541
+        ],
+        "elbowLeft": [
+          365,
+          850
+        ],
+        "elbowRight": [
+          690,
+          850
+        ],
+        "wristLeft": [
+          340,
+          940
+        ],
+        "wristRight": [
+          715,
+          950
+        ],
+        "waist": [
+          520,
+          800
+        ],
+        "hips": [
+          520,
+          900
+        ],
+        "kneeLeft": [
+          473,
+          1100
+        ],
+        "kneeRight": [
+          617,
+          1100
+        ],
+        "ankleLeft": [
+          491,
+          1360
+        ],
+        "ankleRight": [
+          675,
+          1360
+        ],
+        "soleLeft": [
+          418,
+          1496
+        ],
+        "soleRight": [
+          676,
+          1507
+        ],
+        "head": [
+          530,
+          300
+        ]
+      },
+      "occupiedHands": [],
+      "replaces": [
+        "legs",
+        "feet"
+      ],
+      "lower": "lower_shoes_4",
+      "footwear": 4
+    },
+    "shoe-5": {
+      "id": "shoe-5",
+      "anchors": {
+        "neck": [
+          530,
+          510
+        ],
+        "shoulderLeft": [
+          420,
+          535
+        ],
+        "shoulderRight": [
+          650,
+          541
+        ],
+        "elbowLeft": [
+          365,
+          850
+        ],
+        "elbowRight": [
+          690,
+          850
+        ],
+        "wristLeft": [
+          340,
+          940
+        ],
+        "wristRight": [
+          715,
+          950
+        ],
+        "waist": [
+          520,
+          800
+        ],
+        "hips": [
+          520,
+          900
+        ],
+        "kneeLeft": [
+          472,
+          1100
+        ],
+        "kneeRight": [
+          617,
+          1100
+        ],
+        "ankleLeft": [
+          489,
+          1360
+        ],
+        "ankleRight": [
+          676,
+          1360
+        ],
+        "soleLeft": [
+          414,
+          1490
+        ],
+        "soleRight": [
+          676,
+          1497
+        ],
+        "head": [
+          530,
+          300
+        ]
+      },
+      "occupiedHands": [],
+      "replaces": [
+        "legs",
+        "feet"
+      ],
+      "lower": "lower_shoes_5",
+      "footwear": 5
+    },
+    "shoe-6": {
+      "id": "shoe-6",
+      "anchors": {
+        "neck": [
+          530,
+          510
+        ],
+        "shoulderLeft": [
+          420,
+          535
+        ],
+        "shoulderRight": [
+          650,
+          541
+        ],
+        "elbowLeft": [
+          365,
+          850
+        ],
+        "elbowRight": [
+          690,
+          850
+        ],
+        "wristLeft": [
+          340,
+          940
+        ],
+        "wristRight": [
+          715,
+          950
+        ],
+        "waist": [
+          520,
+          800
+        ],
+        "hips": [
+          520,
+          900
+        ],
+        "kneeLeft": [
+          473,
+          1100
+        ],
+        "kneeRight": [
+          617,
+          1100
+        ],
+        "ankleLeft": [
+          492,
+          1360
+        ],
+        "ankleRight": [
+          675,
+          1360
+        ],
+        "soleLeft": [
+          419,
+          1494
+        ],
+        "soleRight": [
+          675,
+          1507
+        ],
+        "head": [
+          530,
+          300
+        ]
+      },
+      "occupiedHands": [],
+      "replaces": [
+        "legs",
+        "feet"
+      ],
+      "lower": "lower_shoes_6",
+      "footwear": 6
+    },
+    "shoe-7": {
+      "id": "shoe-7",
+      "anchors": {
+        "neck": [
+          530,
+          510
+        ],
+        "shoulderLeft": [
+          420,
+          535
+        ],
+        "shoulderRight": [
+          650,
+          541
+        ],
+        "elbowLeft": [
+          365,
+          850
+        ],
+        "elbowRight": [
+          690,
+          850
+        ],
+        "wristLeft": [
+          340,
+          940
+        ],
+        "wristRight": [
+          715,
+          950
+        ],
+        "waist": [
+          520,
+          800
+        ],
+        "hips": [
+          520,
+          900
+        ],
+        "kneeLeft": [
+          471,
+          1100
+        ],
+        "kneeRight": [
+          617,
+          1100
+        ],
+        "ankleLeft": [
+          481,
+          1360
+        ],
+        "ankleRight": [
+          676,
+          1360
+        ],
+        "soleLeft": [
+          415,
+          1492
+        ],
+        "soleRight": [
+          677,
+          1502
+        ],
+        "head": [
+          530,
+          300
+        ]
+      },
+      "occupiedHands": [],
+      "replaces": [
+        "legs",
+        "feet"
+      ],
+      "lower": "lower_shoes_7",
+      "footwear": 7
+    },
+    "shoe-8": {
+      "id": "shoe-8",
+      "anchors": {
+        "neck": [
+          530,
+          510
+        ],
+        "shoulderLeft": [
+          420,
+          535
+        ],
+        "shoulderRight": [
+          650,
+          541
+        ],
+        "elbowLeft": [
+          365,
+          850
+        ],
+        "elbowRight": [
+          690,
+          850
+        ],
+        "wristLeft": [
+          340,
+          940
+        ],
+        "wristRight": [
+          715,
+          950
+        ],
+        "waist": [
+          520,
+          800
+        ],
+        "hips": [
+          520,
+          900
+        ],
+        "kneeLeft": [
+          473,
+          1100
+        ],
+        "kneeRight": [
+          617,
+          1100
+        ],
+        "ankleLeft": [
+          483,
+          1360
+        ],
+        "ankleRight": [
+          667,
+          1360
+        ],
+        "soleLeft": [
+          427,
+          1488
+        ],
+        "soleRight": [
+          669,
+          1494
+        ],
+        "head": [
+          530,
+          300
+        ]
+      },
+      "occupiedHands": [],
+      "replaces": [
+        "legs",
+        "feet"
+      ],
+      "lower": "lower_shoes_8",
+      "footwear": 8
+    },
+    "boots-outturn": {
+      "id": "boots-outturn",
+      "anchors": {
+        "neck": [
+          530,
+          510
+        ],
+        "shoulderLeft": [
+          420,
+          535
+        ],
+        "shoulderRight": [
+          650,
+          541
+        ],
+        "elbowLeft": [
+          365,
+          850
+        ],
+        "elbowRight": [
+          690,
+          850
+        ],
+        "wristLeft": [
+          340,
+          940
+        ],
+        "wristRight": [
+          715,
+          950
+        ],
+        "waist": [
+          520,
+          800
+        ],
+        "hips": [
+          520,
+          900
+        ],
+        "kneeLeft": [
+          420,
+          1090
+        ],
+        "kneeRight": [
+          610,
+          1095
+        ],
+        "ankleLeft": [
+          430,
+          1340
+        ],
+        "ankleRight": [
+          640,
+          1340
+        ],
+        "soleLeft": [
+          425,
+          1490
+        ],
+        "soleRight": [
+          640,
+          1490
+        ],
+        "head": [
+          530,
+          300
+        ]
+      },
+      "occupiedHands": [],
+      "replaces": [
+        "legs",
+        "feet"
+      ],
+      "lower": "pose_lower_boots"
+    },
+    "garden-crossed": {
+      "id": "garden-crossed",
+      "anchors": {
+        "neck": [
+          530,
+          510
+        ],
+        "shoulderLeft": [
+          420,
+          535
+        ],
+        "shoulderRight": [
+          650,
+          541
+        ],
+        "elbowLeft": [
+          365,
+          850
+        ],
+        "elbowRight": [
+          690,
+          850
+        ],
+        "wristLeft": [
+          340,
+          940
+        ],
+        "wristRight": [
+          715,
+          950
+        ],
+        "waist": [
+          520,
+          845
+        ],
+        "hips": [
+          520,
+          900
+        ],
+        "kneeLeft": [
+          450,
+          1110
+        ],
+        "kneeRight": [
+          625,
+          1110
+        ],
+        "ankleLeft": [
+          495,
+          1400
+        ],
+        "ankleRight": [
+          545,
+          1400
+        ],
+        "soleLeft": [
+          470,
+          1490
+        ],
+        "soleRight": [
+          570,
+          1490
+        ],
+        "head": [
+          530,
+          300
+        ]
+      },
+      "occupiedHands": [],
+      "replaces": [
+        "legs",
+        "feet",
+        "bottom"
+      ],
+      "lower": "pose_lower_garden"
+    },
+    "suit-uniform": {
+      "id": "suit-uniform",
+      "anchors": {
+        "neck": [
+          530,
+          510
+        ],
+        "shoulderLeft": [
+          420,
+          535
+        ],
+        "shoulderRight": [
+          650,
+          541
+        ],
+        "elbowLeft": [
+          365,
+          850
+        ],
+        "elbowRight": [
+          685,
+          675
+        ],
+        "wristLeft": [
+          330,
+          960
+        ],
+        "wristRight": [
+          573,
+          580
+        ],
+        "waist": [
+          520,
+          760
+        ],
+        "hips": [
+          520,
+          900
+        ],
+        "kneeLeft": [
+          450,
+          1110
+        ],
+        "kneeRight": [
+          625,
+          1110
+        ],
+        "ankleLeft": [
+          490,
+          1390
+        ],
+        "ankleRight": [
+          685,
+          1420
+        ],
+        "soleLeft": [
+          450,
+          1490
+        ],
+        "soleRight": [
+          685,
+          1500
+        ],
+        "head": [
+          530,
+          300
+        ],
+        "hip": [
+          520,
+          980
+        ]
+      },
+      "occupiedHands": [],
+      "replaces": [
+        "body",
+        "arms",
+        "hands",
+        "legs",
+        "feet"
+      ]
+    },
+    "suit-apron": {
+      "id": "suit-apron",
+      "anchors": {
+        "neck": [
+          530,
+          510
+        ],
+        "shoulderLeft": [
+          420,
+          535
+        ],
+        "shoulderRight": [
+          650,
+          541
+        ],
+        "elbowLeft": [
+          365,
+          850
+        ],
+        "elbowRight": [
+          690,
+          850
+        ],
+        "wristLeft": [
+          358,
+          840
+        ],
+        "wristRight": [
+          650,
+          850
+        ],
+        "waist": [
+          520,
+          730
+        ],
+        "hips": [
+          520,
+          900
+        ],
+        "kneeLeft": [
+          440,
+          1170
+        ],
+        "kneeRight": [
+          605,
+          1170
+        ],
+        "ankleLeft": [
+          490,
+          1390
+        ],
+        "ankleRight": [
+          685,
+          1420
+        ],
+        "soleLeft": [
+          420,
+          1490
+        ],
+        "soleRight": [
+          650,
+          1490
+        ],
+        "head": [
+          530,
+          300
+        ]
+      },
+      "occupiedHands": [],
+      "replaces": [
+        "body",
+        "arms",
+        "hands",
+        "legs",
+        "feet"
+      ]
+    },
+    "suit-school": {
+      "id": "suit-school",
+      "anchors": {
+        "neck": [
+          530,
+          510
+        ],
+        "shoulderLeft": [
+          420,
+          535
+        ],
+        "shoulderRight": [
+          650,
+          541
+        ],
+        "elbowLeft": [
+          365,
+          850
+        ],
+        "elbowRight": [
+          690,
+          850
+        ],
+        "wristLeft": [
+          320,
+          940
+        ],
+        "wristRight": [
+          658,
+          900
+        ],
+        "waist": [
+          520,
+          800
+        ],
+        "hips": [
+          520,
+          900
+        ],
+        "kneeLeft": [
+          480,
+          1170
+        ],
+        "kneeRight": [
+          620,
+          1170
+        ],
+        "ankleLeft": [
+          490,
+          1390
+        ],
+        "ankleRight": [
+          685,
+          1420
+        ],
+        "soleLeft": [
+          455,
+          1490
+        ],
+        "soleRight": [
+          645,
+          1490
+        ],
+        "head": [
+          530,
+          300
+        ]
+      },
+      "occupiedHands": [],
+      "replaces": [
+        "body",
+        "arms",
+        "hands",
+        "legs",
+        "feet"
+      ]
+    },
+    "suit-garden": {
+      "id": "suit-garden",
+      "anchors": {
+        "neck": [
+          530,
+          510
+        ],
+        "shoulderLeft": [
+          420,
+          535
+        ],
+        "shoulderRight": [
+          650,
+          541
+        ],
+        "elbowLeft": [
+          365,
+          850
+        ],
+        "elbowRight": [
+          690,
+          850
+        ],
+        "wristLeft": [
+          340,
+          940
+        ],
+        "wristRight": [
+          650,
+          860
+        ],
+        "waist": [
+          520,
+          800
+        ],
+        "hips": [
+          520,
+          900
+        ],
+        "kneeLeft": [
+          450,
+          1110
+        ],
+        "kneeRight": [
+          625,
+          1110
+        ],
+        "ankleLeft": [
+          495,
+          1400
+        ],
+        "ankleRight": [
+          545,
+          1400
+        ],
+        "soleLeft": [
+          470,
+          1490
+        ],
+        "soleRight": [
+          570,
+          1490
+        ],
+        "head": [
+          530,
+          300
+        ]
+      },
+      "occupiedHands": [],
+      "replaces": [
+        "body",
+        "arms",
+        "hands",
+        "legs",
+        "feet"
+      ]
+    }
+  },
+  "items": {
+    "top": {
+      "0": {
+        "id": "top-0",
+        "type": "ordinary",
+        "layer": "upper_top_0",
+        "poseId": "relaxed",
+        "covers": [
+          "torso",
+          "leftArm",
+          "rightArm",
+          "leftHand",
+          "rightHand"
+        ],
+        "handMasks": {
+          "left": [
+            [
+              278,
+              943
+            ],
+            [
+              375,
+              943
+            ],
+            [
+              392,
+              1060
+            ],
+            [
+              270,
+              1060
+            ]
+          ],
+          "right": [
+            [
+              678,
+              944
+            ],
+            [
+              756,
+              944
+            ],
+            [
+              790,
+              1060
+            ],
+            [
+              666,
+              1060
+            ]
+          ]
+        },
+        "fallback": "same-garment-relaxed"
+      },
+      "1": {
+        "id": "top-1",
+        "type": "posed-upper",
+        "layer": "upper_top_1",
+        "poseId": "relaxed",
+        "covers": [
+          "torso",
+          "leftArm",
+          "rightArm",
+          "leftHand",
+          "rightHand"
+        ],
+        "handMasks": {
+          "left": [
+            [
+              278,
+              943
+            ],
+            [
+              375,
+              943
+            ],
+            [
+              392,
+              1060
+            ],
+            [
+              270,
+              1060
+            ]
+          ],
+          "right": [
+            [
+              678,
+              944
+            ],
+            [
+              756,
+              944
+            ],
+            [
+              790,
+              1060
+            ],
+            [
+              666,
+              1060
+            ]
+          ]
+        },
+        "fallback": "same-garment-relaxed",
+        "preferredPose": "uniform-sword"
+      },
+      "2": {
+        "id": "top-2",
+        "type": "ordinary",
+        "layer": "upper_top_2",
+        "poseId": "relaxed",
+        "covers": [
+          "torso",
+          "leftArm",
+          "rightArm",
+          "leftHand",
+          "rightHand"
+        ],
+        "handMasks": {
+          "left": [
+            [
+              278,
+              943
+            ],
+            [
+              375,
+              943
+            ],
+            [
+              392,
+              1060
+            ],
+            [
+              270,
+              1060
+            ]
+          ],
+          "right": [
+            [
+              678,
+              944
+            ],
+            [
+              756,
+              944
+            ],
+            [
+              790,
+              1060
+            ],
+            [
+              666,
+              1060
+            ]
+          ]
+        },
+        "fallback": "same-garment-relaxed"
+      },
+      "3": {
+        "id": "top-3",
+        "type": "ordinary",
+        "layer": "upper_top_3",
+        "poseId": "relaxed",
+        "covers": [
+          "torso",
+          "leftArm",
+          "rightArm",
+          "leftHand",
+          "rightHand"
+        ],
+        "handMasks": {
+          "left": [
+            [
+              278,
+              943
+            ],
+            [
+              375,
+              943
+            ],
+            [
+              392,
+              1060
+            ],
+            [
+              270,
+              1060
+            ]
+          ],
+          "right": [
+            [
+              678,
+              944
+            ],
+            [
+              756,
+              944
+            ],
+            [
+              790,
+              1060
+            ],
+            [
+              666,
+              1060
+            ]
+          ]
+        },
+        "fallback": "same-garment-relaxed"
+      },
+      "4": {
+        "id": "top-4",
+        "type": "ordinary",
+        "layer": "upper_top_4",
+        "poseId": "relaxed",
+        "covers": [
+          "torso",
+          "leftArm",
+          "rightArm",
+          "leftHand",
+          "rightHand"
+        ],
+        "handMasks": {
+          "left": [
+            [
+              278,
+              943
+            ],
+            [
+              375,
+              943
+            ],
+            [
+              392,
+              1060
+            ],
+            [
+              270,
+              1060
+            ]
+          ],
+          "right": [
+            [
+              678,
+              944
+            ],
+            [
+              756,
+              944
+            ],
+            [
+              790,
+              1060
+            ],
+            [
+              666,
+              1060
+            ]
+          ]
+        },
+        "fallback": "same-garment-relaxed"
+      },
+      "5": {
+        "id": "top-5",
+        "type": "ordinary",
+        "layer": "upper_top_5",
+        "poseId": "relaxed",
+        "covers": [
+          "torso",
+          "leftArm",
+          "rightArm",
+          "leftHand",
+          "rightHand"
+        ],
+        "handMasks": {
+          "left": [
+            [
+              278,
+              943
+            ],
+            [
+              375,
+              943
+            ],
+            [
+              392,
+              1060
+            ],
+            [
+              270,
+              1060
+            ]
+          ],
+          "right": [
+            [
+              678,
+              944
+            ],
+            [
+              756,
+              944
+            ],
+            [
+              790,
+              1060
+            ],
+            [
+              666,
+              1060
+            ]
+          ]
+        },
+        "fallback": "same-garment-relaxed"
+      },
+      "6": {
+        "id": "top-6",
+        "type": "ordinary",
+        "layer": "upper_top_6",
+        "poseId": "relaxed",
+        "covers": [
+          "torso",
+          "leftArm",
+          "rightArm",
+          "leftHand",
+          "rightHand"
+        ],
+        "handMasks": {
+          "left": [
+            [
+              278,
+              943
+            ],
+            [
+              375,
+              943
+            ],
+            [
+              392,
+              1060
+            ],
+            [
+              270,
+              1060
+            ]
+          ],
+          "right": [
+            [
+              678,
+              944
+            ],
+            [
+              756,
+              944
+            ],
+            [
+              790,
+              1060
+            ],
+            [
+              666,
+              1060
+            ]
+          ]
+        },
+        "fallback": "same-garment-relaxed"
+      },
+      "7": {
+        "id": "top-7",
+        "type": "ordinary",
+        "layer": "upper_top_7",
+        "poseId": "relaxed",
+        "covers": [
+          "torso",
+          "leftArm",
+          "rightArm",
+          "leftHand",
+          "rightHand"
+        ],
+        "handMasks": {
+          "left": [
+            [
+              278,
+              943
+            ],
+            [
+              375,
+              943
+            ],
+            [
+              392,
+              1060
+            ],
+            [
+              270,
+              1060
+            ]
+          ],
+          "right": [
+            [
+              678,
+              944
+            ],
+            [
+              756,
+              944
+            ],
+            [
+              790,
+              1060
+            ],
+            [
+              666,
+              1060
+            ]
+          ]
+        },
+        "fallback": "same-garment-relaxed"
+      },
+      "8": {
+        "id": "top-8",
+        "type": "ordinary",
+        "layer": "upper_top_8",
+        "poseId": "relaxed",
+        "covers": [
+          "torso",
+          "leftArm",
+          "rightArm",
+          "leftHand",
+          "rightHand"
+        ],
+        "handMasks": {
+          "left": [
+            [
+              278,
+              943
+            ],
+            [
+              375,
+              943
+            ],
+            [
+              392,
+              1060
+            ],
+            [
+              270,
+              1060
+            ]
+          ],
+          "right": [
+            [
+              678,
+              944
+            ],
+            [
+              756,
+              944
+            ],
+            [
+              790,
+              1060
+            ],
+            [
+              666,
+              1060
+            ]
+          ]
+        },
+        "fallback": "same-garment-relaxed"
+      },
+      "9": {
+        "id": "top-9",
+        "type": "posed-upper",
+        "layer": "upper_top_9",
+        "poseId": "relaxed",
+        "covers": [
+          "torso",
+          "leftArm",
+          "rightArm",
+          "leftHand",
+          "rightHand"
+        ],
+        "handMasks": {
+          "left": [
+            [
+              278,
+              943
+            ],
+            [
+              375,
+              943
+            ],
+            [
+              392,
+              1060
+            ],
+            [
+              270,
+              1060
+            ]
+          ],
+          "right": [
+            [
+              678,
+              944
+            ],
+            [
+              756,
+              944
+            ],
+            [
+              790,
+              1060
+            ],
+            [
+              666,
+              1060
+            ]
+          ]
+        },
+        "fallback": "same-garment-relaxed",
+        "preferredPose": "hoodie-pocket"
+      },
+      "10": {
+        "id": "top-10",
+        "type": "ordinary",
+        "layer": "upper_top_10",
+        "poseId": "relaxed",
+        "covers": [
+          "torso",
+          "leftArm",
+          "rightArm",
+          "leftHand",
+          "rightHand"
+        ],
+        "handMasks": {
+          "left": [
+            [
+              278,
+              943
+            ],
+            [
+              375,
+              943
+            ],
+            [
+              392,
+              1060
+            ],
+            [
+              270,
+              1060
+            ]
+          ],
+          "right": [
+            [
+              678,
+              944
+            ],
+            [
+              756,
+              944
+            ],
+            [
+              790,
+              1060
+            ],
+            [
+              666,
+              1060
+            ]
+          ]
+        },
+        "fallback": "same-garment-relaxed"
+      },
+      "11": {
+        "id": "top-11",
+        "type": "posed-upper",
+        "layer": "upper_top_11",
+        "poseId": "relaxed",
+        "covers": [
+          "torso",
+          "leftArm",
+          "rightArm",
+          "leftHand",
+          "rightHand"
+        ],
+        "handMasks": {
+          "left": [
+            [
+              278,
+              943
+            ],
+            [
+              375,
+              943
+            ],
+            [
+              392,
+              1060
+            ],
+            [
+              270,
+              1060
+            ]
+          ],
+          "right": [
+            [
+              678,
+              944
+            ],
+            [
+              756,
+              944
+            ],
+            [
+              790,
+              1060
+            ],
+            [
+              666,
+              1060
+            ]
+          ]
+        },
+        "fallback": "same-garment-relaxed",
+        "preferredPose": "coat-collar"
+      },
+      "12": {
+        "id": "top-12",
+        "type": "ordinary",
+        "layer": "upper_top_12",
+        "poseId": "relaxed",
+        "covers": [
+          "torso",
+          "leftArm",
+          "rightArm",
+          "leftHand",
+          "rightHand"
+        ],
+        "handMasks": {
+          "left": [
+            [
+              278,
+              943
+            ],
+            [
+              375,
+              943
+            ],
+            [
+              392,
+              1060
+            ],
+            [
+              270,
+              1060
+            ]
+          ],
+          "right": [
+            [
+              678,
+              944
+            ],
+            [
+              756,
+              944
+            ],
+            [
+              790,
+              1060
+            ],
+            [
+              666,
+              1060
+            ]
+          ]
+        },
+        "fallback": "same-garment-relaxed"
+      },
+      "13": {
+        "id": "top-13",
+        "type": "ordinary",
+        "layer": "upper_top_13",
+        "poseId": "relaxed",
+        "covers": [
+          "torso",
+          "leftArm",
+          "rightArm",
+          "leftHand",
+          "rightHand"
+        ],
+        "handMasks": {
+          "left": [
+            [
+              278,
+              943
+            ],
+            [
+              375,
+              943
+            ],
+            [
+              392,
+              1060
+            ],
+            [
+              270,
+              1060
+            ]
+          ],
+          "right": [
+            [
+              678,
+              944
+            ],
+            [
+              756,
+              944
+            ],
+            [
+              790,
+              1060
+            ],
+            [
+              666,
+              1060
+            ]
+          ]
+        },
+        "fallback": "same-garment-relaxed"
+      },
+      "14": {
+        "id": "top-14",
+        "type": "ordinary",
+        "layer": "upper_top_14",
+        "poseId": "relaxed",
+        "covers": [
+          "torso",
+          "leftArm",
+          "rightArm",
+          "leftHand",
+          "rightHand"
+        ],
+        "handMasks": {
+          "left": [
+            [
+              278,
+              943
+            ],
+            [
+              375,
+              943
+            ],
+            [
+              392,
+              1060
+            ],
+            [
+              270,
+              1060
+            ]
+          ],
+          "right": [
+            [
+              678,
+              944
+            ],
+            [
+              756,
+              944
+            ],
+            [
+              790,
+              1060
+            ],
+            [
+              666,
+              1060
+            ]
+          ]
+        },
+        "fallback": "same-garment-relaxed"
+      },
+      "15": {
+        "id": "top-15",
+        "type": "ordinary",
+        "layer": "upper_top_15",
+        "poseId": "relaxed",
+        "covers": [
+          "torso",
+          "leftArm",
+          "rightArm",
+          "leftHand",
+          "rightHand"
+        ],
+        "handMasks": {
+          "left": [
+            [
+              278,
+              943
+            ],
+            [
+              375,
+              943
+            ],
+            [
+              392,
+              1060
+            ],
+            [
+              270,
+              1060
+            ]
+          ],
+          "right": [
+            [
+              678,
+              944
+            ],
+            [
+              756,
+              944
+            ],
+            [
+              790,
+              1060
+            ],
+            [
+              666,
+              1060
+            ]
+          ]
+        },
+        "fallback": "same-garment-relaxed"
+      },
+      "16": {
+        "id": "top-16",
+        "type": "ordinary",
+        "layer": "upper_top_16",
+        "poseId": "relaxed",
+        "covers": [
+          "torso",
+          "leftArm",
+          "rightArm",
+          "leftHand",
+          "rightHand"
+        ],
+        "handMasks": {
+          "left": [
+            [
+              278,
+              943
+            ],
+            [
+              375,
+              943
+            ],
+            [
+              392,
+              1060
+            ],
+            [
+              270,
+              1060
+            ]
+          ],
+          "right": [
+            [
+              678,
+              944
+            ],
+            [
+              756,
+              944
+            ],
+            [
+              790,
+              1060
+            ],
+            [
+              666,
+              1060
+            ]
+          ]
+        },
+        "fallback": "same-garment-relaxed"
+      },
+      "17": {
+        "id": "top-17",
+        "type": "ordinary",
+        "layer": "upper_top_17",
+        "poseId": "relaxed",
+        "covers": [
+          "torso",
+          "leftArm",
+          "rightArm",
+          "leftHand",
+          "rightHand"
+        ],
+        "handMasks": {
+          "left": [
+            [
+              278,
+              943
+            ],
+            [
+              375,
+              943
+            ],
+            [
+              392,
+              1060
+            ],
+            [
+              270,
+              1060
+            ]
+          ],
+          "right": [
+            [
+              678,
+              944
+            ],
+            [
+              756,
+              944
+            ],
+            [
+              790,
+              1060
+            ],
+            [
+              666,
+              1060
+            ]
+          ]
+        },
+        "fallback": "same-garment-relaxed"
+      }
+    },
+    "bottom": {
+      "0": {
+        "id": "bottom-0",
+        "type": "ordinary",
+        "layer": "bottom_0",
+        "poseId": "relaxed",
+        "covers": [
+          "hips"
+        ],
+        "fallback": "same-garment-relaxed"
+      },
+      "1": {
+        "id": "bottom-1",
+        "type": "ordinary",
+        "layer": "bottom_1",
+        "poseId": "relaxed",
+        "covers": [
+          "hips",
+          "legs"
+        ],
+        "fallback": "same-garment-relaxed"
+      },
+      "2": {
+        "id": "bottom-2",
+        "type": "ordinary",
+        "layer": "bottom_2",
+        "poseId": "relaxed",
+        "covers": [
+          "hips"
+        ],
+        "fallback": "same-garment-relaxed"
+      },
+      "3": {
+        "id": "bottom-3",
+        "type": "ordinary",
+        "layer": "bottom_3",
+        "poseId": "relaxed",
+        "covers": [
+          "hips"
+        ],
+        "fallback": "same-garment-relaxed"
+      },
+      "4": {
+        "id": "bottom-4",
+        "type": "ordinary",
+        "layer": "bottom_4",
+        "poseId": "relaxed",
+        "covers": [
+          "hips"
+        ],
+        "fallback": "same-garment-relaxed"
+      },
+      "5": {
+        "id": "bottom-5",
+        "type": "posed-lower",
+        "layer": "bottom_5",
+        "poseId": "garden-crossed",
+        "covers": [
+          "hips"
+        ],
+        "fallback": "same-garment-relaxed"
+      },
+      "6": {
+        "id": "bottom-6",
+        "type": "ordinary",
+        "layer": "bottom_6",
+        "poseId": "relaxed",
+        "covers": [
+          "hips"
+        ],
+        "fallback": "same-garment-relaxed"
+      },
+      "7": {
+        "id": "bottom-7",
+        "type": "ordinary",
+        "layer": "bottom_7",
+        "poseId": "relaxed",
+        "covers": [
+          "hips"
+        ],
+        "fallback": "same-garment-relaxed"
+      },
+      "8": {
+        "id": "bottom-8",
+        "type": "ordinary",
+        "layer": "bottom_8",
+        "poseId": "relaxed",
+        "covers": [
+          "hips",
+          "legs"
+        ],
+        "fallback": "same-garment-relaxed"
+      },
+      "9": {
+        "id": "bottom-9",
+        "type": "ordinary",
+        "layer": "bottom_9",
+        "poseId": "relaxed",
+        "covers": [
+          "hips",
+          "legs"
+        ],
+        "fallback": "same-garment-relaxed"
+      },
+      "10": {
+        "id": "bottom-10",
+        "type": "ordinary",
+        "layer": "bottom_10",
+        "poseId": "relaxed",
+        "covers": [
+          "hips"
+        ],
+        "fallback": "same-garment-relaxed"
+      },
+      "11": {
+        "id": "bottom-11",
+        "type": "ordinary",
+        "layer": "bottom_11",
+        "poseId": "relaxed",
+        "covers": [
+          "hips"
+        ],
+        "fallback": "same-garment-relaxed"
+      },
+      "12": {
+        "id": "bottom-12",
+        "type": "ordinary",
+        "layer": "bottom_12",
+        "poseId": "relaxed",
+        "covers": [
+          "hips",
+          "legs"
+        ],
+        "fallback": "same-garment-relaxed"
+      },
+      "13": {
+        "id": "bottom-13",
+        "type": "ordinary",
+        "layer": "bottom_13",
+        "poseId": "relaxed",
+        "covers": [
+          "hips"
+        ],
+        "fallback": "same-garment-relaxed"
+      },
+      "14": {
+        "id": "bottom-14",
+        "type": "ordinary",
+        "layer": "bottom_14",
+        "poseId": "relaxed",
+        "covers": [
+          "hips"
+        ],
+        "fallback": "same-garment-relaxed"
+      }
+    },
+    "shoes": {
+      "0": {
+        "id": "shoes-0",
+        "type": "posed-lower",
+        "layer": "lower_shoes_0",
+        "poseId": "shoe-0",
+        "covers": [
+          "legs",
+          "feet"
+        ],
+        "preferredPose": "shoe-0",
+        "fallback": "same-shoes-relaxed"
+      },
+      "1": {
+        "id": "shoes-1",
+        "type": "posed-lower",
+        "layer": "lower_shoes_1",
+        "poseId": "shoe-1",
+        "covers": [
+          "legs",
+          "feet"
+        ],
+        "preferredPose": "shoe-1",
+        "fallback": "same-shoes-relaxed"
+      },
+      "2": {
+        "id": "shoes-2",
+        "type": "posed-lower",
+        "layer": "lower_shoes_2",
+        "poseId": "shoe-2",
+        "covers": [
+          "legs",
+          "feet"
+        ],
+        "preferredPose": "shoe-2",
+        "fallback": "same-shoes-relaxed"
+      },
+      "3": {
+        "id": "shoes-3",
+        "type": "posed-lower",
+        "layer": "lower_shoes_3",
+        "poseId": "shoe-3",
+        "covers": [
+          "legs",
+          "feet"
+        ],
+        "preferredPose": "shoe-3",
+        "fallback": "same-shoes-relaxed"
+      },
+      "4": {
+        "id": "shoes-4",
+        "type": "posed-lower",
+        "layer": "lower_shoes_4",
+        "poseId": "shoe-4",
+        "covers": [
+          "legs",
+          "feet"
+        ],
+        "preferredPose": "shoe-4",
+        "fallback": "same-shoes-relaxed"
+      },
+      "5": {
+        "id": "shoes-5",
+        "type": "posed-lower",
+        "layer": "lower_shoes_5",
+        "poseId": "shoe-5",
+        "covers": [
+          "legs",
+          "feet"
+        ],
+        "preferredPose": "shoe-5",
+        "fallback": "same-shoes-relaxed"
+      },
+      "6": {
+        "id": "shoes-6",
+        "type": "posed-lower",
+        "layer": "lower_shoes_6",
+        "poseId": "shoe-6",
+        "covers": [
+          "legs",
+          "feet"
+        ],
+        "preferredPose": "shoe-6",
+        "fallback": "same-shoes-relaxed"
+      },
+      "7": {
+        "id": "shoes-7",
+        "type": "posed-lower",
+        "layer": "lower_shoes_7",
+        "poseId": "shoe-7",
+        "covers": [
+          "legs",
+          "feet"
+        ],
+        "preferredPose": "boots-outturn",
+        "fallback": "same-shoes-relaxed"
+      },
+      "8": {
+        "id": "shoes-8",
+        "type": "posed-lower",
+        "layer": "lower_shoes_8",
+        "poseId": "shoe-8",
+        "covers": [
+          "legs",
+          "feet"
+        ],
+        "preferredPose": "shoe-8",
+        "fallback": "same-shoes-relaxed"
+      }
+    }
+  },
+  "suits": {
+    "0": {
+      "poseId": "suit-uniform",
+      "body": "pose_suit_uniform",
+      "requires": {
+        "top": 1,
+        "bottom": 1,
+        "socks": 0,
+        "shoes": 0,
+        "accessory": 1
+      }
+    },
+    "1": {
+      "poseId": "suit-apron",
+      "body": "pose_suit_apron",
+      "requires": {
+        "top": 2,
+        "bottom": 1,
+        "socks": 0,
+        "shoes": 0,
+        "accessory": 0
+      }
+    },
+    "2": {
+      "poseId": "suit-school",
+      "body": "pose_suit_school",
+      "requires": {
+        "top": 3,
+        "bottom": 2,
+        "socks": 3,
+        "shoes": 3,
+        "accessory": 1
+      }
+    },
+    "5": {
+      "poseId": "suit-garden",
+      "body": "pose_suit_garden",
+      "requires": {
+        "top": 7,
+        "bottom": 5,
+        "socks": 1,
+        "shoes": 1,
+        "accessory": 0
+      }
+    }
+  },
+  "rules": {
+    "headRegistration": "All painted masters intentionally share the approved head/neck origin; no moving faces.",
+    "poseFallback": "Same garment/shoe ordinary painting; never delete options.",
+    "ownership": "Each body region has exactly one painted owner; full suit replaces all body regions.",
+    "sourceMasks": "Anatomical contour selections only, no silhouette-scaled garments or global body row truncation."
+  }
+}

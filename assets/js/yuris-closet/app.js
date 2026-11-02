@@ -1,8 +1,8 @@
 /* yuri的衣橱 / original, offline, layer-based dress-up game */
 (()=>{
  'use strict';
- const W=256,H=384,STORAGE='yuris-closet-v4';
- const DEFAULT={hair:0,top:1,bottom:1,socks:0,shoes:0,hat:0,accessory:1,scene:0,name:'原作 · 初始立绘'};
+ const W=1024,H=1536,STORAGE='yuris-closet-v4';
+ const DEFAULT={hair:0,top:0,bottom:0,socks:0,shoes:0,hat:0,accessory:0,scene:0,suit:null,name:'Yuri · 暮色便服'};
  const SCENES=[
   ['奶油摄影棚','STUDIO','#f1ebe4'],['黄昏车站','PLATFORM','#c7a5a9'],['幼儿园教室','CLASSROOM','#e5bf78'],
   ['事务所走廊','OFFICE','#a0a3ad'],['午后小花园','GARDEN','#b7cbb0'],['像素棋盘','CHECKER','#dbd6cf'],
@@ -56,13 +56,15 @@
  const keys=Object.keys(categories).filter(k=>k!=='preset');
  const by=id=>document.getElementById(id);
  const E={stage:by('stage'),grid:by('itemsGrid'),tabs:by('tabs'),heading:by('categoryHeading'),hint:by('categoryHint'),count:by('choiceCount'),name:by('lookName'),lookTitle:by('lookNameDisplay'),saved:by('savedGrid'),savedCount:by('savedCount'),toast:by('toast'),file:by('customFile'),filename:by('customName'),clear:by('clearCustom')};
- let active='preset',state={...DEFAULT},saved=[],pics={},custom=null,toastTimer=null;
- function clean(x){const next={...DEFAULT};for(const k of keys){const v=Number(x?.[k]);if(Number.isInteger(v)&&v>=0&&v<categories[k].items.length)next[k]=v;}if(typeof x?.name==='string'&&x.name.trim())next.name=x.name.slice(0,30);return next;}
- try{const old=JSON.parse(localStorage.getItem(STORAGE)||localStorage.getItem('yuris-closet-v3')||'{}');if(old.state)state=clean(old.state);if(Array.isArray(old.saved))saved=old.saved.map(clean).slice(0,12);}catch(_){}
- function persist(){try{localStorage.setItem(STORAGE,JSON.stringify({state,saved}));}catch(_){}}
+ let previewMode='master';
+ let active='preset',state={...DEFAULT},saved=[],pics={},custom=null,customPose=null,customHeadOnly=false,customLabel='',toastTimer=null;
+ function clean(x){const next={...DEFAULT};for(const k of keys){const v=Number(x?.[k]);if(Number.isInteger(v)&&v>=0&&v<categories[k].items.length)next[k]=v;}if(typeof x?.name==='string'&&x.name.trim())next.name=x.name.slice(0,30);next.view=['original','master','dressup'].includes(x?.view)?x.view:'dressup';if(Number.isInteger(x?.suit)&&P[x.suit]&&['top','bottom','socks','shoes','accessory'].every(k=>next[k]===P[x.suit].look[k]))next.suit=x.suit;return next;}
+ try{const old=JSON.parse(localStorage.getItem(STORAGE)||localStorage.getItem('yuris-closet-v3')||'{}');if(old.state){state=clean(old.state);previewMode=state.view;}if(Array.isArray(old.saved))saved=old.saved.map(clean).slice(0,12);}catch(_){}
+ function persist(){try{state.view=previewMode;localStorage.setItem(STORAGE,JSON.stringify({state,saved}));}catch(_){}}
  function notice(msg){E.toast.textContent=msg;E.toast.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>E.toast.classList.remove('show'),2350);}
  function block(c,x,y,w,h,color){c.fillStyle=color;c.fillRect(x,y,w,h);}
- function scenery(c,id){
+ function sceneryLow(c,id){
+  const W=256,H=384;
   if(id===0){block(c,0,0,W,H,'#f4efe8');block(c,0,339,256,45,'#eae3dc');for(let x=12;x<256;x+=29)block(c,x,346,14,1,'#ddd1c8');for(const [x,y] of [[30,32],[43,32],[222,40],[235,53],[24,295]])block(c,x,y,3,3,'#e0c9ca');}
   else if(id===1){block(c,0,0,W,H,'#d4b3b3');block(c,0,150,W,144,'#be9ea9');block(c,0,294,W,90,'#686674');block(c,0,297,W,7,'#f0d1ba');block(c,14,106,7,183,'#8b8190');block(c,224,106,7,183,'#8b8190');block(c,14,109,217,7,'#8b8190');block(c,40,135,96,10,'#968996');block(c,46,146,21,14,'#e4cec7');block(c,202,40,22,12,'#f5d3a7');for(let x=5;x<252;x+=40)block(c,x,354,25,2,'#8b818b');}
   else if(id===2){block(c,0,0,W,H,'#e6d8ba');block(c,0,292,256,92,'#bca782');block(c,0,299,256,5,'#806b6c');block(c,16,47,90,105,'#ac9e82');block(c,22,52,78,94,'#eaf0d7');block(c,36,75,24,25,'#eab7ab');block(c,67,82,21,19,'#d5bd85');block(c,38,114,47,7,'#abc6b4');block(c,175,54,61,83,'#c99487');block(c,180,59,51,73,'#f0dcc5');block(c,180,90,50,3,'#d1b49e');block(c,205,58,3,73,'#d1b49e');block(c,9,219,80,20,'#ad947b');block(c,16,238,68,54,'#d3bca0');for(let x=15;x<254;x+=31)block(c,x,339,19,2,'#ae9a7e');}
@@ -71,51 +73,54 @@
   else if(id===5){block(c,0,0,W,H,'#eee9e1');for(let y=0;y<H;y+=16)for(let x=0;x<W;x+=16)if(((x+y)/16)%2===0)block(c,x,y,16,16,'#dcd7d1');}
   else if(id===6){block(c,0,0,W,H,'#343e5a');block(c,0,308,W,76,'#26314c');block(c,18,28,218,276,'#77809a');block(c,23,33,208,264,'#37445f');block(c,119,30,5,269,'#69758f');block(c,25,171,207,5,'#68718d');block(c,181,54,35,34,'#f1d8be');block(c,184,50,12,15,'#37445f');for(let i=0;i<25;i++){const x=29+(i*39)%192,y=43+(i*61)%226;block(c,x,y,i%3?2:3,2,'#b9c2d5');}}
   else{block(c,0,0,W,H,'#e5d4d1');block(c,0,291,W,93,'#a58e98');block(c,0,294,W,5,'#816e80');block(c,171,38,65,97,'#9a929f');block(c,176,43,55,87,'#f1dedd');block(c,201,44,4,87,'#b7a4ac');block(c,178,88,52,4,'#b7a4ac');block(c,0,247,93,47,'#a48d9b');block(c,8,230,79,53,'#cdb4b6');block(c,9,236,71,22,'#ead5d0');block(c,19,206,31,28,'#ab949b');for(let x=4;x<256;x+=36)block(c,x,343,24,2,'#b9a0a9');}
-  if(id!==5){const shadow=id===6?'#1f2b47':id===1?'#514858':'#c4b8af';block(c,90,366,85,2,shadow);block(c,97,368,72,1,shadow);}
+  if(id!==5){const shadow=id===6?'#1f2b47':id===1?'#514858':'#c4b8af';block(c,88,370,104,2,shadow);block(c,96,372,88,1,shadow);}
  }
+ function scenery(c,id){c.save();c.scale(4,4);sceneryLow(c,id);c.restore();}
  const KEY={hair:'hair',top:'top',bottom:'bottom',socks:'socks',shoes:'shoes',hat:'hat',accessory:'accessory'};
- function draw(c,look,includeBackground=true,includeCustom=true){
-  c.setTransform(1,0,0,1,0,0);c.imageSmoothingEnabled=false;c.clearRect(0,0,W,H);
-  if(includeBackground)scenery(c,look.scene);
-  const stamp=key=>{if(pics[key])c.drawImage(pics[key],0,0);};
-  // Garment silhouettes cover intact anatomy; no global horizontal body cuts.
-  stamp(`hair_back_${look.hair}`);stamp(`accessory_back_${look.accessory}`);
-  for(const key of ['neck','torso','arm_left','arm_right','legs','feet'])stamp(key);
-  if(look.bottom===9)stamp('tights');
-  stamp(`socks_${look.socks}`);
-  if(window.YURI_RIG.wideTrousers.includes(look.bottom)){
-   stamp(`shoes_${look.shoes}`);stamp(`bottom_${look.bottom}`);
-  }else{
-   stamp(`bottom_${look.bottom}`);stamp(`shoes_${look.shoes}`);
-  }
-  stamp(`top_${look.top}`);
-  if(![6,9].includes(look.accessory))stamp(`accessory_${look.accessory}`);
-  stamp('face');stamp('bangs');stamp(`hair_front_${look.hair}`);stamp(`hat_${look.hat}`);
-  if(look.accessory===6)stamp('accessory_6');
-  const grip=window.YURI_RIG.handReplacement[String(look.accessory)]||[];
-  if(look.accessory!==9){
-   if(!grip.includes('left'))stamp('hand_left');
-   if(!grip.includes('right'))stamp('hand_right');
-  }else stamp('accessory_9');
-  stamp(`accessory_front_${look.accessory}`);
-  if(includeCustom && custom)c.drawImage(custom,0,0,W,H);
+ const native=window.YURI_NATIVE;
+ function poseSignature(look){const p=window.YURI_POSES.resolve(look);return [p.full||'',p.upper,p.lower].join('/');}
+ function customCompatible(look){return !custom||customHeadOnly||customPose===poseSignature(look);}
+ function layer(c,key){const item=native.layers[key],im=pics[key];if(item&&im)c.drawImage(im,...item.origin);}
+ function contour(c,points){c.moveTo(...points[0]);for(const xy of points.slice(1))c.lineTo(...xy);c.closePath();}
+ function paintedPart(c,cmd){
+  c.save();
+  if(cmd.only){c.beginPath();contour(c,cmd.only);c.clip();}
+  if(cmd.omit?.length){c.beginPath();c.rect(0,0,W,H);for(const points of cmd.omit)contour(c,points);c.clip('evenodd');}
+  layer(c,cmd.key);c.restore();
  }
-
- function render(){draw(E.stage.getContext('2d'),state);E.lookTitle.textContent=state.name;if(E.name.value!==state.name)E.name.value=state.name;}
- function matchPreset(p){return keys.every(key=>state[key]===p.look[key]);}
+ function draw(c,look,includeBackground=true,includeCustom=true,mode='dressup'){
+  c.setTransform(1,0,0,1,0,0);c.imageSmoothingEnabled=false;c.clearRect(0,0,W,H);
+  if(mode!=='dressup'){layer(c,mode==='original'?'master_original':'master_formal');return;}
+  if(includeBackground)scenery(c,look.scene);
+  for(const cmd of window.YURI_POSES.commands(look).commands)paintedPart(c,cmd);
+  if(includeCustom&&custom&&customCompatible(look))c.drawImage(custom,0,0);
+ }
+ function setPreview(mode){previewMode=mode;render();persist();}
+ function render(){
+  draw(E.stage.getContext('2d'),state,true,true,previewMode);
+  const dress=previewMode==='dressup';document.documentElement.classList.toggle('native-dressup',dress);
+  const master=by('masterImage');master.hidden=dress;master.src=window.PIXEL_ASSETS[previewMode==='original'?'master_original':'master_formal'];
+  for(const [id,mode] of [['viewOriginal','original'],['viewMaster','master'],['viewDressup','dressup']])by(id).setAttribute('aria-pressed',String(previewMode===mode));
+  E.lookTitle.textContent=dress?state.name:previewMode==='original'?'原始生成图 · 未叠加图层':'Yuri · 正式母版';
+  const pose=window.YURI_POSES.resolve(state);E.stage.dataset.upperPose=pose.upper;E.stage.dataset.lowerPose=pose.lower;E.stage.dataset.suit=pose.full||'';
+  if(custom)E.filename.textContent='当前图层：'+customLabel+(customCompatible(state)?'':'（对应另一种姿势，已暂存；切回原姿势恢复）');
+  if(E.name.value!==state.name)E.name.value=state.name;
+ }
+ function matchPreset(p){return state.suit===P.indexOf(p)&&keys.every(key=>state[key]===p.look[key]);}
  function activeIndex(){return active==='preset'?P.findIndex(matchPreset):state[active];}
  function counter(){const ix=activeIndex();E.count.textContent=(ix<0?'—':String(ix+1).padStart(2,'0'))+' / '+String(categories[active].items.length).padStart(2,'0');}
  function thumb(group,index){
-  const look=group==='preset'?{...DEFAULT,...P[index].look}:({...state,[group]:index});
+  const look=group==='preset'?{...DEFAULT,...P[index].look,suit:index}:({...state,[group]:index});
+  if(!['preset','hair','hat','scene'].includes(group))look.suit=null;
   const tmp=document.createElement('canvas');tmp.width=W;tmp.height=H;
   if(group==='hair')look.hat=0; // hair thumbnails must not be hidden by hats
   draw(tmp.getContext('2d'),look,group==='scene',false);
   const cvs=document.createElement('canvas');cvs.width=120;cvs.height=100;const c=cvs.getContext('2d');c.imageSmoothingEnabled=false;
   block(c,0,0,120,100,group==='scene'?'#f1e4df':'#ece5df');
-  const crops={hair:[56,35,152,174],top:[75,142,110,155],bottom:[86,201,94,150],socks:[96,267,80,100],shoes:[86,296,94,75],hat:[53,20,156,95],accessory:[68,140,120,128]};
-  let cr=group==='preset'||group==='scene'?[0,0,W,H]:(crops[group]||[0,0,W,H]);
-  if(group==='accessory'&&index===1)cr=[14,229,85,114];
-  if(group==='accessory'&&index===6)cr=[80,80,40,45];
+  const crops={hair:[52,8,154,184],top:[68,116,132,192],bottom:[85,198,112,158],socks:[88,254,115,119],shoes:[84,290,120,83],hat:[43,0,172,116],accessory:[5,114,200,260]};
+  let cr=crops[group]?crops[group].map(v=>v*4):[0,0,W,H];
+
+
   const scale=Math.min(120/cr[2],100/cr[3]),dw=Math.round(cr[2]*scale),dh=Math.round(cr[3]*scale);
   c.drawImage(tmp,...cr,Math.floor((120-dw)/2),Math.floor((100-dh)/2),dw,dh);
   return cvs;
@@ -132,10 +137,10 @@
     cell.append(frame,label,sub);
     if(index===selected){const tick=document.createElement('span');tick.className='item-check';tick.textContent='✓';cell.append(tick);}
     cell.addEventListener('click',()=>{
-      if(active==='preset'){state=clean({...state,...P[index].look,name:P[index].name});}
-      else if(state[active]!==index){state[active]=index;}
-      else{notice('这一项已经穿在 Yuri 身上啦');return;}
-      persist();render();refresh();notice(active==='preset'?'已换上「'+P[index].name+'」':'尤莉换装完成 ✦');
+    if(active==='preset'){state=clean({...state,...P[index].look,suit:index,name:P[index].name});}
+    else if(state[active]!==index||(!['hair','hat','scene'].includes(active)&&state.suit!==null)){state[active]=index;if(!['hair','hat','scene'].includes(active))state.suit=null;if(active==='top'&&index===1&&state.accessory===0)state.accessory=1;}
+      else{if(previewMode!=='dressup'){previewMode='dressup';render();refresh();notice('已进入自由换装');}else notice('这一项已经穿在 Yuri 身上啦');return;}
+    previewMode='dressup';persist();render();refresh();notice(window.YURI_POSES.resolve(state).message||(active==='preset'?'已换上「'+P[index].name+'」':'尤莉换装完成 ✦'));
     });
     frag.append(cell);
   });
@@ -149,10 +154,10 @@
   E.savedCount.textContent=saved.length+' / 12';E.saved.replaceChildren();
   if(!saved.length){const none=document.createElement('div');none.className='no-saves';none.textContent='还没有收藏的搭配。试着为尤莉搭配一套，再点击「♡ 收藏搭配」。';E.saved.append(none);return;}
   saved.forEach((item,index)=>{
-   const cell=document.createElement('div');cell.className='saved-cell';const swatch=document.createElement('span');swatch.className='saved-swatch';const preview=document.createElement('canvas');preview.width=W;preview.height=H;draw(preview.getContext('2d'),item,false,false);swatch.append(preview);
+   const cell=document.createElement('div');cell.className='saved-cell';const swatch=document.createElement('span');swatch.className='saved-swatch';const preview=document.createElement('canvas');preview.width=W;preview.height=H;draw(preview.getContext('2d'),item,false,false,item.view||'dressup');swatch.append(preview);
    const load=document.createElement('button');load.type='button';load.className='saved-load';const title=document.createElement('strong');title.textContent=item.name;const small=document.createElement('small');small.textContent='SLOT '+String(index+1).padStart(2,'0');load.append(title,small);
    const remove=document.createElement('button');remove.type='button';remove.className='saved-remove';remove.textContent='×';remove.setAttribute('aria-label','删除 '+item.name);
-   load.addEventListener('click',()=>{state=clean(item);persist();render();refresh();window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});notice('已读取收藏搭配');});
+   load.addEventListener('click',()=>{state=clean(item);previewMode=item.view||'dressup';persist();render();refresh();window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});notice('已读取收藏搭配');});
    remove.addEventListener('click',()=>{saved.splice(index,1);persist();updateSaved();notice('已删除这条穿搭存档');});
    cell.append(swatch,load,remove);E.saved.append(cell);
   });
@@ -162,52 +167,45 @@
   try{canvas.toBlob(blob=>{if(!blob){notice('PNG 生成失败，请重试');return;}const url=URL.createObjectURL(blob);const a=document.createElement('a');a.download=file;a.href=url;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1200);notice('已生成 PNG 图片');},'image/png');}catch(e){console.error(e);notice('当前浏览器限制了 PNG 导出');}
  }
  function exportSprite(){
-  const original=document.createElement('canvas');original.width=W;original.height=H;draw(original.getContext('2d'),state,false,true);
-  const large=document.createElement('canvas');large.width=W*4;large.height=H*4;const c=large.getContext('2d');c.imageSmoothingEnabled=false;c.drawImage(original,0,0,large.width,large.height);
-  saveCanvas(large,fileLabel()+'_sprite.png');
+  if(previewMode==='dressup'){const out=document.createElement('canvas');out.width=W;out.height=H;draw(out.getContext('2d'),state,false,true);saveCanvas(out,fileLabel()+'_1024x1536.png');return;}
+  // Full-image mode exports the exact source PNG, including original alpha RGB.
+  const a=document.createElement('a');a.download='yuri-'+previewMode+'-1024x1536.png';a.href=window.PIXEL_ASSETS[previewMode==='original'?'master_original':'master_formal'];document.body.append(a);a.click();a.remove();notice('已导出原始尺寸 PNG');
  }
+
  function exportCard(){
   const out=document.createElement('canvas');out.width=800;out.height=1080;const c=out.getContext('2d');c.imageSmoothingEnabled=false;
   block(c,0,0,800,1080,'#e9e1d9');block(c,20,20,760,1040,'#faf5ed');block(c,20,20,760,76,'#33313d');
   c.font='bold 30px monospace';c.fillStyle='#fff3ea';c.fillText("YURI'S CLOSET",48,69);
-  block(c,56,124,688,802,'#e8dfd8');const sprite=document.createElement('canvas');sprite.width=W;sprite.height=H;draw(sprite.getContext('2d'),state,true,true);
+  block(c,56,124,688,802,'#e8dfd8');const sprite=document.createElement('canvas');sprite.width=W;sprite.height=H;draw(sprite.getContext('2d'),state,true,true,previewMode);
   c.drawImage(sprite,0,0,W,H,144,144,512,768);
   c.font='bold 31px sans-serif';c.fillStyle='#453743';c.fillText(state.name.slice(0,22),57,977);c.font='19px monospace';c.fillStyle='#986e7c';c.fillText('PIXEL LOOK / YURI · NON-COMMERCIAL FAN WORK',60,1026);
   saveCanvas(out,fileLabel()+'_card.png');
  }
  function guide(){
   const out=document.createElement('canvas');out.width=W;out.height=H;const c=out.getContext('2d');c.imageSmoothingEnabled=false;
-  c.globalAlpha=.34;for(const k of ['hair_back_0','body','face','bangs','hair_front_0'])if(pics[k])c.drawImage(pics[k],0,0);c.globalAlpha=1;
-  c.strokeStyle='#a66a7b';c.setLineDash([4,4]);c.strokeRect(87,141,95,140);c.setLineDash([]);
-  saveCanvas(out,'yuri_draw_guide_256x384.png');
+  c.globalAlpha=.4;draw(c,state,false,false);c.globalAlpha=1;
+  const current=window.YURI_POSES.resolve(state),anchors={...native.poseSystem.poses[current.upper].anchors,...native.poseSystem.poses[current.lower].anchors};
+  c.fillStyle='#a66a7b';for(const [name,[x,y]] of Object.entries(anchors)){c.fillRect(x-3,y-3,6,6);}
+  saveCanvas(out,'yuri_draw_guide_1024x1536.png');
  }
  function init(){
+  for(const [id,mode] of [['viewOriginal','original'],['viewMaster','master'],['viewDressup','dressup']])by(id).addEventListener('click',()=>setPreview(mode));
   E.tabs.addEventListener('click',e=>{const b=e.target.closest('[data-tab]');if(b)tab(b.dataset.tab);});
   E.name.value=state.name;E.name.addEventListener('input',()=>{state.name=E.name.value.slice(0,30);E.lookTitle.textContent=state.name||'Yuri';persist();});
   E.name.addEventListener('blur',()=>{if(!state.name.trim()){state.name='Yuri · 今日穿搭';render();persist();}});
-  by('randomBtn').addEventListener('click',()=>{for(const k of keys){if(k==='scene')continue;state[k]=Math.floor(Math.random()*categories[k].items.length);}state.name='Yuri · 随机造型';persist();render();refresh();notice('随机穿搭完成 ✳');});
-  by('resetBtn').addEventListener('click',()=>{state={...DEFAULT};persist();render();refresh();notice('已恢复尤莉的原作造型');});
-  by('saveBtn').addEventListener('click',()=>{saved.unshift(clean(state));saved=saved.slice(0,12);persist();updateSaved();notice('已将这套衣服放进搭配存档 ♡');});
+  by('randomBtn').addEventListener('click',()=>{state.suit=null;for(const k of keys){if(k==='scene')continue;state[k]=Math.floor(Math.random()*categories[k].items.length);}state.name='Yuri · 随机造型';previewMode='dressup';persist();render();refresh();notice(window.YURI_POSES.resolve(state).message||'随机穿搭完成 ✳');});
+  by('resetBtn').addEventListener('click',()=>{state={...DEFAULT};previewMode='master';persist();render();refresh();notice('已恢复正式母版');});
+  by('saveBtn').addEventListener('click',()=>{saved.unshift(clean({...state,view:previewMode}));saved=saved.slice(0,12);persist();updateSaved();notice('已将这套衣服放进搭配存档 ♡');});
   by('exportSprite').addEventListener('click',exportSprite);by('exportCard').addEventListener('click',exportCard);by('guideBtn').addEventListener('click',guide);
   E.file.addEventListener('change',e=>{const file=e.target.files?.[0];if(!file)return;
    if(file.type!=='image/png'||file.size>8*1024*1024){notice('请选择不超过 8MB 的透明 PNG 图片');return;}
-   const reader=new FileReader();reader.onload=()=>{const pic=new Image();pic.onload=()=>{custom=pic;E.filename.textContent='当前图层：'+file.name+(pic.width!==W||pic.height!==H?'（自动缩放）':'');E.clear.disabled=false;render();notice('自绘图层已导入');};pic.onerror=()=>notice('图片打开失败');pic.src=reader.result;};reader.readAsDataURL(file);
+   const reader=new FileReader();reader.onload=()=>{const pic=new Image();pic.onload=()=>{if(pic.width!==W||pic.height!==H){notice('请使用 1024×1536 的透明 PNG；原图不会被自动拉伸');return;}custom=pic;customLabel=file.name;customPose=poseSignature(state);const probe=document.createElement('canvas');probe.width=W;probe.height=H;probe.getContext('2d').drawImage(pic,0,0);const alpha=probe.getContext('2d').getImageData(0,460,W,H-460).data;customHeadOnly=true;for(let i=3;i<alpha.length;i+=4)if(alpha[i]){customHeadOnly=false;break;}previewMode='dressup';E.clear.disabled=false;render();notice('自绘图层已导入');};pic.onerror=()=>notice('图片打开失败');pic.src=reader.result;};reader.readAsDataURL(file);
   });
-  E.clear.addEventListener('click',()=>{custom=null;E.file.value='';E.filename.textContent='';E.clear.disabled=true;render();notice('已移除自定义图层');});
+  E.clear.addEventListener('click',()=>{custom=null;customPose=null;customLabel='';E.file.value='';E.filename.textContent='';E.clear.disabled=true;render();notice('已移除自定义图层');});
   window.addEventListener('keydown',e=>{if(['INPUT','TEXTAREA'].includes(document.activeElement?.tagName))return;const n=Number(e.key);if(n>=1&&n<=9)tab(Object.keys(categories)[n-1]);if(e.key.toLowerCase()==='r'&&!e.ctrlKey&&!e.metaKey)by('randomBtn').click();});
   render();refresh();updateSaved();
-  window.YURI_QA={version:'5.0',draw,scenery,getState:()=>({...state}),presets:P.map(p=>({...p.look,name:p.name})),categories,
-    trace:(ctx,look)=>{
-      const original=pics;pics={...pics};
-      try{
-        for(const [key,color] of [['legs','#00ff00'],['feet','#ff00ff'],['arm_left','#00ffff'],['arm_right','#00ffff'],['hand_left','#0000ff'],['hand_right','#0000ff']]){
-          const temp=document.createElement('canvas');temp.width=W;temp.height=H;const t=temp.getContext('2d');
-          t.drawImage(original[key],0,0);t.globalCompositeOperation='source-in';t.fillStyle=color;t.fillRect(0,0,W,H);pics[key]=temp;
-        }
-        draw(ctx,look,false,false);
-      }finally{pics=original;}
-    },
-    assets:()=>Object.keys(pics),setState:look=>{state=clean(look);render();refresh();},
+  if(new URLSearchParams(location.search).get('qa')==='1')window.YURI_QA={version:'8.0-painted-poses',draw,scenery,getState:()=>({...state}),presets:P.map((p,suit)=>({...p.look,suit,name:p.name})),categories,resolvePose:window.YURI_POSES.resolve,commands:window.YURI_POSES.commands,
+    assets:()=>Object.keys(pics),setState:(look,refreshMenu=true)=>{state=clean(look);previewMode='dressup';render();if(refreshMenu)refresh();},getMode:()=>previewMode,setPreview,
     snapshot:()=>E.stage.toDataURL('image/png')};
   document.documentElement.dataset.yuriReady='true';
  }
