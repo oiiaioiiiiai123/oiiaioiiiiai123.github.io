@@ -1,4 +1,4 @@
-# yuri的衣橱 · 08.0 绘稿姿势版发布源
+# yuri的衣橱 · 08.1 素材与遮挡修复版发布源
 
 试玩：https://oiiaioiiiiai123.github.io/yuris-closet/
 
@@ -8,11 +8,11 @@
 - `assets/css/yuris-closet.css`：样式。
 - `assets/js/yuris-closet/`：app.js、rig.js、pose-engine.js 和生成的 assets.js。
 - `scripts/yuris-closet/runtime.json`、`poses.json`：原生裁切坐标、身体区域所有权和姿势兼容配置。
-- `assets/images/projects/yuris-closet/layers/`：运行清单明确列出的 107 个 PNG；历史文件不自动打包。
+- `assets/images/projects/yuris-closet/layers/`：运行清单明确列出的 165 个 PNG；历史文件不自动打包。
 - `yuris-closet/index.html`：实际发布页面，`release.json` 记录输入及页面 SHA-256。
 - `_projects/yuris-closet.md`：Games 项目入口唯一内容源，cover.png 来自真实游戏画布。
 
-采用先前生成并恢复的 Yuri 原稿，统一 1024×1536；上衣、鞋腿与完整套装可以拥有不同绘制姿势。卫衣插兜、白外套扶领、制服持剑和交错裙腿使用绘稿，运行时不旋转拉伸人体。冲突时选择同款兼容手势。脸、刘海及多数发型、下装与配件继续沿用原批素材。此目录不包含第三方原始参考图、开发日志或私人工作文件。
+采用先前生成并恢复的 Yuri 原稿，统一 1024×1536；上衣、鞋腿与完整套装可以拥有不同绘制姿势。卫衣插兜、白外套扶领、制服持剑和交错裙腿使用绘稿，运行时不旋转拉伸人体。冲突时选择同款兼容手势。脸和刘海保持原像素；后发按当前发型完整替换。衣身与手掌使用不重叠部件，持物腕部在袖口后、握持手在前。长裤盖短靴、裤脚入长靴、靴筒覆盖腿部及裙摆覆盖靴口分别由穿着规则决定。多数下装与配件继续沿用原批素材。此目录不包含第三方原始参考图、开发日志或私人工作文件。
 
 在原本地项目完成绘稿／代码编辑、构建及实际浏览器验收后，于网站仓库运行：
 

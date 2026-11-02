@@ -89,11 +89,13 @@
   layer(c,cmd.key);c.restore();
  }
  function draw(c,look,includeBackground=true,includeCustom=true,mode='dressup'){
-  c.setTransform(1,0,0,1,0,0);c.imageSmoothingEnabled=false;c.clearRect(0,0,W,H);
+  c.save();try{
+  c.setTransform(1,0,0,1,0,0);c.globalAlpha=1;c.globalCompositeOperation='source-over';c.filter='none';c.imageSmoothingEnabled=false;c.clearRect(0,0,W,H);
   if(mode!=='dressup'){layer(c,mode==='original'?'master_original':'master_formal');return;}
   if(includeBackground)scenery(c,look.scene);
   for(const cmd of window.YURI_POSES.commands(look).commands)paintedPart(c,cmd);
   if(includeCustom&&custom&&customCompatible(look))c.drawImage(custom,0,0);
+  }finally{c.restore();}
  }
  function setPreview(mode){previewMode=mode;render();persist();}
  function render(){
@@ -183,7 +185,8 @@
  }
  function guide(){
   const out=document.createElement('canvas');out.width=W;out.height=H;const c=out.getContext('2d');c.imageSmoothingEnabled=false;
-  c.globalAlpha=.4;draw(c,state,false,false);c.globalAlpha=1;
+  const sprite=document.createElement('canvas');sprite.width=W;sprite.height=H;draw(sprite.getContext('2d'),state,false,false);
+  c.globalAlpha=.4;c.drawImage(sprite,0,0);c.globalAlpha=1;
   const current=window.YURI_POSES.resolve(state),anchors={...native.poseSystem.poses[current.upper].anchors,...native.poseSystem.poses[current.lower].anchors};
   c.fillStyle='#a66a7b';for(const [name,[x,y]] of Object.entries(anchors)){c.fillRect(x-3,y-3,6,6);}
   saveCanvas(out,'yuri_draw_guide_1024x1536.png');
@@ -204,7 +207,7 @@
   E.clear.addEventListener('click',()=>{custom=null;customPose=null;customLabel='';E.file.value='';E.filename.textContent='';E.clear.disabled=true;render();notice('已移除自定义图层');});
   window.addEventListener('keydown',e=>{if(['INPUT','TEXTAREA'].includes(document.activeElement?.tagName))return;const n=Number(e.key);if(n>=1&&n<=9)tab(Object.keys(categories)[n-1]);if(e.key.toLowerCase()==='r'&&!e.ctrlKey&&!e.metaKey)by('randomBtn').click();});
   render();refresh();updateSaved();
-  if(new URLSearchParams(location.search).get('qa')==='1')window.YURI_QA={version:'8.0-painted-poses',draw,scenery,getState:()=>({...state}),presets:P.map((p,suit)=>({...p.look,suit,name:p.name})),categories,resolvePose:window.YURI_POSES.resolve,commands:window.YURI_POSES.commands,
+  if(new URLSearchParams(location.search).get('qa')==='1')window.YURI_QA={version:'8.1-region-ownership',draw,scenery,getState:()=>({...state}),presets:P.map((p,suit)=>({...p.look,suit,name:p.name})),categories,resolvePose:window.YURI_POSES.resolve,commands:window.YURI_POSES.commands,
     assets:()=>Object.keys(pics),setState:(look,refreshMenu=true)=>{state=clean(look);previewMode='dressup';render();if(refreshMenu)refresh();},getMode:()=>previewMode,setPreview,
     snapshot:()=>E.stage.toDataURL('image/png')};
   document.documentElement.dataset.yuriReady='true';

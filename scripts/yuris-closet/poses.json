@@ -1,5 +1,5 @@
 {
-  "version": "8.0",
+  "version": "8.1",
   "canvas": [
     1024,
     1536
@@ -452,7 +452,7 @@
         "legs",
         "feet"
       ],
-      "lower": "lower_shoes_0",
+      "lower": "lower_legs_0",
       "footwear": 0
     },
     "shoe-1": {
@@ -528,7 +528,7 @@
         "legs",
         "feet"
       ],
-      "lower": "lower_shoes_1",
+      "lower": "lower_legs_1",
       "footwear": 1
     },
     "shoe-2": {
@@ -604,7 +604,7 @@
         "legs",
         "feet"
       ],
-      "lower": "lower_shoes_2",
+      "lower": "lower_legs_2",
       "footwear": 2
     },
     "shoe-3": {
@@ -680,7 +680,7 @@
         "legs",
         "feet"
       ],
-      "lower": "lower_shoes_3",
+      "lower": "lower_legs_3",
       "footwear": 3
     },
     "shoe-4": {
@@ -756,7 +756,7 @@
         "legs",
         "feet"
       ],
-      "lower": "lower_shoes_4",
+      "lower": "lower_legs_4",
       "footwear": 4
     },
     "shoe-5": {
@@ -832,7 +832,7 @@
         "legs",
         "feet"
       ],
-      "lower": "lower_shoes_5",
+      "lower": "lower_legs_5",
       "footwear": 5
     },
     "shoe-6": {
@@ -908,7 +908,7 @@
         "legs",
         "feet"
       ],
-      "lower": "lower_shoes_6",
+      "lower": "lower_legs_6",
       "footwear": 6
     },
     "shoe-7": {
@@ -984,7 +984,7 @@
         "legs",
         "feet"
       ],
-      "lower": "lower_shoes_7",
+      "lower": "lower_legs_7",
       "footwear": 7
     },
     "shoe-8": {
@@ -1060,7 +1060,7 @@
         "legs",
         "feet"
       ],
-      "lower": "lower_shoes_8",
+      "lower": "lower_legs_8",
       "footwear": 8
     },
     "boots-outturn": {
@@ -2629,110 +2629,119 @@
       "0": {
         "id": "shoes-0",
         "type": "posed-lower",
-        "layer": "lower_shoes_0",
+        "layer": "lower_legs_0",
         "poseId": "shoe-0",
         "covers": [
           "legs",
           "feet"
         ],
         "preferredPose": "shoe-0",
-        "fallback": "same-shoes-relaxed"
+        "fallback": "same-shoes-relaxed",
+        "footwearLayer": "shoes_0"
       },
       "1": {
         "id": "shoes-1",
         "type": "posed-lower",
-        "layer": "lower_shoes_1",
+        "layer": "lower_legs_1",
         "poseId": "shoe-1",
         "covers": [
           "legs",
           "feet"
         ],
         "preferredPose": "shoe-1",
-        "fallback": "same-shoes-relaxed"
+        "fallback": "same-shoes-relaxed",
+        "footwearLayer": "shoes_1"
       },
       "2": {
         "id": "shoes-2",
         "type": "posed-lower",
-        "layer": "lower_shoes_2",
+        "layer": "lower_legs_2",
         "poseId": "shoe-2",
         "covers": [
           "legs",
           "feet"
         ],
         "preferredPose": "shoe-2",
-        "fallback": "same-shoes-relaxed"
+        "fallback": "same-shoes-relaxed",
+        "footwearLayer": "shoes_2"
       },
       "3": {
         "id": "shoes-3",
         "type": "posed-lower",
-        "layer": "lower_shoes_3",
+        "layer": "lower_legs_3",
         "poseId": "shoe-3",
         "covers": [
           "legs",
           "feet"
         ],
         "preferredPose": "shoe-3",
-        "fallback": "same-shoes-relaxed"
+        "fallback": "same-shoes-relaxed",
+        "footwearLayer": "shoes_3"
       },
       "4": {
         "id": "shoes-4",
         "type": "posed-lower",
-        "layer": "lower_shoes_4",
+        "layer": "lower_legs_4",
         "poseId": "shoe-4",
         "covers": [
           "legs",
           "feet"
         ],
         "preferredPose": "shoe-4",
-        "fallback": "same-shoes-relaxed"
+        "fallback": "same-shoes-relaxed",
+        "footwearLayer": "shoes_4"
       },
       "5": {
         "id": "shoes-5",
         "type": "posed-lower",
-        "layer": "lower_shoes_5",
+        "layer": "lower_legs_5",
         "poseId": "shoe-5",
         "covers": [
           "legs",
           "feet"
         ],
         "preferredPose": "shoe-5",
-        "fallback": "same-shoes-relaxed"
+        "fallback": "same-shoes-relaxed",
+        "footwearLayer": "shoes_5"
       },
       "6": {
         "id": "shoes-6",
         "type": "posed-lower",
-        "layer": "lower_shoes_6",
+        "layer": "lower_legs_6",
         "poseId": "shoe-6",
         "covers": [
           "legs",
           "feet"
         ],
         "preferredPose": "shoe-6",
-        "fallback": "same-shoes-relaxed"
+        "fallback": "same-shoes-relaxed",
+        "footwearLayer": "shoes_6"
       },
       "7": {
         "id": "shoes-7",
         "type": "posed-lower",
-        "layer": "lower_shoes_7",
+        "layer": "lower_legs_7",
         "poseId": "shoe-7",
         "covers": [
           "legs",
           "feet"
         ],
         "preferredPose": "boots-outturn",
-        "fallback": "same-shoes-relaxed"
+        "fallback": "same-shoes-relaxed",
+        "footwearLayer": "shoes_7"
       },
       "8": {
         "id": "shoes-8",
         "type": "posed-lower",
-        "layer": "lower_shoes_8",
+        "layer": "lower_legs_8",
         "poseId": "shoe-8",
         "covers": [
           "legs",
           "feet"
         ],
         "preferredPose": "shoe-8",
-        "fallback": "same-shoes-relaxed"
+        "fallback": "same-shoes-relaxed",
+        "footwearLayer": "shoes_8"
       }
     }
   },
@@ -2787,5 +2796,165 @@
     "poseFallback": "Same garment/shoe ordinary painting; never delete options.",
     "ownership": "Each body region has exactly one painted owner; full suit replaces all body regions.",
     "sourceMasks": "Anatomical contour selections only, no silhouette-scaled garments or global body row truncation."
+  },
+  "handLayers": {
+    "upper_top_0": {
+      "left": "upper_top_0_hand_left",
+      "right": "upper_top_0_hand_right"
+    },
+    "upper_top_1": {
+      "left": "upper_top_1_hand_left",
+      "right": "upper_top_1_hand_right"
+    },
+    "upper_top_2": {
+      "left": "upper_top_2_hand_left",
+      "right": "upper_top_2_hand_right"
+    },
+    "upper_top_3": {
+      "left": "upper_top_3_hand_left",
+      "right": "upper_top_3_hand_right"
+    },
+    "upper_top_4": {
+      "left": "upper_top_4_hand_left",
+      "right": "upper_top_4_hand_right"
+    },
+    "upper_top_5": {
+      "left": "upper_top_5_hand_left",
+      "right": "upper_top_5_hand_right"
+    },
+    "upper_top_6": {
+      "left": "upper_top_6_hand_left",
+      "right": "upper_top_6_hand_right"
+    },
+    "upper_top_7": {
+      "left": "upper_top_7_hand_left",
+      "right": "upper_top_7_hand_right"
+    },
+    "upper_top_8": {
+      "left": "upper_top_8_hand_left",
+      "right": "upper_top_8_hand_right"
+    },
+    "upper_top_9": {
+      "left": "upper_top_9_hand_left",
+      "right": "upper_top_9_hand_right"
+    },
+    "upper_top_10": {
+      "left": "upper_top_10_hand_left",
+      "right": "upper_top_10_hand_right"
+    },
+    "upper_top_11": {
+      "left": "upper_top_11_hand_left",
+      "right": "upper_top_11_hand_right"
+    },
+    "upper_top_12": {
+      "left": "upper_top_12_hand_left",
+      "right": "upper_top_12_hand_right"
+    },
+    "upper_top_13": {
+      "left": "upper_top_13_hand_left",
+      "right": "upper_top_13_hand_right"
+    },
+    "upper_top_14": {
+      "left": "upper_top_14_hand_left",
+      "right": "upper_top_14_hand_right"
+    },
+    "upper_top_15": {
+      "left": "upper_top_15_hand_left",
+      "right": "upper_top_15_hand_right"
+    },
+    "upper_top_16": {
+      "left": "upper_top_16_hand_left",
+      "right": "upper_top_16_hand_right"
+    },
+    "upper_top_17": {
+      "left": "upper_top_17_hand_left",
+      "right": "upper_top_17_hand_right"
+    },
+    "pose_upper_uniform": {
+      "left": "pose_upper_uniform_hand_left",
+      "right": "pose_upper_uniform_hand_right"
+    },
+    "pose_upper_coat": {
+      "left": "pose_upper_coat_hand_left",
+      "right": "pose_upper_coat_hand_right"
+    },
+    "pose_suit_uniform": {
+      "left": "pose_suit_uniform_hand_left",
+      "right": "pose_suit_uniform_hand_right"
+    },
+    "pose_suit_apron": {
+      "left": "pose_suit_apron_hand_left",
+      "right": "pose_suit_apron_hand_right"
+    },
+    "pose_suit_school": {
+      "left": "pose_suit_school_hand_left",
+      "right": "pose_suit_school_hand_right"
+    },
+    "pose_suit_garden": {
+      "left": "pose_suit_garden_hand_left",
+      "right": "pose_suit_garden_hand_right"
+    }
+  },
+  "hairOwnership": {
+    "rear": "hair_back_{hair}",
+    "front": {
+      "0": "hair_front_0",
+      "4": "hair_front_4",
+      "5": "hair_front_5",
+      "9": "hair_front_9"
+    },
+    "permanentNape": false
+  },
+  "wearRules": {
+    "longBottoms": [
+      1,
+      8,
+      9,
+      12
+    ],
+    "bootShoes": [
+      0,
+      1,
+      2,
+      7,
+      8
+    ],
+    "bottoms": {
+      "1": {
+        "boots": "pantsOverBoots",
+        "low": "pantsOverBoots",
+        "shoes": {
+          "7": "tuckedIntoBoots"
+        }
+      },
+      "8": {
+        "boots": "pantsOverBoots",
+        "low": "pantsOverBoots",
+        "shoes": {
+          "7": "tuckedIntoBoots"
+        }
+      },
+      "9": {
+        "boots": "bootsOverLegs",
+        "low": "exposedAnkle"
+      },
+      "12": {
+        "boots": "pantsOverBoots",
+        "low": "pantsOverBoots"
+      }
+    },
+    "tallAdaptations": {
+      "1": "pants_1_tall",
+      "8": "pants_8_tall"
+    },
+    "explanation": "Pants own covered legs; barefoot lower sprites are not drawn under long trousers. Shoe shaft position is resolved per garment, never a universal z-index."
+  },
+  "frontLayers": {
+    "pose_upper_pocket": [
+      "pose_upper_pocket_sleeves_front"
+    ],
+    "pose_upper_coat": [
+      "pose_upper_coat_sleeves_front"
+    ]
   }
 }

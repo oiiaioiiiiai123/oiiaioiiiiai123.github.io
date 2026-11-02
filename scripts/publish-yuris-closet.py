@@ -25,7 +25,7 @@ if args.source:
     if args.check:parser.error('Sync with --source, then verify with --check separately')
     game=args.source.resolve()
     build=json.loads((game/'art/production/build.json').read_text())
-    audit=json.loads((game/'qa/posed/current-build.json').read_text())
+    audit=json.loads((game/'qa/repair/current-build.json').read_text())
     if build!=audit:raise ValueError('Run the final browser audit for this build before publishing')
     for rel,digest in build['files'].items():
         file=game/rel
@@ -41,20 +41,27 @@ if args.source:
         assert sha(source)==e['sha256'],'Stale PNG: '+key
         target=LAYERS/(key+'.png');copy(source,target)
         spec['layers'][key]={'file':target.relative_to(ROOT).as_posix(),'origin':e['origin'],'size':e['size'],'sha256':e['sha256']}
+    # This directory is the game's generated public runtime, not the editable source archive.
+    # Remove only obsolete game PNGs, retained in Git history and the local full project.
+    expected={key+'.png' for key in spec['layers']}
+    for old in LAYERS.glob('*.png'):
+        if old.is_symlink():raise ValueError('Unexpected symlink: '+str(old))
+        if old.name not in expected:old.unlink()
     (SRC/'runtime.json').write_text(json.dumps(spec,ensure_ascii=False,indent=2)+'\n')
     (SRC/'poses.json').write_text(json.dumps(poses,ensure_ascii=False,indent=2)+'\n')
     # Cover comes from the audited game canvas; only the display size is reduced.
     from PIL import Image
-    capture=Image.open(game/'qa/posed/preset-0.png').convert('RGBA')
+    capture=Image.open(game/'qa/repair/preset-0.png').convert('RGBA')
     assert capture.size==(1024,1536)
     cover=Image.new('RGBA',(800,500),'#f4efe8')
     cover.alpha_composite(capture.resize((256,384),Image.Resampling.NEAREST),(272,58))
     cover.convert('RGB').save(ROOT/'assets/images/projects/yuris-closet/cover.png')
 
 spec=json.loads((SRC/'runtime.json').read_text())
-assert spec['canvas']==[1024,1536] and spec['version']=='8.0-painted-poses'
+assert spec['canvas']==[1024,1536] and spec['version']=='8.1-region-ownership'
 assert spec['poseSystem']==json.loads((SRC/'poses.json').read_text())
-assert 'body_base' not in spec['layers']
+assert not {'body_base','hair_nape','hand_left','hand_right'} & set(spec['layers'])
+assert {p.name for p in LAYERS.glob('*.png')}=={key+'.png' for key in spec['layers']},'Unlisted game PNGs in public output'
 assets={}
 for key,e in spec['layers'].items():
     p=ROOT/e['file'];assert p.resolve().is_relative_to(LAYERS) and sha(p)==e['sha256']
@@ -70,7 +77,7 @@ for name in SCRIPTS:
 assert '<script src=' not in html and 'file://' not in html and '/Users/' not in html
 for forbidden in ['preview-foot','posed-qa.js','Capture source baseline','眼睛、绷带和熟悉的刘海，依然是她自己。']:assert forbidden not in html
 inputs=[SRC/'index.html',SRC/'runtime.json',SRC/'poses.json',CSS,*[JS/n for n in SCRIPTS if n!='assets.js'],*[ROOT/e['file'] for e in spec['layers'].values()]]
-manifest={'name':'yuri的衣橱','version':spec['version'],'canvas':spec['canvas'],'pngs':len(assets),'art':'painted upper/lower/full poses; original face and hair preserved','files':{p.relative_to(ROOT).as_posix():sha(p) for p in inputs},'page_sha256':hashlib.sha256(html.encode()).hexdigest()}
+manifest={'name':'yuri的衣橱','version':spec['version'],'canvas':spec['canvas'],'pngs':len(assets),'art':'approved original face/fringe; per-style rear hair; disjoint cuffs/hands; per-garment footwear ownership','files':{p.relative_to(ROOT).as_posix():sha(p) for p in inputs},'page_sha256':hashlib.sha256(html.encode()).hexdigest()}
 if args.check:
     assert (JS/'assets.js').read_text()==asset_js,'Stale generated asset bundle'
     assert (DEST/'index.html').read_text()==html,'Repackage the page'
