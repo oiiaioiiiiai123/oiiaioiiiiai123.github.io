@@ -9,11 +9,11 @@
   "art": "approved original face/fringe; per-style rear hair; disjoint cuffs/hands; per-garment footwear ownership",
   "files": {
     "scripts/yuris-closet/index.html": "70beff196ab9c207667397b2cd853434e6319f51cd3e1b6773d0b08c8c182f6c",
-    "scripts/yuris-closet/runtime.json": "7077410ad30cbbf0ae7992b0837116085ecfceb13161cddb7c968597b9da826e",
-    "scripts/yuris-closet/poses.json": "1f2d0b7bd0c28ffdef56a03964453a630f7549c597422a8df4895feed57c7db4",
+    "scripts/yuris-closet/runtime.json": "35e4a8077bc8e6566ecf0c7f209cd4717509dd00dd1c0678639b4afabef8de0d",
+    "scripts/yuris-closet/poses.json": "cb87a7d442811fcfdb91495128f52ff469aaf2cbac1afa93ff5998b9da3d1ebe",
     "assets/css/yuris-closet.css": "a3f0a9d962d13f4fc7f455987ffafebed52a2fa1a85f83aa956f3c99f640fddb",
     "assets/js/yuris-closet/rig.js": "db329a655ce06d3790089d213f81de8781b628f161cc864b820b5ecbb42e2538",
-    "assets/js/yuris-closet/pose-engine.js": "41f85ccedc606ed1987eba60a6ef618be61d5e5568d51b7faa0ac7867981b8c5",
+    "assets/js/yuris-closet/pose-engine.js": "aad23210ec1fec5af274e68ee1707cb99b365bb9d1eec3649ed4b00e92d5c706",
     "assets/js/yuris-closet/app.js": "ed224a7f55f0ca22c45754019383b6a31c4d89ce096f3b6133205f98cb280554",
     "assets/images/projects/yuris-closet/layers/accessory_back_10.png": "7b2e19f7291a4e9b37dfb9cb1c325cd777ed6e9e25dc803f00b276811a84de97",
     "assets/images/projects/yuris-closet/layers/accessory_front_1.png": "03d2fd556a57c374f966224ac58116b5c499204e22f3a4fc3f784f20e34ad2cd",
@@ -31,7 +31,7 @@
     "assets/images/projects/yuris-closet/layers/accessory_wrist_11.png": "3f0409af837e47b44f04c618df32021e12e07b4a3b63cd3df290e434ca866722",
     "assets/images/projects/yuris-closet/layers/accessory_wrist_8.png": "0ab0d2a73f5140144ac815da0490487191330987b2b5d6726f4f5c96d917005b",
     "assets/images/projects/yuris-closet/layers/bottom_0.png": "4079d7cf191f6a61d9768a6f3197c5e24c5999831134b4706809d3c45d9cd014",
-    "assets/images/projects/yuris-closet/layers/bottom_1.png": "69eb24d614839273c2ae4a7a745b9b7410940409d79d1cd77d980610043b0e1c",
+    "assets/images/projects/yuris-closet/layers/bottom_1.png": "a7d88b1c14329ed21c2837a5f68ab720be8b62585c5dfb47535f879ebc568978",
     "assets/images/projects/yuris-closet/layers/bottom_10.png": "399a6e7676c6b6153b5e7df9deff7e3c6b1491de25a741a5b9ced7c25708a4e3",
     "assets/images/projects/yuris-closet/layers/bottom_11.png": "74fad9beaa52a4692d94e13650406b58b12a29bb9d421def1a3d3f93cb2ef682",
     "assets/images/projects/yuris-closet/layers/bottom_12.png": "1b77b0a5b87c1227a5a37f2c6e7af24603e80bd8e8e2b6386ead7a46afc892b2",
@@ -43,7 +43,7 @@
     "assets/images/projects/yuris-closet/layers/bottom_5.png": "e51e52a8ca374073f350d8d25dd50a66686ec30ee32438501d15cd69df3bac1c",
     "assets/images/projects/yuris-closet/layers/bottom_6.png": "7e24d6d03fa1161e2266f1f19eafa70663e86a92a272e70938a1d5ec1170a4a8",
     "assets/images/projects/yuris-closet/layers/bottom_7.png": "4cff7a8fb01a1813a81d583865a3f0e5a428cbb0961f5ffb00b7695e63cd3465",
-    "assets/images/projects/yuris-closet/layers/bottom_8.png": "19c148f2cafc5115689afd9305338bb01c7055a178687f95362052c63d9ef2f1",
+    "assets/images/projects/yuris-closet/layers/bottom_8.png": "a6fb66d886ded1dcec8488aa956f656ad31546e915823ace5de79d7d162147fb",
     "assets/images/projects/yuris-closet/layers/bottom_9.png": "3cee880e312345e1198ea71a73cfb0ab93f5cedc3cae27a316483fc9347e0f14",
     "assets/images/projects/yuris-closet/layers/foot_base_0.png": "7d87cffffa28a85de733eb61205522547d03aa634018a8c54c5dfa82c08f3643",
     "assets/images/projects/yuris-closet/layers/foot_base_1.png": "fa501c659b8814fad8e0a5bc12a0c196b9afccf018bdd1e2520b3484655334d8",
@@ -181,5 +181,5 @@
     "assets/images/projects/yuris-closet/layers/upper_top_9_hand_left.png": "e1f7d4dfbfccfd90d84193947afa0a2e097449be6cca04f4ae30c7f316dee135",
     "assets/images/projects/yuris-closet/layers/upper_top_9_hand_right.png": "25adc2ff5e42e4ea1fb01888377c9d7e1ba21981b8c68b9fc2edffe5e0d0b222"
   },
-  "page_sha256": "5f7ad8da1ddc98f7ea94685ad3facaec8f5de7c3fa780d62f77d7873d05c2ad0"
+  "page_sha256": "799bbbce73007467054cdb89749973a0c4eb1a09f62c07c993d7f3b742a403f6"
 }

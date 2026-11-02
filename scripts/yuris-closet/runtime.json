@@ -3015,7 +3015,189 @@
         "1": "pants_1_tall",
         "8": "pants_8_tall"
       },
-      "explanation": "Pants own covered legs; barefoot lower sprites are not drawn under long trousers. Shoe shaft position is resolved per garment, never a universal z-index."
+      "explanation": "Pants own covered legs; barefoot lower sprites are not drawn under long trousers. Shoe shaft position is resolved per garment, never a universal z-index.",
+      "footRegions": {
+        "0": [
+          [
+            [
+              320,
+              1225
+            ],
+            [
+              800,
+              1225
+            ],
+            [
+              800,
+              1536
+            ],
+            [
+              320,
+              1536
+            ]
+          ]
+        ],
+        "1": [
+          [
+            [
+              320,
+              1290
+            ],
+            [
+              800,
+              1290
+            ],
+            [
+              800,
+              1536
+            ],
+            [
+              320,
+              1536
+            ]
+          ]
+        ],
+        "2": [
+          [
+            [
+              320,
+              1290
+            ],
+            [
+              800,
+              1290
+            ],
+            [
+              800,
+              1536
+            ],
+            [
+              320,
+              1536
+            ]
+          ]
+        ],
+        "3": [
+          [
+            [
+              320,
+              1340
+            ],
+            [
+              800,
+              1340
+            ],
+            [
+              800,
+              1536
+            ],
+            [
+              320,
+              1536
+            ]
+          ]
+        ],
+        "4": [
+          [
+            [
+              320,
+              1340
+            ],
+            [
+              800,
+              1340
+            ],
+            [
+              800,
+              1536
+            ],
+            [
+              320,
+              1536
+            ]
+          ]
+        ],
+        "5": [
+          [
+            [
+              320,
+              1330
+            ],
+            [
+              800,
+              1330
+            ],
+            [
+              800,
+              1536
+            ],
+            [
+              320,
+              1536
+            ]
+          ]
+        ],
+        "6": [
+          [
+            [
+              320,
+              1330
+            ],
+            [
+              800,
+              1330
+            ],
+            [
+              800,
+              1536
+            ],
+            [
+              320,
+              1536
+            ]
+          ]
+        ],
+        "7": [
+          [
+            [
+              320,
+              1100
+            ],
+            [
+              800,
+              1100
+            ],
+            [
+              800,
+              1536
+            ],
+            [
+              320,
+              1536
+            ]
+          ]
+        ],
+        "8": [
+          [
+            [
+              320,
+              1290
+            ],
+            [
+              800,
+              1290
+            ],
+            [
+              800,
+              1536
+            ],
+            [
+              320,
+              1536
+            ]
+          ]
+        ]
+      }
     },
     "frontLayers": {
       "pose_upper_pocket": [
@@ -3226,10 +3408,10 @@
         795
       ],
       "size": [
-        366,
+        363,
         647
       ],
-      "sha256": "69eb24d614839273c2ae4a7a745b9b7410940409d79d1cd77d980610043b0e1c"
+      "sha256": "a7d88b1c14329ed21c2837a5f68ab720be8b62585c5dfb47535f879ebc568978"
     },
     "bottom_10": {
       "file": "assets/images/projects/yuris-closet/layers/bottom_10.png",
@@ -3373,7 +3555,7 @@
         367,
         647
       ],
-      "sha256": "19c148f2cafc5115689afd9305338bb01c7055a178687f95362052c63d9ef2f1"
+      "sha256": "a6fb66d886ded1dcec8488aa956f656ad31546e915823ace5de79d7d162147fb"
     },
     "bottom_9": {
       "file": "assets/images/projects/yuris-closet/layers/bottom_9.png",

@@ -48,7 +48,9 @@
    if(p.ownsBottom)add(p.lowerLayer);
    else if(p.lower==='boots-outturn'){add(p.lowerLayer);add('bottom_'+look.bottom);}
    else if(p.longBottom){
-    add('foot_base_'+look.shoes);
+    // Socks own the exposed foot when selected; never paint skin through a sock.
+    if(look.socks)add('socks_'+look.socks,{only:config.wearRules.footRegions[String(look.shoes)][0]});
+    else add('foot_base_'+look.shoes);
     const bottom=p.lowerAdaptation||'bottom_'+look.bottom;
     if(p.wearRelation==='pantsOverBoots'){add('shoes_'+look.shoes);add(bottom);}
     else{add(bottom);add('shoes_'+look.shoes);}
