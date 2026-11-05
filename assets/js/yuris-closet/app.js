@@ -83,10 +83,12 @@
  function layer(c,key){const item=native.layers[key],im=pics[key];if(item&&im)c.drawImage(im,...item.origin);}
  function contour(c,points){c.moveTo(...points[0]);for(const xy of points.slice(1))c.lineTo(...xy);c.closePath();}
  function paintedPart(c,cmd){
-  c.save();
+  c.save();try{
   if(cmd.only){c.beginPath();contour(c,cmd.only);c.clip();}
+  if(cmd.onlyRegions?.length){c.beginPath();for(const points of cmd.onlyRegions)contour(c,points);c.clip();}
   if(cmd.omit?.length){c.beginPath();c.rect(0,0,W,H);for(const points of cmd.omit)contour(c,points);c.clip('evenodd');}
-  layer(c,cmd.key);c.restore();
+  layer(c,cmd.key);
+  }finally{c.restore();}
  }
  function draw(c,look,includeBackground=true,includeCustom=true,mode='dressup'){
   c.save();try{
@@ -207,7 +209,7 @@
   E.clear.addEventListener('click',()=>{custom=null;customPose=null;customLabel='';E.file.value='';E.filename.textContent='';E.clear.disabled=true;render();notice('已移除自定义图层');});
   window.addEventListener('keydown',e=>{if(['INPUT','TEXTAREA'].includes(document.activeElement?.tagName))return;const n=Number(e.key);if(n>=1&&n<=9)tab(Object.keys(categories)[n-1]);if(e.key.toLowerCase()==='r'&&!e.ctrlKey&&!e.metaKey)by('randomBtn').click();});
   render();refresh();updateSaved();
-  if(new URLSearchParams(location.search).get('qa')==='1')window.YURI_QA={version:'8.1-region-ownership',draw,scenery,getState:()=>({...state}),presets:P.map((p,suit)=>({...p.look,suit,name:p.name})),categories,resolvePose:window.YURI_POSES.resolve,commands:window.YURI_POSES.commands,
+  if(new URLSearchParams(location.search).get('qa')==='1')window.YURI_QA={version:window.YURI_NATIVE.version,draw,drawLayer:paintedPart,scenery,getState:()=>({...state}),presets:P.map((p,suit)=>({...p.look,suit,name:p.name})),categories,resolvePose:window.YURI_POSES.resolve,commands:window.YURI_POSES.commands,
     assets:()=>Object.keys(pics),setState:(look,refreshMenu=true)=>{state=clean(look);previewMode='dressup';render();if(refreshMenu)refresh();},getMode:()=>previewMode,setPreview,
     snapshot:()=>E.stage.toDataURL('image/png')};
   document.documentElement.dataset.yuriReady='true';

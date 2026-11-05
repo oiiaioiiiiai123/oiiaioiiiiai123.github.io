@@ -7,7 +7,7 @@ order: 1
 description: 给尤莉搭配发型、衣服与配饰的像素换装小游戏。
 cover: /assets/images/projects/yuris-closet/cover.png
 cover_alt: 绘稿姿势版游戏真实画布中的尤莉，穿黑红长制服并自然持剑
-cover_caption: 来自 08.1 游戏真实画布，保留原批像素人物，修复后发、手部与鞋裤遮挡。
+cover_caption: 来自 08.2.1 游戏真实画布，保留认可的像素人物，经过全单品、套装与成对搭配复核。
 github_url: https://github.com/oiiaioiiiiai123/oiiaioiiiiai123.github.io/tree/main/scripts/yuris-closet
 live_url: https://oiiaioiiiiai123.github.io/yuris-closet/
 live_label: 开始换装

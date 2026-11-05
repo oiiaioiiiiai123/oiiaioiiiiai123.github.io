@@ -1,5 +1,5 @@
 {
-  "version": "8.1-region-ownership",
+  "version": "8.2.1-final-regression",
   "canvas": [
     1024,
     1536
@@ -67,7 +67,7 @@
     ]
   },
   "poseSystem": {
-    "version": "8.1",
+    "version": "8.2.1",
     "canvas": [
       1024,
       1536
@@ -1609,45 +1609,11 @@
             "leftHand",
             "rightHand"
           ],
-          "handMasks": {
-            "left": [
-              [
-                278,
-                943
-              ],
-              [
-                375,
-                943
-              ],
-              [
-                392,
-                1060
-              ],
-              [
-                270,
-                1060
-              ]
-            ],
-            "right": [
-              [
-                678,
-                944
-              ],
-              [
-                756,
-                944
-              ],
-              [
-                790,
-                1060
-              ],
-              [
-                666,
-                1060
-              ]
-            ]
-          },
-          "fallback": "same-garment-relaxed"
+          "fallback": "same-garment-relaxed",
+          "handLayers": {
+            "left": "upper_top_0_hand_left",
+            "right": "upper_top_0_hand_right"
+          }
         },
         "1": {
           "id": "top-1",
@@ -1661,46 +1627,12 @@
             "leftHand",
             "rightHand"
           ],
-          "handMasks": {
-            "left": [
-              [
-                278,
-                943
-              ],
-              [
-                375,
-                943
-              ],
-              [
-                392,
-                1060
-              ],
-              [
-                270,
-                1060
-              ]
-            ],
-            "right": [
-              [
-                678,
-                944
-              ],
-              [
-                756,
-                944
-              ],
-              [
-                790,
-                1060
-              ],
-              [
-                666,
-                1060
-              ]
-            ]
-          },
           "fallback": "same-garment-relaxed",
-          "preferredPose": "uniform-sword"
+          "preferredPose": "uniform-sword",
+          "handLayers": {
+            "left": "upper_top_1_hand_left",
+            "right": "upper_top_1_hand_right"
+          }
         },
         "2": {
           "id": "top-2",
@@ -1714,45 +1646,11 @@
             "leftHand",
             "rightHand"
           ],
-          "handMasks": {
-            "left": [
-              [
-                278,
-                943
-              ],
-              [
-                375,
-                943
-              ],
-              [
-                392,
-                1060
-              ],
-              [
-                270,
-                1060
-              ]
-            ],
-            "right": [
-              [
-                678,
-                944
-              ],
-              [
-                756,
-                944
-              ],
-              [
-                790,
-                1060
-              ],
-              [
-                666,
-                1060
-              ]
-            ]
-          },
-          "fallback": "same-garment-relaxed"
+          "fallback": "same-garment-relaxed",
+          "handLayers": {
+            "left": "upper_top_2_hand_left",
+            "right": "upper_top_2_hand_right"
+          }
         },
         "3": {
           "id": "top-3",
@@ -1766,45 +1664,11 @@
             "leftHand",
             "rightHand"
           ],
-          "handMasks": {
-            "left": [
-              [
-                278,
-                943
-              ],
-              [
-                375,
-                943
-              ],
-              [
-                392,
-                1060
-              ],
-              [
-                270,
-                1060
-              ]
-            ],
-            "right": [
-              [
-                678,
-                944
-              ],
-              [
-                756,
-                944
-              ],
-              [
-                790,
-                1060
-              ],
-              [
-                666,
-                1060
-              ]
-            ]
-          },
-          "fallback": "same-garment-relaxed"
+          "fallback": "same-garment-relaxed",
+          "handLayers": {
+            "left": "upper_top_3_hand_left",
+            "right": "upper_top_3_hand_right"
+          }
         },
         "4": {
           "id": "top-4",
@@ -1818,45 +1682,11 @@
             "leftHand",
             "rightHand"
           ],
-          "handMasks": {
-            "left": [
-              [
-                278,
-                943
-              ],
-              [
-                375,
-                943
-              ],
-              [
-                392,
-                1060
-              ],
-              [
-                270,
-                1060
-              ]
-            ],
-            "right": [
-              [
-                678,
-                944
-              ],
-              [
-                756,
-                944
-              ],
-              [
-                790,
-                1060
-              ],
-              [
-                666,
-                1060
-              ]
-            ]
-          },
-          "fallback": "same-garment-relaxed"
+          "fallback": "same-garment-relaxed",
+          "handLayers": {
+            "left": "upper_top_4_hand_left",
+            "right": "upper_top_4_hand_right"
+          }
         },
         "5": {
           "id": "top-5",
@@ -1870,45 +1700,11 @@
             "leftHand",
             "rightHand"
           ],
-          "handMasks": {
-            "left": [
-              [
-                278,
-                943
-              ],
-              [
-                375,
-                943
-              ],
-              [
-                392,
-                1060
-              ],
-              [
-                270,
-                1060
-              ]
-            ],
-            "right": [
-              [
-                678,
-                944
-              ],
-              [
-                756,
-                944
-              ],
-              [
-                790,
-                1060
-              ],
-              [
-                666,
-                1060
-              ]
-            ]
-          },
-          "fallback": "same-garment-relaxed"
+          "fallback": "same-garment-relaxed",
+          "handLayers": {
+            "left": "upper_top_5_hand_left",
+            "right": "upper_top_5_hand_right"
+          }
         },
         "6": {
           "id": "top-6",
@@ -1922,45 +1718,11 @@
             "leftHand",
             "rightHand"
           ],
-          "handMasks": {
-            "left": [
-              [
-                278,
-                943
-              ],
-              [
-                375,
-                943
-              ],
-              [
-                392,
-                1060
-              ],
-              [
-                270,
-                1060
-              ]
-            ],
-            "right": [
-              [
-                678,
-                944
-              ],
-              [
-                756,
-                944
-              ],
-              [
-                790,
-                1060
-              ],
-              [
-                666,
-                1060
-              ]
-            ]
-          },
-          "fallback": "same-garment-relaxed"
+          "fallback": "same-garment-relaxed",
+          "handLayers": {
+            "left": "upper_top_6_hand_left",
+            "right": "upper_top_6_hand_right"
+          }
         },
         "7": {
           "id": "top-7",
@@ -1974,45 +1736,11 @@
             "leftHand",
             "rightHand"
           ],
-          "handMasks": {
-            "left": [
-              [
-                278,
-                943
-              ],
-              [
-                375,
-                943
-              ],
-              [
-                392,
-                1060
-              ],
-              [
-                270,
-                1060
-              ]
-            ],
-            "right": [
-              [
-                678,
-                944
-              ],
-              [
-                756,
-                944
-              ],
-              [
-                790,
-                1060
-              ],
-              [
-                666,
-                1060
-              ]
-            ]
-          },
-          "fallback": "same-garment-relaxed"
+          "fallback": "same-garment-relaxed",
+          "handLayers": {
+            "left": "upper_top_7_hand_left",
+            "right": "upper_top_7_hand_right"
+          }
         },
         "8": {
           "id": "top-8",
@@ -2026,45 +1754,11 @@
             "leftHand",
             "rightHand"
           ],
-          "handMasks": {
-            "left": [
-              [
-                278,
-                943
-              ],
-              [
-                375,
-                943
-              ],
-              [
-                392,
-                1060
-              ],
-              [
-                270,
-                1060
-              ]
-            ],
-            "right": [
-              [
-                678,
-                944
-              ],
-              [
-                756,
-                944
-              ],
-              [
-                790,
-                1060
-              ],
-              [
-                666,
-                1060
-              ]
-            ]
-          },
-          "fallback": "same-garment-relaxed"
+          "fallback": "same-garment-relaxed",
+          "handLayers": {
+            "left": "upper_top_8_hand_left",
+            "right": "upper_top_8_hand_right"
+          }
         },
         "9": {
           "id": "top-9",
@@ -2078,46 +1772,12 @@
             "leftHand",
             "rightHand"
           ],
-          "handMasks": {
-            "left": [
-              [
-                278,
-                943
-              ],
-              [
-                375,
-                943
-              ],
-              [
-                392,
-                1060
-              ],
-              [
-                270,
-                1060
-              ]
-            ],
-            "right": [
-              [
-                678,
-                944
-              ],
-              [
-                756,
-                944
-              ],
-              [
-                790,
-                1060
-              ],
-              [
-                666,
-                1060
-              ]
-            ]
-          },
           "fallback": "same-garment-relaxed",
-          "preferredPose": "hoodie-pocket"
+          "preferredPose": "hoodie-pocket",
+          "handLayers": {
+            "left": "upper_top_9_hand_left",
+            "right": "upper_top_9_hand_right"
+          }
         },
         "10": {
           "id": "top-10",
@@ -2131,45 +1791,11 @@
             "leftHand",
             "rightHand"
           ],
-          "handMasks": {
-            "left": [
-              [
-                278,
-                943
-              ],
-              [
-                375,
-                943
-              ],
-              [
-                392,
-                1060
-              ],
-              [
-                270,
-                1060
-              ]
-            ],
-            "right": [
-              [
-                678,
-                944
-              ],
-              [
-                756,
-                944
-              ],
-              [
-                790,
-                1060
-              ],
-              [
-                666,
-                1060
-              ]
-            ]
-          },
-          "fallback": "same-garment-relaxed"
+          "fallback": "same-garment-relaxed",
+          "handLayers": {
+            "left": "upper_top_10_hand_left",
+            "right": "upper_top_10_hand_right"
+          }
         },
         "11": {
           "id": "top-11",
@@ -2183,46 +1809,12 @@
             "leftHand",
             "rightHand"
           ],
-          "handMasks": {
-            "left": [
-              [
-                278,
-                943
-              ],
-              [
-                375,
-                943
-              ],
-              [
-                392,
-                1060
-              ],
-              [
-                270,
-                1060
-              ]
-            ],
-            "right": [
-              [
-                678,
-                944
-              ],
-              [
-                756,
-                944
-              ],
-              [
-                790,
-                1060
-              ],
-              [
-                666,
-                1060
-              ]
-            ]
-          },
           "fallback": "same-garment-relaxed",
-          "preferredPose": "coat-collar"
+          "preferredPose": "coat-collar",
+          "handLayers": {
+            "left": "upper_top_11_hand_left",
+            "right": "upper_top_11_hand_right"
+          }
         },
         "12": {
           "id": "top-12",
@@ -2236,45 +1828,11 @@
             "leftHand",
             "rightHand"
           ],
-          "handMasks": {
-            "left": [
-              [
-                278,
-                943
-              ],
-              [
-                375,
-                943
-              ],
-              [
-                392,
-                1060
-              ],
-              [
-                270,
-                1060
-              ]
-            ],
-            "right": [
-              [
-                678,
-                944
-              ],
-              [
-                756,
-                944
-              ],
-              [
-                790,
-                1060
-              ],
-              [
-                666,
-                1060
-              ]
-            ]
-          },
-          "fallback": "same-garment-relaxed"
+          "fallback": "same-garment-relaxed",
+          "handLayers": {
+            "left": "upper_top_12_hand_left",
+            "right": "upper_top_12_hand_right"
+          }
         },
         "13": {
           "id": "top-13",
@@ -2288,45 +1846,11 @@
             "leftHand",
             "rightHand"
           ],
-          "handMasks": {
-            "left": [
-              [
-                278,
-                943
-              ],
-              [
-                375,
-                943
-              ],
-              [
-                392,
-                1060
-              ],
-              [
-                270,
-                1060
-              ]
-            ],
-            "right": [
-              [
-                678,
-                944
-              ],
-              [
-                756,
-                944
-              ],
-              [
-                790,
-                1060
-              ],
-              [
-                666,
-                1060
-              ]
-            ]
-          },
-          "fallback": "same-garment-relaxed"
+          "fallback": "same-garment-relaxed",
+          "handLayers": {
+            "left": "upper_top_13_hand_left",
+            "right": "upper_top_13_hand_right"
+          }
         },
         "14": {
           "id": "top-14",
@@ -2340,45 +1864,11 @@
             "leftHand",
             "rightHand"
           ],
-          "handMasks": {
-            "left": [
-              [
-                278,
-                943
-              ],
-              [
-                375,
-                943
-              ],
-              [
-                392,
-                1060
-              ],
-              [
-                270,
-                1060
-              ]
-            ],
-            "right": [
-              [
-                678,
-                944
-              ],
-              [
-                756,
-                944
-              ],
-              [
-                790,
-                1060
-              ],
-              [
-                666,
-                1060
-              ]
-            ]
-          },
-          "fallback": "same-garment-relaxed"
+          "fallback": "same-garment-relaxed",
+          "handLayers": {
+            "left": "upper_top_14_hand_left",
+            "right": "upper_top_14_hand_right"
+          }
         },
         "15": {
           "id": "top-15",
@@ -2392,45 +1882,11 @@
             "leftHand",
             "rightHand"
           ],
-          "handMasks": {
-            "left": [
-              [
-                278,
-                943
-              ],
-              [
-                375,
-                943
-              ],
-              [
-                392,
-                1060
-              ],
-              [
-                270,
-                1060
-              ]
-            ],
-            "right": [
-              [
-                678,
-                944
-              ],
-              [
-                756,
-                944
-              ],
-              [
-                790,
-                1060
-              ],
-              [
-                666,
-                1060
-              ]
-            ]
-          },
-          "fallback": "same-garment-relaxed"
+          "fallback": "same-garment-relaxed",
+          "handLayers": {
+            "left": "upper_top_15_hand_left",
+            "right": "upper_top_15_hand_right"
+          }
         },
         "16": {
           "id": "top-16",
@@ -2444,45 +1900,11 @@
             "leftHand",
             "rightHand"
           ],
-          "handMasks": {
-            "left": [
-              [
-                278,
-                943
-              ],
-              [
-                375,
-                943
-              ],
-              [
-                392,
-                1060
-              ],
-              [
-                270,
-                1060
-              ]
-            ],
-            "right": [
-              [
-                678,
-                944
-              ],
-              [
-                756,
-                944
-              ],
-              [
-                790,
-                1060
-              ],
-              [
-                666,
-                1060
-              ]
-            ]
-          },
-          "fallback": "same-garment-relaxed"
+          "fallback": "same-garment-relaxed",
+          "handLayers": {
+            "left": "upper_top_16_hand_left",
+            "right": "upper_top_16_hand_right"
+          }
         },
         "17": {
           "id": "top-17",
@@ -2496,45 +1918,11 @@
             "leftHand",
             "rightHand"
           ],
-          "handMasks": {
-            "left": [
-              [
-                278,
-                943
-              ],
-              [
-                375,
-                943
-              ],
-              [
-                392,
-                1060
-              ],
-              [
-                270,
-                1060
-              ]
-            ],
-            "right": [
-              [
-                678,
-                944
-              ],
-              [
-                756,
-                944
-              ],
-              [
-                790,
-                1060
-              ],
-              [
-                666,
-                1060
-              ]
-            ]
-          },
-          "fallback": "same-garment-relaxed"
+          "fallback": "same-garment-relaxed",
+          "handLayers": {
+            "left": "upper_top_17_hand_left",
+            "right": "upper_top_17_hand_right"
+          }
         }
       },
       "bottom": {
@@ -2593,11 +1981,13 @@
           "id": "bottom-5",
           "type": "posed-lower",
           "layer": "bottom_5",
-          "poseId": "garden-crossed",
+          "poseId": "relaxed",
           "covers": [
             "hips"
           ],
-          "fallback": "same-garment-relaxed"
+          "fallback": "same-garment-relaxed",
+          "preferredPose": "garden-crossed",
+          "adaptation": "pose_lower_garden"
         },
         "6": {
           "id": "bottom-6",
@@ -2863,7 +2253,9 @@
       "headRegistration": "All painted masters intentionally share the approved head/neck origin; no moving faces.",
       "poseFallback": "Same garment/shoe ordinary painting; never delete options.",
       "ownership": "Each body region has exactly one painted owner; full suit replaces all body regions.",
-      "sourceMasks": "Anatomical contour selections only, no silhouette-scaled garments or global body row truncation."
+      "sourceMasks": "Anatomical contour selections only, no silhouette-scaled garments or global body row truncation.",
+      "missingAsset": "Declared layers are required; empty choices explicitly list zero layers.",
+      "bodyOwnership": "Clothing, anatomy, hair and footwear have separate native selections. Hand partitions preserve exact pixel union."
     },
     "handLayers": {
       "upper_top_0": {
@@ -3004,7 +2396,8 @@
         },
         "9": {
           "boots": "bootsOverLegs",
-          "low": "exposedAnkle"
+          "low": "exposedAnkle",
+          "hosiery": "over"
         },
         "12": {
           "boots": "pantsOverBoots",
@@ -3197,7 +2590,432 @@
             ]
           ]
         ]
-      }
+      },
+      "shoeExposureRegions": {
+        "1": [
+          [
+            [
+              300,
+              1430
+            ],
+            [
+              390,
+              1430
+            ],
+            [
+              430,
+              1420
+            ],
+            [
+              475,
+              1421
+            ],
+            [
+              514,
+              1418
+            ],
+            [
+              548,
+              1426
+            ],
+            [
+              560,
+              1438
+            ],
+            [
+              560,
+              1535
+            ],
+            [
+              300,
+              1535
+            ]
+          ],
+          [
+            [
+              560,
+              1433
+            ],
+            [
+              605,
+              1433
+            ],
+            [
+              650,
+              1434
+            ],
+            [
+              690,
+              1434
+            ],
+            [
+              723,
+              1431
+            ],
+            [
+              820,
+              1431
+            ],
+            [
+              820,
+              1535
+            ],
+            [
+              560,
+              1535
+            ]
+          ]
+        ],
+        "8": [
+          [
+            [
+              300,
+              1433
+            ],
+            [
+              390,
+              1433
+            ],
+            [
+              432,
+              1423
+            ],
+            [
+              480,
+              1427
+            ],
+            [
+              517,
+              1425
+            ],
+            [
+              560,
+              1435
+            ],
+            [
+              560,
+              1535
+            ],
+            [
+              300,
+              1535
+            ]
+          ],
+          [
+            [
+              560,
+              1436
+            ],
+            [
+              610,
+              1436
+            ],
+            [
+              650,
+              1435
+            ],
+            [
+              695,
+              1434
+            ],
+            [
+              725,
+              1434
+            ],
+            [
+              820,
+              1434
+            ],
+            [
+              820,
+              1535
+            ],
+            [
+              560,
+              1535
+            ]
+          ]
+        ],
+        "12": [
+          [
+            [
+              280,
+              1415
+            ],
+            [
+              350,
+              1415
+            ],
+            [
+              400,
+              1420
+            ],
+            [
+              450,
+              1424
+            ],
+            [
+              500,
+              1430
+            ],
+            [
+              543,
+              1434
+            ],
+            [
+              560,
+              1429
+            ],
+            [
+              580,
+              1429
+            ],
+            [
+              580,
+              1535
+            ],
+            [
+              280,
+              1535
+            ]
+          ],
+          [
+            [
+              560,
+              1434
+            ],
+            [
+              590,
+              1435
+            ],
+            [
+              610,
+              1440
+            ],
+            [
+              645,
+              1433
+            ],
+            [
+              695,
+              1435
+            ],
+            [
+              755,
+              1436
+            ],
+            [
+              815,
+              1425
+            ],
+            [
+              850,
+              1425
+            ],
+            [
+              850,
+              1535
+            ],
+            [
+              560,
+              1535
+            ]
+          ]
+        ]
+      },
+      "shoeToeRegions": {
+        "0": [
+          [
+            [
+              300,
+              1335
+            ],
+            [
+              425,
+              1335
+            ],
+            [
+              466,
+              1377
+            ],
+            [
+              550,
+              1407
+            ],
+            [
+              565,
+              1535
+            ],
+            [
+              300,
+              1535
+            ]
+          ],
+          [
+            [
+              585,
+              1390
+            ],
+            [
+              765,
+              1390
+            ],
+            [
+              790,
+              1535
+            ],
+            [
+              575,
+              1535
+            ]
+          ]
+        ],
+        "1": [
+          [
+            [
+              320,
+              1370
+            ],
+            [
+              445,
+              1370
+            ],
+            [
+              480,
+              1400
+            ],
+            [
+              565,
+              1405
+            ],
+            [
+              565,
+              1535
+            ],
+            [
+              320,
+              1535
+            ]
+          ],
+          [
+            [
+              590,
+              1400
+            ],
+            [
+              780,
+              1400
+            ],
+            [
+              800,
+              1535
+            ],
+            [
+              570,
+              1535
+            ]
+          ]
+        ],
+        "2": [
+          [
+            [
+              320,
+              1370
+            ],
+            [
+              445,
+              1370
+            ],
+            [
+              480,
+              1400
+            ],
+            [
+              565,
+              1405
+            ],
+            [
+              565,
+              1535
+            ],
+            [
+              320,
+              1535
+            ]
+          ],
+          [
+            [
+              590,
+              1400
+            ],
+            [
+              780,
+              1400
+            ],
+            [
+              800,
+              1535
+            ],
+            [
+              570,
+              1535
+            ]
+          ]
+        ],
+        "8": [
+          [
+            [
+              320,
+              1370
+            ],
+            [
+              445,
+              1370
+            ],
+            [
+              480,
+              1400
+            ],
+            [
+              565,
+              1405
+            ],
+            [
+              565,
+              1535
+            ],
+            [
+              320,
+              1535
+            ]
+          ],
+          [
+            [
+              590,
+              1400
+            ],
+            [
+              780,
+              1400
+            ],
+            [
+              800,
+              1535
+            ],
+            [
+              570,
+              1535
+            ]
+          ]
+        ]
+      },
+      "coveredFootShoes": [
+        0,
+        1,
+        2,
+        7,
+        8
+      ]
     },
     "frontLayers": {
       "pose_upper_pocket": [
@@ -3206,6 +3024,227 @@
       "pose_upper_coat": [
         "pose_upper_coat_sleeves_front"
       ]
+    },
+    "appearances": {
+      "hair": {
+        "0": {
+          "back": [
+            "hair_back_0"
+          ],
+          "front": [
+            "hair_front_0"
+          ]
+        },
+        "1": {
+          "back": [
+            "hair_back_1"
+          ],
+          "front": []
+        },
+        "2": {
+          "back": [
+            "hair_back_2"
+          ],
+          "front": []
+        },
+        "3": {
+          "back": [
+            "hair_back_3"
+          ],
+          "front": []
+        },
+        "4": {
+          "back": [
+            "hair_back_4"
+          ],
+          "front": [
+            "hair_front_4"
+          ]
+        },
+        "5": {
+          "back": [
+            "hair_back_5"
+          ],
+          "front": [
+            "hair_front_5"
+          ]
+        },
+        "6": {
+          "back": [
+            "hair_back_6"
+          ],
+          "front": []
+        },
+        "7": {
+          "back": [
+            "hair_back_7"
+          ],
+          "front": []
+        },
+        "8": {
+          "back": [
+            "hair_back_8"
+          ],
+          "front": []
+        },
+        "9": {
+          "back": [
+            "hair_back_9"
+          ],
+          "front": [
+            "hair_front_9"
+          ]
+        }
+      },
+      "hat": {
+        "0": [],
+        "1": [
+          "hat_1"
+        ],
+        "2": [
+          "hat_2"
+        ],
+        "3": [
+          "hat_3"
+        ],
+        "4": [
+          "hat_4"
+        ],
+        "5": [
+          "hat_5"
+        ],
+        "6": [
+          "hat_6"
+        ],
+        "7": [
+          "hat_7"
+        ]
+      },
+      "accessory": {
+        "0": {
+          "back": [],
+          "front": [],
+          "wrist": [],
+          "heldSides": [],
+          "slot": "held"
+        },
+        "1": {
+          "back": [],
+          "front": [
+            "accessory_front_1"
+          ],
+          "wrist": [
+            "accessory_wrist_1"
+          ],
+          "heldSides": [
+            "left"
+          ],
+          "slot": "held"
+        },
+        "2": {
+          "back": [],
+          "front": [
+            "accessory_front_2"
+          ],
+          "wrist": [],
+          "heldSides": [],
+          "slot": "worn"
+        },
+        "3": {
+          "back": [],
+          "front": [
+            "accessory_front_3"
+          ],
+          "wrist": [],
+          "heldSides": [],
+          "slot": "worn"
+        },
+        "4": {
+          "back": [],
+          "front": [
+            "accessory_front_4"
+          ],
+          "wrist": [],
+          "heldSides": [],
+          "slot": "worn"
+        },
+        "5": {
+          "back": [],
+          "front": [
+            "accessory_front_5"
+          ],
+          "wrist": [],
+          "heldSides": [],
+          "slot": "worn"
+        },
+        "6": {
+          "back": [],
+          "front": [
+            "accessory_front_6"
+          ],
+          "wrist": [],
+          "heldSides": [],
+          "slot": "held"
+        },
+        "7": {
+          "back": [],
+          "front": [
+            "accessory_front_7"
+          ],
+          "wrist": [],
+          "heldSides": [],
+          "slot": "worn"
+        },
+        "8": {
+          "back": [],
+          "front": [
+            "accessory_front_8"
+          ],
+          "wrist": [
+            "accessory_wrist_8"
+          ],
+          "heldSides": [
+            "left"
+          ],
+          "slot": "held"
+        },
+        "9": {
+          "back": [],
+          "front": [
+            "accessory_front_9"
+          ],
+          "wrist": [],
+          "heldSides": [
+            "left",
+            "right"
+          ],
+          "slot": "held"
+        },
+        "10": {
+          "back": [
+            "accessory_back_10"
+          ],
+          "front": [
+            "accessory_front_10"
+          ],
+          "wrist": [],
+          "heldSides": [],
+          "slot": "worn"
+        },
+        "11": {
+          "back": [],
+          "front": [
+            "accessory_front_11"
+          ],
+          "wrist": [
+            "accessory_wrist_11"
+          ],
+          "heldSides": [
+            "right"
+          ],
+          "slot": "held"
+        }
+      }
     }
   },
   "layers": {
@@ -3296,26 +3335,26 @@
     "accessory_front_5": {
       "file": "assets/images/projects/yuris-closet/layers/accessory_front_5.png",
       "origin": [
-        523,
+        540,
         626
       ],
       "size": [
-        62,
+        45,
         48
       ],
-      "sha256": "aaf4d89c6f5b214d91e4f5af12722707ed8c2c1076f161416c292b281e3e4609"
+      "sha256": "5a02b94909187eec81d1edfe60c929b16f74c58316a0358451777b4c16f06156"
     },
     "accessory_front_6": {
       "file": "assets/images/projects/yuris-closet/layers/accessory_front_6.png",
       "origin": [
         280,
-        261
+        291
       ],
       "size": [
         100,
-        98
+        68
       ],
-      "sha256": "7b2d044de8d98945abaf2f08cd005e04f0fa655ccf9f368ace7bc482d89ef3ca"
+      "sha256": "5fe7de786db8bc528a920fe31db46037c6479289a4cdb9a23602c5a0f18fb86f"
     },
     "accessory_front_7": {
       "file": "assets/images/projects/yuris-closet/layers/accessory_front_7.png",
@@ -3397,21 +3436,21 @@
       ],
       "size": [
         309,
-        192
+        190
       ],
-      "sha256": "4079d7cf191f6a61d9768a6f3197c5e24c5999831134b4706809d3c45d9cd014"
+      "sha256": "52591c1181c55232fa55beda1a0fbf29c7e4bdcdcde0cb580285cf08ea979809"
     },
     "bottom_1": {
       "file": "assets/images/projects/yuris-closet/layers/bottom_1.png",
       "origin": [
-        357,
-        795
+        378,
+        798
       ],
       "size": [
-        363,
-        647
+        342,
+        644
       ],
-      "sha256": "a7d88b1c14329ed21c2837a5f68ab720be8b62585c5dfb47535f879ebc568978"
+      "sha256": "53a3b4e49eaec53f7707b655d56359fa13c3f4ddbd418a3091928fedfd30ff2e"
     },
     "bottom_10": {
       "file": "assets/images/projects/yuris-closet/layers/bottom_10.png",
@@ -3441,13 +3480,13 @@
       "file": "assets/images/projects/yuris-closet/layers/bottom_12.png",
       "origin": [
         358,
-        722
+        723
       ],
       "size": [
         411,
-        714
+        713
       ],
-      "sha256": "1b77b0a5b87c1227a5a37f2c6e7af24603e80bd8e8e2b6386ead7a46afc892b2"
+      "sha256": "2734db115296c8dd6b0129b56d5262ff92128035bd1d251ab1f69d4ee484036e"
     },
     "bottom_13": {
       "file": "assets/images/projects/yuris-closet/layers/bottom_13.png",
@@ -3548,62 +3587,62 @@
     "bottom_8": {
       "file": "assets/images/projects/yuris-closet/layers/bottom_8.png",
       "origin": [
-        357,
+        364,
         795
       ],
       "size": [
-        367,
+        360,
         647
       ],
-      "sha256": "a6fb66d886ded1dcec8488aa956f656ad31546e915823ace5de79d7d162147fb"
+      "sha256": "4d2941f4dabe3890485ba3d5e56375b3a44bad145d8ab37b925a54fe8676cdcd"
     },
     "bottom_9": {
       "file": "assets/images/projects/yuris-closet/layers/bottom_9.png",
       "origin": [
-        372,
+        375,
         825
       ],
       "size": [
-        355,
+        352,
         672
       ],
-      "sha256": "3cee880e312345e1198ea71a73cfb0ab93f5cedc3cae27a316483fc9347e0f14"
+      "sha256": "4e224db810a1d3f4df80457a4a93dc5286f06f4ea6dc62beb73c2c0d017a3751"
     },
     "foot_base_0": {
       "file": "assets/images/projects/yuris-closet/layers/foot_base_0.png",
       "origin": [
-        344,
+        447,
         1225
       ],
       "size": [
-        379,
-        284
+        273,
+        44
       ],
-      "sha256": "7d87cffffa28a85de733eb61205522547d03aa634018a8c54c5dfa82c08f3643"
+      "sha256": "58d252a1f464caef696efc8576927c755d945554f05a668991b5b1ceceb7d23f"
     },
     "foot_base_1": {
       "file": "assets/images/projects/yuris-closet/layers/foot_base_1.png",
       "origin": [
-        454,
+        461,
         1290
       ],
       "size": [
-        243,
+        236,
         20
       ],
-      "sha256": "fa501c659b8814fad8e0a5bc12a0c196b9afccf018bdd1e2520b3484655334d8"
+      "sha256": "f999387992c35eaced6ce0f221c26257fe9b7901662a4fd2fbdf01cecfe0ad30"
     },
     "foot_base_2": {
       "file": "assets/images/projects/yuris-closet/layers/foot_base_2.png",
       "origin": [
-        453,
+        461,
         1290
       ],
       "size": [
-        251,
-        31
+        62,
+        22
       ],
-      "sha256": "02855920c1da15398e75b62e01033cc3d827eaa89eba4526691def26ae59a8ae"
+      "sha256": "07268c75b4e14f993077d5dc55193c3de75a711e5332a8962fd599a4a3b3e7a5"
     },
     "foot_base_3": {
       "file": "assets/images/projects/yuris-closet/layers/foot_base_3.png",
@@ -3615,67 +3654,67 @@
         291,
         96
       ],
-      "sha256": "ab4c7e5fdf7b9f3560ea7c6eb1fc3edec8f752bdbbc24bf4e0222c94afd35b4c"
+      "sha256": "26bc433f9b49f0022c65a7b7412e8b1f8ef88fb6656ecf0086af65070393e3e4"
     },
     "foot_base_4": {
       "file": "assets/images/projects/yuris-closet/layers/foot_base_4.png",
       "origin": [
-        454,
+        461,
         1340
       ],
       "size": [
-        249,
+        235,
         52
       ],
-      "sha256": "fbd5edd052524c11e2bf3a21a95c38013a4af384cef50d71b38866b32fcecf02"
+      "sha256": "52b2dceca26d7ab8afa848ffd2ad22e89307ad495696b65bf4826438f5ba4ae7"
     },
     "foot_base_5": {
       "file": "assets/images/projects/yuris-closet/layers/foot_base_5.png",
       "origin": [
-        454,
+        461,
         1330
       ],
       "size": [
-        250,
+        235,
         38
       ],
-      "sha256": "5daad58942d336d63075b6ee531a484900c6a518ae87336ef9e3beb82097133c"
+      "sha256": "98063036dce42eb8edfd55cd93cd7fb9160c5d43c9b9502126a9ca2671dceaca"
     },
     "foot_base_6": {
       "file": "assets/images/projects/yuris-closet/layers/foot_base_6.png",
       "origin": [
-        454,
+        461,
         1330
       ],
       "size": [
-        250,
+        240,
         47
       ],
-      "sha256": "b741360f6c142c0bc9ea7ba8f4bc4c3a3863fb2149e7b55c63f62ed99a0502e6"
+      "sha256": "6b01fa0b63a08249c4713030c40918e3f0a085c4e14cbd5ca5ebd3bf68f4b641"
     },
     "foot_base_7": {
       "file": "assets/images/projects/yuris-closet/layers/foot_base_7.png",
       "origin": [
-        423,
+        430,
         1100
       ],
       "size": [
-        254,
+        242,
         42
       ],
-      "sha256": "a1e6c07557f02bc667340f9ccc516fa1dcfe49af326f3263147a7697ff3280b1"
+      "sha256": "f1ab89705be8e590425f5c1de3a46746faf3d38c7e293816426994089575d323"
     },
     "foot_base_8": {
       "file": "assets/images/projects/yuris-closet/layers/foot_base_8.png",
       "origin": [
-        454,
+        461,
         1290
       ],
       "size": [
-        248,
-        25
+        234,
+        21
       ],
-      "sha256": "83d13873e815a3f3a70426b7fcfce97212691654af21ed2c9ef90e8435d71ee0"
+      "sha256": "c470b130671a71673bfb92a5ef2c12f9b3ec7798d6303f32be95558eb021b385"
     },
     "hair_back_0": {
       "file": "assets/images/projects/yuris-closet/layers/hair_back_0.png",
@@ -3944,110 +3983,110 @@
     "lower_legs_0": {
       "file": "assets/images/projects/yuris-closet/layers/lower_legs_0.png",
       "origin": [
-        344,
-        943
+        382,
+        937
       ],
       "size": [
-        379,
-        566
+        338,
+        332
       ],
-      "sha256": "6b7d301a709a6c9ebcb0f2c1c94fcc97c9d38d7ec4f4fc01074bf4c96fe47b1a"
+      "sha256": "7ab77d3af3596d0009259291d8d72b402559b1fc38606a2db9516477d7a927c2"
     },
     "lower_legs_1": {
       "file": "assets/images/projects/yuris-closet/layers/lower_legs_1.png",
       "origin": [
         387,
-        943
+        937
       ],
       "size": [
         324,
-        367
+        373
       ],
-      "sha256": "ddfe53cd8c1aacf4ae6121fbb94877ed96df909fb05a6d44ee675cdc09b0fe34"
+      "sha256": "926ea5f1d58c58eee9e233b25209d9708c69ca2374ef7f313e1ffd664f3c090d"
     },
     "lower_legs_2": {
       "file": "assets/images/projects/yuris-closet/layers/lower_legs_2.png",
       "origin": [
         387,
-        943
+        937
       ],
       "size": [
         324,
-        378
+        375
       ],
-      "sha256": "6c9a50d0209e481cbc3b602f2528f6b03660c497cc9014d54798635e8cce4a85"
+      "sha256": "759b78e1de606d3618e235bbbc5204b63b0a1b615acdb0f412a867a3542e4b9d"
     },
     "lower_legs_3": {
       "file": "assets/images/projects/yuris-closet/layers/lower_legs_3.png",
       "origin": [
         387,
-        943
+        937
       ],
       "size": [
         324,
-        493
+        499
       ],
-      "sha256": "e521bc4f039b24b64cec73de9521f1e9aaa420bbd1d5f718bbd03fa161cfd09a"
+      "sha256": "f07d956b84f1d30e0e153b79de01f28ca093c4f572faccf9975745d29b37c40c"
     },
     "lower_legs_4": {
       "file": "assets/images/projects/yuris-closet/layers/lower_legs_4.png",
       "origin": [
         387,
-        943
+        937
       ],
       "size": [
         323,
-        449
+        455
       ],
-      "sha256": "d62d966597f51105545112c9dc3e0061bd928bf4d73918472696fec543d331f0"
+      "sha256": "a8bbeb8af828bb95990bfc49abfaaa7383c514a60e592e902c01e81aea9936ed"
     },
     "lower_legs_5": {
       "file": "assets/images/projects/yuris-closet/layers/lower_legs_5.png",
       "origin": [
         387,
-        943
+        937
       ],
       "size": [
         324,
-        425
+        431
       ],
-      "sha256": "5eb45970eb8a92d68f436565331ec4288ea6086046034e904ce4f0b1e1d991c9"
+      "sha256": "edb8bb39fdfd4a9005158cc1e95e68777aed8090144625a9efa6dc0abe2cbb0a"
     },
     "lower_legs_6": {
       "file": "assets/images/projects/yuris-closet/layers/lower_legs_6.png",
       "origin": [
         387,
-        943
+        937
       ],
       "size": [
         323,
-        434
+        440
       ],
-      "sha256": "4d414199ebe3d2777f47aa6b361212a21e82d905d2e073643e8479a28a2721c1"
+      "sha256": "6a9a2971695062ee340787675e4bc4b6d9340bfaddb74cf1dc6530cc603d6d01"
     },
     "lower_legs_7": {
       "file": "assets/images/projects/yuris-closet/layers/lower_legs_7.png",
       "origin": [
         388,
-        943
+        937
       ],
       "size": [
-        289,
-        199
+        284,
+        205
       ],
-      "sha256": "6a7b1601baf6f3c0518589b52eed5ebb7b9a41f80430f68e0683eb97ae143ea3"
+      "sha256": "c7f980c41661b80f17098cc6ea87725ba162e0d80227200526c39c40af704f05"
     },
     "lower_legs_8": {
       "file": "assets/images/projects/yuris-closet/layers/lower_legs_8.png",
       "origin": [
         387,
-        943
+        937
       ],
       "size": [
         322,
-        372
+        374
       ],
-      "sha256": "7d49c88251e883f9ece9d902910944dd98c2f0b673b2855145f17719d9627997"
+      "sha256": "fabafa336ba484842ec59bd65aa55acaa54f3d85f51200a0245976fa26836419"
     },
     "master_formal": {
       "file": "assets/images/projects/yuris-closet/layers/master_formal.png",
@@ -4076,38 +4115,38 @@
     "pants_1_tall": {
       "file": "assets/images/projects/yuris-closet/layers/pants_1_tall.png",
       "origin": [
-        351,
+        379,
         798
       ],
       "size": [
-        336,
+        308,
         364
       ],
-      "sha256": "5f49544952840244982417b8e9091ce8bd83bd97036c35f88c867d18742b0f8b"
+      "sha256": "5847bd430e421b7c6f002ede68ae71d99047a8b0d34d9c8d06d685a01cd7d495"
     },
     "pants_8_tall": {
       "file": "assets/images/projects/yuris-closet/layers/pants_8_tall.png",
       "origin": [
-        351,
+        373,
         796
       ],
       "size": [
-        336,
+        314,
         366
       ],
-      "sha256": "c9badfe5656ed419d9977dd26852eda82b56b5a1b83579dbebdb79f27d96906b"
+      "sha256": "75a7792cd0f1b0aea5b5276f9bec6235659e441e023ce26f19d2109e4ef9545c"
     },
     "pose_lower_boots": {
       "file": "assets/images/projects/yuris-closet/layers/pose_lower_boots.png",
       "origin": [
         332,
-        943
+        937
       ],
       "size": [
         366,
-        546
+        552
       ],
-      "sha256": "442593f30fca60361aa406337da6e2bf9d0071d00d43e7e5b017e7924fb8a144"
+      "sha256": "f3c88b788cd929a50f269e524057362ba5c893019244d3ad0dc17792c7b15308"
     },
     "pose_lower_garden": {
       "file": "assets/images/projects/yuris-closet/layers/pose_lower_garden.png",
@@ -4167,19 +4206,19 @@
         508,
         1034
       ],
-      "sha256": "407fa4b6bfa1d865edf2cf3935da910ae4581f9914c18e63da5c2ad78ed8bde7"
+      "sha256": "098f10b8272274026bafefb9fa570891adae6e03a51715cecee41e6127315949"
     },
     "pose_suit_garden_hand_left": {
       "file": "assets/images/projects/yuris-closet/layers/pose_suit_garden_hand_left.png",
       "origin": [
-        300,
-        900
+        297,
+        925
       ],
       "size": [
-        101,
-        146
+        73,
+        96
       ],
-      "sha256": "8a8ce6a47b7a836e689d98c86ef4da68513f325a9247e80afdfcccf6f0ced18e"
+      "sha256": "25a7b78408b5deb3f223591ccad6a2aea372a1de49fac908147df285fca036d7"
     },
     "pose_suit_garden_hand_right": {
       "file": "assets/images/projects/yuris-closet/layers/pose_suit_garden_hand_right.png",
@@ -4203,7 +4242,7 @@
         727,
         1026
       ],
-      "sha256": "f98abb3558533d0c5ae20e9b5bc23d63a2e0dc7db842dda45b6fc5cc5d89e756"
+      "sha256": "dbc38558648bf3c55c26f5d8e946b7bc441da90f80ca48fda8dab98a1f0bf1ea"
     },
     "pose_suit_school_hand_left": {
       "file": "assets/images/projects/yuris-closet/layers/pose_suit_school_hand_left.png",
@@ -4215,7 +4254,7 @@
         81,
         141
       ],
-      "sha256": "2598778f5bb63d683ad34dbd94cb9f7ccb76711c26d8dbd2df94924e568d3cae"
+      "sha256": "7b98e4b476bb511b8626987f8d7b97a4b552975011c05bb087682effdab7c9bb"
     },
     "pose_suit_school_hand_right": {
       "file": "assets/images/projects/yuris-closet/layers/pose_suit_school_hand_right.png",
@@ -4268,14 +4307,14 @@
     "pose_upper_coat": {
       "file": "assets/images/projects/yuris-closet/layers/pose_upper_coat.png",
       "origin": [
-        344,
+        346,
         466
       ],
       "size": [
-        399,
+        397,
         550
       ],
-      "sha256": "418828f11788e3caec35e8872b84b84c02bbdcf9c91d21d26e78792b176d485e"
+      "sha256": "04260194683dc024cf27199528e10f9ef27f444cc6b3af6170ad58353e85a6ce"
     },
     "pose_upper_coat_hand_left": {
       "file": "assets/images/projects/yuris-closet/layers/pose_upper_coat_hand_left.png",
@@ -4292,14 +4331,14 @@
     "pose_upper_coat_hand_right": {
       "file": "assets/images/projects/yuris-closet/layers/pose_upper_coat_hand_right.png",
       "origin": [
-        660,
-        935
+        678,
+        936
       ],
       "size": [
-        100,
-        116
+        82,
+        114
       ],
-      "sha256": "430dc93245c8a24c9798145dd4203f855b64f65750630ed25d2bdce4a0ec0272"
+      "sha256": "921c060505825d1ae6705b6df3b1f30745e352a5d6355ee017a06de066b41fbf"
     },
     "pose_upper_coat_sleeves_front": {
       "file": "assets/images/projects/yuris-closet/layers/pose_upper_coat_sleeves_front.png",
@@ -4323,7 +4362,7 @@
         379,
         440
       ],
-      "sha256": "44dbd1de9103c06b2bdfe1a400900d7ba2cda8518533ac25b9a45c0b1c450028"
+      "sha256": "014a30067d45a480b5a87e2d9042b4c6334a23074fde30d45b7026b89a6db89c"
     },
     "pose_upper_pocket_sleeves_front": {
       "file": "assets/images/projects/yuris-closet/layers/pose_upper_pocket_sleeves_front.png",
@@ -4485,13 +4524,13 @@
       "file": "assets/images/projects/yuris-closet/layers/socks_1.png",
       "origin": [
         370,
-        1320
+        1322
       ],
       "size": [
         362,
-        177
+        175
       ],
-      "sha256": "a169d27a5150077705256770e82f66423d50d8f6478eec6f6d43f5d6cf920090"
+      "sha256": "3d47487e857b01bac1d2f7227a9440948c7aa0e2fb38f6aeabacb0e355a1e24e"
     },
     "socks_2": {
       "file": "assets/images/projects/yuris-closet/layers/socks_2.png",
@@ -4500,46 +4539,46 @@
         1010
       ],
       "size": [
-        375,
+        350,
         494
       ],
-      "sha256": "51e0730122a3c32ed65c0494cbfbdeae740139eaf95729880ed4c1c88b3d413b"
+      "sha256": "1a9fa07404d64c8b5d59fb604a7fec331a98c8581b2a4259af9fed4512271df3"
     },
     "socks_3": {
       "file": "assets/images/projects/yuris-closet/layers/socks_3.png",
       "origin": [
         370,
-        1135
+        1139
       ],
       "size": [
         360,
-        365
+        361
       ],
-      "sha256": "65aef454185205c4103451c9ae65ac88623da46742501260aa1814a0d24eb851"
+      "sha256": "6f0fb6a753d47f65d21795385edccf23ee079ec5e26d388dd5a4b6937b15c270"
     },
     "socks_4": {
       "file": "assets/images/projects/yuris-closet/layers/socks_4.png",
       "origin": [
-        372,
+        376,
         825
       ],
       "size": [
-        361,
+        357,
         674
       ],
-      "sha256": "dde8490a17b113e29cc8b6df1b8e52bb91681a970de3df4173c1d5227fc388f9"
+      "sha256": "de5010dea9107e2340f555e4a1518d4ff19d5db074e453e51f82ed659aa19a2a"
     },
     "socks_5": {
       "file": "assets/images/projects/yuris-closet/layers/socks_5.png",
       "origin": [
-        372,
+        374,
         825
       ],
       "size": [
-        358,
+        356,
         677
       ],
-      "sha256": "fba66c6b47e4ad0d43e0dd3189219e5646f192f3350df5148bf055466252f26f"
+      "sha256": "e628f8bc079a8afae5c523a26cf195abdc185cf30efb73b94e4625f72034f0d5"
     },
     "upper_top_0": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_0.png",
@@ -4551,7 +4590,7 @@
         436,
         488
       ],
-      "sha256": "5f8aafd6aaf1c58f2d75b9b98079ead08a06c7a36bf11429c1fa5ced191f66d7"
+      "sha256": "ed309971d5c63dc1348938e6e2599506e4caef3fc0a1b2d3e1ea262813af952a"
     },
     "upper_top_0_hand_left": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_0_hand_left.png",
@@ -4563,7 +4602,7 @@
         80,
         84
       ],
-      "sha256": "f329f5a01f2a9747542a338ad5a2a03ad133e3ce717d08951c93911a0a0b321a"
+      "sha256": "2254d7ca88256d31c03ec7618f6757dd5f2a526bc3f5d6a04c7cb506cf802ff0"
     },
     "upper_top_0_hand_right": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_0_hand_right.png",
@@ -4573,21 +4612,21 @@
       ],
       "size": [
         88,
-        110
+        115
       ],
-      "sha256": "b27f9470597a6f621e846611c6b2d2de31ed497d74d6f51b8352fa4e3c74f2eb"
+      "sha256": "b1a923141c154ddebd2113ad21cf9d3ccb02677cfb0b3475669314fa2122b73e"
     },
     "upper_top_1": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_1.png",
       "origin": [
-        296,
+        288,
         466
       ],
       "size": [
-        447,
-        501
+        461,
+        509
       ],
-      "sha256": "768158dba7c33fca6687beaa49ed13db318bdae5667b73de5f9329dccc1f0b1f"
+      "sha256": "3f64af9a712b140a0ab6552cc347b9efce0cab95090b286a8f69d0403a6b8920"
     },
     "upper_top_10": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_10.png",
@@ -4599,7 +4638,7 @@
         436,
         488
       ],
-      "sha256": "5f5273caa61cb77d9346e8036572335279d8dbfed3057fceb9b262abed49986d"
+      "sha256": "97739f08ff365773380535cc01ce521a172c5615f0a00fe27888dc8a2930b605"
     },
     "upper_top_10_hand_left": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_10_hand_left.png",
@@ -4611,7 +4650,7 @@
         80,
         85
       ],
-      "sha256": "3156f37c6b87e10e2ad1bb8ae2bfe380ffde4bed788528c912570efcb97502fc"
+      "sha256": "0c41aa5ef2724de5551aa51455eedf980ba18c23f42030be0be1484d0940c5f6"
     },
     "upper_top_10_hand_right": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_10_hand_right.png",
@@ -4621,9 +4660,9 @@
       ],
       "size": [
         88,
-        110
+        116
       ],
-      "sha256": "1f6cdcfa701c5cbe86bf67d2113e85a131f1a2a6ee406cca4ef2c7dcabf9535f"
+      "sha256": "2eda72e432642bdd3427cd159cabd867903ffa69ffe8266dca548aa45ccaa92b"
     },
     "upper_top_11": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_11.png",
@@ -4635,7 +4674,7 @@
         445,
         550
       ],
-      "sha256": "743ad9ab27ae7aa319e52bd4d080a208da7921292657f111bb7cbbe6fb1e5d5c"
+      "sha256": "10e49c3bfc7fd309b01f83482f51619d2aa7826ad915a2c079aca24e5b6f1b66"
     },
     "upper_top_11_hand_left": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_11_hand_left.png",
@@ -4644,22 +4683,22 @@
         938
       ],
       "size": [
-        103,
+        82,
         85
       ],
-      "sha256": "25ccb4e52b9004e6ade38858d8b12d2fb631e6d9c0f8d65100615aad01d1c7fa"
+      "sha256": "40c87238d893631bf6c18abd70e024ace1cdf9bb913d772d1acb0bfc934cc8b0"
     },
     "upper_top_11_hand_right": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_11_hand_right.png",
       "origin": [
-        660,
+        678,
         935
       ],
       "size": [
-        102,
-        110
+        84,
+        116
       ],
-      "sha256": "4c6e68b1a5caf8b2bfd7f28e8d40c33ebfaf0852d95f95801008c04c869525b5"
+      "sha256": "54402d46888e7540f7964ce09b837ed580567809ff0db70c5145eebdffc7f447"
     },
     "upper_top_12": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_12.png",
@@ -4671,7 +4710,7 @@
         435,
         488
       ],
-      "sha256": "de51113f3e890deb3f807f880e4447678dc0ddbd91cd3a19d11a2551d3f19ed4"
+      "sha256": "08ebe373386c344e06e54daad7f1d28fa120cf7b2bf6a140eda72d326acb34ab"
     },
     "upper_top_12_hand_left": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_12_hand_left.png",
@@ -4683,7 +4722,7 @@
         80,
         83
       ],
-      "sha256": "29e67f9bdd3f45386610a9bdb6af6d03d5e2b2fac4824f97f545099595522481"
+      "sha256": "734dfe93b1773823720c2d78a6c68051e635675bed275d453a0aeb59459219d7"
     },
     "upper_top_12_hand_right": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_12_hand_right.png",
@@ -4693,9 +4732,9 @@
       ],
       "size": [
         87,
-        110
+        115
       ],
-      "sha256": "24bfa103422d2a4501ddd3c66afb180b01b8dddcb9809f7c450d94158f75f229"
+      "sha256": "2b2ea0434947879f5e6d23b1a339c0f0ccacb926c352996e97296a19818b17e7"
     },
     "upper_top_13": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_13.png",
@@ -4707,7 +4746,7 @@
         439,
         504
       ],
-      "sha256": "45916c1efcd3347c60486b25d5dd507380b4474d0e5d538cb9fe6e8fb08386c4"
+      "sha256": "9ed553a8c342e747c1773e352fc0e0229e30df48ee00fe2fcdcf5bde587635c6"
     },
     "upper_top_13_hand_left": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_13_hand_left.png",
@@ -4719,7 +4758,7 @@
         81,
         84
       ],
-      "sha256": "0e6eaaf3ec4bd46b3fd5ea4f5e1df8a02be06e20f16ed58c8aa144ebef24249c"
+      "sha256": "43bb04c618fa2f0877d2195cf63a2281b2999cd754717a42b22fbcb4edce6b9f"
     },
     "upper_top_13_hand_right": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_13_hand_right.png",
@@ -4729,9 +4768,9 @@
       ],
       "size": [
         87,
-        111
+        116
       ],
-      "sha256": "f3a92a8117aea5d9910f86a12a722fd444919bcb5a2febc7cb36a695b7df4965"
+      "sha256": "5098a71e9000c5aae4b6651e0ec2e647168e4196aaf0112a54f7024f0c0143c3"
     },
     "upper_top_14": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_14.png",
@@ -4743,7 +4782,7 @@
         433,
         488
       ],
-      "sha256": "cb8c8bed546d8708275bd03c7b38cf727a32927ea2e7d9ea743777b1b516a621"
+      "sha256": "8c00c08258698075cc002275939d14c4ee76b2a6d7db2930199007221c3f28f0"
     },
     "upper_top_14_hand_left": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_14_hand_left.png",
@@ -4755,7 +4794,7 @@
         78,
         83
       ],
-      "sha256": "4da5a0c8a0294b5f96e097c1a4227acd6112f59176b4521207cef8b84ab4b970"
+      "sha256": "fbfd3064c52255a5f1cc4869fadd28aacce3fc947e10a37b94b7e33e4e2b0221"
     },
     "upper_top_14_hand_right": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_14_hand_right.png",
@@ -4765,9 +4804,9 @@
       ],
       "size": [
         86,
-        110
+        115
       ],
-      "sha256": "d35f7eb495f6d310433dfbe33cfa727c8a69906e33428d7389148d34e613e2cb"
+      "sha256": "a6fd0e384f520bfcc8af8f4419aea96e3ab91b911734d52dcf44c9304bb4b6bf"
     },
     "upper_top_15": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_15.png",
@@ -4779,7 +4818,7 @@
         444,
         504
       ],
-      "sha256": "d4ee49c25ad5bb4d5ad917480fc5a0cad9a7b36cd53a28e05eea4ea2cd085fe3"
+      "sha256": "05ae3e21f463f718d0a086718f4462b54f5c998cee604f5a025a7606939715fd"
     },
     "upper_top_15_hand_left": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_15_hand_left.png",
@@ -4791,7 +4830,7 @@
         80,
         83
       ],
-      "sha256": "997e075c2262088de22ff3856c82f38630dfffbc1e57c6297d0aa096add13d14"
+      "sha256": "47dbb8ca572f7bf9ffe1358739e19d7e0cf758cd8f5092743be695198af6fd84"
     },
     "upper_top_15_hand_right": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_15_hand_right.png",
@@ -4801,9 +4840,9 @@
       ],
       "size": [
         87,
-        112
+        116
       ],
-      "sha256": "dc5dcff5343f3f313c5374a555813dc6c669d050b50ed32731edf0a0c4611dc0"
+      "sha256": "25b38ba104b013dd8e3ea4721adceb423b8b453f1da1ca0e93b1c1f99269d0f9"
     },
     "upper_top_16": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_16.png",
@@ -4815,7 +4854,7 @@
         435,
         488
       ],
-      "sha256": "5c981433efcf7e2d311624c65f349c81297c18ee4839a8a5c07ad6dd0d849198"
+      "sha256": "125bac0440e37c08294dec2c20d3686b25a5f31d7592c1d71a8c87859236c77e"
     },
     "upper_top_16_hand_left": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_16_hand_left.png",
@@ -4827,7 +4866,7 @@
         79,
         83
       ],
-      "sha256": "bef66dce80ce06cc60d35f14e31234ca95b526947f1c68d2dd9d41c732a139ca"
+      "sha256": "cdf37fe2a53901335e77f2837c06f527b44138d2840dee3c9141a5a0fea68fbf"
     },
     "upper_top_16_hand_right": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_16_hand_right.png",
@@ -4837,9 +4876,9 @@
       ],
       "size": [
         89,
-        110
+        115
       ],
-      "sha256": "1f6cb7b08787f1127f2af76738dcf7a5f8f7dbd9f194701ddfb27a5be044e037"
+      "sha256": "fba985eb1d876121b698a229daf418d59cd1f8d6aac7e9e02e91269ba5d68ee8"
     },
     "upper_top_17": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_17.png",
@@ -4849,9 +4888,9 @@
       ],
       "size": [
         436,
-        491
+        489
       ],
-      "sha256": "1bb237ff030efa75e7c682f030fe475cb3493122e4bd0124a1edfc6ffc82a65f"
+      "sha256": "8aacfa8b1cd3cc58a8cd7947f4281cf60a3133436894c100fc5ccd02b27f6a3a"
     },
     "upper_top_17_hand_left": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_17_hand_left.png",
@@ -4863,7 +4902,7 @@
         80,
         83
       ],
-      "sha256": "9cdf6dd5d467c7f07c1d866d99032c15dcfd74b788b872289c7503a4eeba0d2a"
+      "sha256": "c24f8fbb3619fe48f8d58757f246fa5750a64277b2164a1df43a1f774b64d3ca"
     },
     "upper_top_17_hand_right": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_17_hand_right.png",
@@ -4873,33 +4912,33 @@
       ],
       "size": [
         88,
-        110
+        115
       ],
-      "sha256": "044c0c004586e68e7de2a07d98dbfae25f75d4ad6861abf41c63bb57ee4055fc"
+      "sha256": "022d1f8fa8e75d19e247e7b82385485174b1d1e1e9f88c7a666018e6265b1514"
     },
     "upper_top_1_hand_left": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_1_hand_left.png",
       "origin": [
-        296,
-        938
+        287,
+        952
       ],
       "size": [
-        100,
-        54
+        80,
+        87
       ],
-      "sha256": "a3f90a27efdc52e1be47939b0b6b509f046c4708054c43c10f5496d6c0e95d0b"
+      "sha256": "7c98a169f290b40e2631fc9daf877e398aca8f77ffb9b2516444776d66904c6e"
     },
     "upper_top_1_hand_right": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_1_hand_right.png",
       "origin": [
-        660,
-        933
+        678,
+        957
       ],
       "size": [
-        94,
-        84
+        76,
+        92
       ],
-      "sha256": "a0214593ae7c82659e42857dd4b7033a7f25739bcebe2889c88b485556dfa15c"
+      "sha256": "b648e9f853f892c847ece259542ccdc715f0e4e8f038e1b4d698abb347c4233c"
     },
     "upper_top_2": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_2.png",
@@ -4911,7 +4950,7 @@
         436,
         600
       ],
-      "sha256": "3d613fbee8c6c00ed08530bfa4bf5a943c7a988f85252913c302d77998bca269"
+      "sha256": "11424561118c05e779d54a66b3e404d1eb34a89c049b15db3a452dd583d07afd"
     },
     "upper_top_2_hand_left": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_2_hand_left.png",
@@ -4920,22 +4959,22 @@
         939
       ],
       "size": [
-        103,
-        90
+        67,
+        83
       ],
-      "sha256": "7fe865deb424c6a9fa279ff24fd7b0dcb34a77544e62078fe7d4d8bab2a3f463"
+      "sha256": "13ef64562431e4e73247576c0cee19b707ffe9ce594c62cd2ab5fa3339a236c9"
     },
     "upper_top_2_hand_right": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_2_hand_right.png",
       "origin": [
-        660,
+        675,
         935
       ],
       "size": [
-        102,
-        116
+        87,
+        115
       ],
-      "sha256": "e54e6417270a530b865b40e46b9d22750e35a7594c179aba0d7d2c86c79a6163"
+      "sha256": "62b39a2580f7d5bb0d72a8a6760f080de46e71fbda674ee5ebf725537b483f6b"
     },
     "upper_top_3": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_3.png",
@@ -4947,7 +4986,7 @@
         454,
         504
       ],
-      "sha256": "9ccaa97cdc016f963b863fdb92095ea18b934bb3183cdab38aaeef90842ab46f"
+      "sha256": "e41e5eef5b97e63d40e832673d52cdfc57b36f6921beaa29698dac63f11d7a11"
     },
     "upper_top_3_hand_left": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_3_hand_left.png",
@@ -4959,19 +4998,19 @@
         84,
         85
       ],
-      "sha256": "ba887f9242b8d25570d13fedb0b9bd85a9de1ca5b565fdfee195ab516b7f2985"
+      "sha256": "105d4fce3131b0be5e1f846c91ab4142e26687733d63e0374b6abff77d2a7748"
     },
     "upper_top_3_hand_right": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_3_hand_right.png",
       "origin": [
-        667,
+        673,
         932
       ],
       "size": [
-        94,
-        113
+        88,
+        118
       ],
-      "sha256": "04e8bcfb7cdbda030f65b837e849307f72803365491ae5e3ed041068cdf5ecf3"
+      "sha256": "ec6dc56fd278e08b2f9bb70c77a195c531fe38690ca4a3be56c829450f587dd3"
     },
     "upper_top_4": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_4.png",
@@ -4983,7 +5022,7 @@
         435,
         488
       ],
-      "sha256": "94ec78203c3335290db723110fe4459629ec0bc8997279fb8850030996ace333"
+      "sha256": "a762308894088352ac91669d3c96ff00666e9b2169a43af31839a7955ade678d"
     },
     "upper_top_4_hand_left": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_4_hand_left.png",
@@ -4995,7 +5034,7 @@
         79,
         83
       ],
-      "sha256": "0c90b1672beeb83bef18d5e745f6054cb899680b999aaf4728ee885ac83406b5"
+      "sha256": "915c8474c081f797c68d9f460f2505868e78f9fc95e73e1af2d327a6dd0d7da3"
     },
     "upper_top_4_hand_right": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_4_hand_right.png",
@@ -5005,9 +5044,9 @@
       ],
       "size": [
         88,
-        110
+        115
       ],
-      "sha256": "5d942d535284ebff78d2f067c059a0514e5783de84465fbe5733fac326b03cc1"
+      "sha256": "61be5c50899181e4686865f06bdd36c79e2a6c7158c379922af0afda0abbc51c"
     },
     "upper_top_5": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_5.png",
@@ -5019,7 +5058,7 @@
         436,
         488
       ],
-      "sha256": "5e45110cca969b7c3967d141c1b7c85bf9006c4328d535e5ce4596c3e354823e"
+      "sha256": "101793b08a69259f89bcc8535d29d18fc4503e21ee68139f5091e5bf830d8443"
     },
     "upper_top_5_hand_left": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_5_hand_left.png",
@@ -5031,7 +5070,7 @@
         81,
         83
       ],
-      "sha256": "b566ae789ef4c290efa9b72e2433ff3a34f87e0a45f1535ae838c2707572b915"
+      "sha256": "47b1b9ebbd5a5e8cfc84c2be3ffcdd053e3c3c011dbd7c68d3f9fcceaf7f49aa"
     },
     "upper_top_5_hand_right": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_5_hand_right.png",
@@ -5041,9 +5080,9 @@
       ],
       "size": [
         88,
-        110
+        115
       ],
-      "sha256": "cdaa82b118b38580f910653532e27ce7882fb79d44a433015025405df09315dc"
+      "sha256": "a153055958d465db5aa80a80c7b98d9d05f7e724d8124c8a62a47516888fd8e5"
     },
     "upper_top_6": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_6.png",
@@ -5055,7 +5094,7 @@
         439,
         504
       ],
-      "sha256": "95906ef319755da9d3fa5be14caf5da9aab00c651b57fe10f8f4516b889993ec"
+      "sha256": "f593a64260349e26b3ac798d1611ec2586b7c68335651e1a831ee7b95efc3ad7"
     },
     "upper_top_6_hand_left": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_6_hand_left.png",
@@ -5067,7 +5106,7 @@
         81,
         84
       ],
-      "sha256": "be63dfad8bcae65b88e270ec02807564525f444877c47029019060a051d9dd21"
+      "sha256": "e251066f4e50d6b5a7ced3022dfebbeac27d02f979576991300d25795ddba755"
     },
     "upper_top_6_hand_right": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_6_hand_right.png",
@@ -5077,9 +5116,9 @@
       ],
       "size": [
         88,
-        110
+        115
       ],
-      "sha256": "8aea200425bf26c16b86a18e2d93ee829bd3120729efbe019b33c7bd19226097"
+      "sha256": "190e7abafb80c98ca4c1083898c1d55872ed71a299cdc85eedfded695c7f0a0a"
     },
     "upper_top_7": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_7.png",
@@ -5091,7 +5130,7 @@
         436,
         504
       ],
-      "sha256": "996d9d6d88da1d76886e21227bae15932f4353ff9934427b753adb6f3c45100c"
+      "sha256": "b805860d0cacde289e22819a53c4db2bf3a8032b31df3396979b11468ce08dee"
     },
     "upper_top_7_hand_left": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_7_hand_left.png",
@@ -5103,7 +5142,7 @@
         80,
         84
       ],
-      "sha256": "4787d2fb2150e30b676866e6c7fd20336f4d705e8cfbdad2f3b1d58b82a798d1"
+      "sha256": "504ae2cef6b6d5d4d5f535d244114485ad23009eb79576ca3e78250edf95173a"
     },
     "upper_top_7_hand_right": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_7_hand_right.png",
@@ -5113,9 +5152,9 @@
       ],
       "size": [
         88,
-        110
+        115
       ],
-      "sha256": "9eb8d32f9690a48c0952ac79d5ea9922192430a3739e9ece9b4d2c9ba523ab1a"
+      "sha256": "220a68a640bc32d1dfcf83a1d6770ba8d938107516af86bb30b4c8b017b58269"
     },
     "upper_top_8": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_8.png",
@@ -5127,7 +5166,7 @@
         435,
         504
       ],
-      "sha256": "9b52e707bd3076c022d94b9dbc5dc00b7f52f0af59dd22a57780b14d70c60a71"
+      "sha256": "b1eca37c924ddab7ddcaccfe675ca0d6a27b4b581a7f465f757eebca288cce03"
     },
     "upper_top_8_hand_left": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_8_hand_left.png",
@@ -5139,7 +5178,7 @@
         80,
         83
       ],
-      "sha256": "55aea395864338cf536a21db6cf4b732894b871f02166ef46017d3294445b783"
+      "sha256": "4a12458fb54f97d57eea760adefe595ff4e705f94e93e353a59a133459743055"
     },
     "upper_top_8_hand_right": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_8_hand_right.png",
@@ -5149,9 +5188,9 @@
       ],
       "size": [
         88,
-        110
+        115
       ],
-      "sha256": "2ac48049605050cd394c19d9955deda77b66018a4ec6c441b4e58f02a5e1db53"
+      "sha256": "36853a2b3a3f7d61856b3fd35f549c347eb0e449ff1816dec615cad2d321e58b"
     },
     "upper_top_9": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_9.png",
@@ -5163,7 +5202,7 @@
         441,
         499
       ],
-      "sha256": "0182b3196889a830cd7c04f01dbca21abd705a9d701a967e8a0c4b5e53a6c931"
+      "sha256": "ef0f1b2ab8266a8994e6a84357a7637eb465c2d7d9b0354723dc79220020689a"
     },
     "upper_top_9_hand_left": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_9_hand_left.png",
@@ -5175,7 +5214,7 @@
         77,
         82
       ],
-      "sha256": "e1f7d4dfbfccfd90d84193947afa0a2e097449be6cca04f4ae30c7f316dee135"
+      "sha256": "cf352250ecdca7346fafdcfe3739f2c82c3bc19dfe6c9641aadd047b6ca17002"
     },
     "upper_top_9_hand_right": {
       "file": "assets/images/projects/yuris-closet/layers/upper_top_9_hand_right.png",
@@ -5185,9 +5224,9 @@
       ],
       "size": [
         80,
-        107
+        110
       ],
-      "sha256": "25adc2ff5e42e4ea1fb01888377c9d7e1ba21981b8c68b9fc2edffe5e0d0b222"
+      "sha256": "65f4b273a9e2cab55ce0cd8ccf4c9b8d122a019fb189f6165b3773dbe2470cdf"
     }
   }
 }

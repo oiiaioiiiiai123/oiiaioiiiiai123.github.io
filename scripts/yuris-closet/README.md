@@ -1,4 +1,4 @@
-# yuri的衣橱 · 08.1 素材与遮挡修复版发布源
+# yuri的衣橱 · 08.2.1 全资源审查修复版发布源
 
 试玩：https://oiiaioiiiiai123.github.io/yuris-closet/
 
@@ -23,7 +23,7 @@ bundle exec jekyll build --strict_front_matter
 python3 scripts/check-site.py
 ```
 
-发布器只同步明确运行文件和封面，验证源码、PNG 与本地最终网页验收的哈希一致，不运行美术生成器。只提交游戏相关文件，然后正常推送 `origin/main`；Pages 自动重建完整站点。不要提交 `_site` 或修改 DNS／发布平台。
+发布器只同步明确运行文件和真实游戏封面，验证源码、PNG 与本地最终网页验收的哈希一致，不运行美术生成器。08.2.1 同步读取原项目 `qa/visual-regression/` 的当前构建、逐页视觉记录、零容差图像对照、重复采集与功能检查，且要求本次构建的最终发布门禁通过。测试图册和私人参考不复制进网站。只提交游戏相关文件，然后正常推送 `origin/main`；现有 Pages 分支发布会自动重建完整站点。不要提交 `_site` 或修改 DNS／发布平台。
 
 如直接修改仓库中的代码，可运行不带 `--source` 的发布命令重新打包。编辑 PNG 时同步 runtime.json 的尺寸、原点与 SHA-256；姿势配置同时更新 poses.json 与 runtime.json.poseSystem。推荐在原项目保留的分层绘稿中编辑，再通过上述同步命令更新，避免两份源码分叉。
 

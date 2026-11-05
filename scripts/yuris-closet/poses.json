@@ -1,5 +1,5 @@
 {
-  "version": "8.1",
+  "version": "8.2.1",
   "canvas": [
     1024,
     1536
@@ -1541,45 +1541,11 @@
           "leftHand",
           "rightHand"
         ],
-        "handMasks": {
-          "left": [
-            [
-              278,
-              943
-            ],
-            [
-              375,
-              943
-            ],
-            [
-              392,
-              1060
-            ],
-            [
-              270,
-              1060
-            ]
-          ],
-          "right": [
-            [
-              678,
-              944
-            ],
-            [
-              756,
-              944
-            ],
-            [
-              790,
-              1060
-            ],
-            [
-              666,
-              1060
-            ]
-          ]
-        },
-        "fallback": "same-garment-relaxed"
+        "fallback": "same-garment-relaxed",
+        "handLayers": {
+          "left": "upper_top_0_hand_left",
+          "right": "upper_top_0_hand_right"
+        }
       },
       "1": {
         "id": "top-1",
@@ -1593,46 +1559,12 @@
           "leftHand",
           "rightHand"
         ],
-        "handMasks": {
-          "left": [
-            [
-              278,
-              943
-            ],
-            [
-              375,
-              943
-            ],
-            [
-              392,
-              1060
-            ],
-            [
-              270,
-              1060
-            ]
-          ],
-          "right": [
-            [
-              678,
-              944
-            ],
-            [
-              756,
-              944
-            ],
-            [
-              790,
-              1060
-            ],
-            [
-              666,
-              1060
-            ]
-          ]
-        },
         "fallback": "same-garment-relaxed",
-        "preferredPose": "uniform-sword"
+        "preferredPose": "uniform-sword",
+        "handLayers": {
+          "left": "upper_top_1_hand_left",
+          "right": "upper_top_1_hand_right"
+        }
       },
       "2": {
         "id": "top-2",
@@ -1646,45 +1578,11 @@
           "leftHand",
           "rightHand"
         ],
-        "handMasks": {
-          "left": [
-            [
-              278,
-              943
-            ],
-            [
-              375,
-              943
-            ],
-            [
-              392,
-              1060
-            ],
-            [
-              270,
-              1060
-            ]
-          ],
-          "right": [
-            [
-              678,
-              944
-            ],
-            [
-              756,
-              944
-            ],
-            [
-              790,
-              1060
-            ],
-            [
-              666,
-              1060
-            ]
-          ]
-        },
-        "fallback": "same-garment-relaxed"
+        "fallback": "same-garment-relaxed",
+        "handLayers": {
+          "left": "upper_top_2_hand_left",
+          "right": "upper_top_2_hand_right"
+        }
       },
       "3": {
         "id": "top-3",
@@ -1698,45 +1596,11 @@
           "leftHand",
           "rightHand"
         ],
-        "handMasks": {
-          "left": [
-            [
-              278,
-              943
-            ],
-            [
-              375,
-              943
-            ],
-            [
-              392,
-              1060
-            ],
-            [
-              270,
-              1060
-            ]
-          ],
-          "right": [
-            [
-              678,
-              944
-            ],
-            [
-              756,
-              944
-            ],
-            [
-              790,
-              1060
-            ],
-            [
-              666,
-              1060
-            ]
-          ]
-        },
-        "fallback": "same-garment-relaxed"
+        "fallback": "same-garment-relaxed",
+        "handLayers": {
+          "left": "upper_top_3_hand_left",
+          "right": "upper_top_3_hand_right"
+        }
       },
       "4": {
         "id": "top-4",
@@ -1750,45 +1614,11 @@
           "leftHand",
           "rightHand"
         ],
-        "handMasks": {
-          "left": [
-            [
-              278,
-              943
-            ],
-            [
-              375,
-              943
-            ],
-            [
-              392,
-              1060
-            ],
-            [
-              270,
-              1060
-            ]
-          ],
-          "right": [
-            [
-              678,
-              944
-            ],
-            [
-              756,
-              944
-            ],
-            [
-              790,
-              1060
-            ],
-            [
-              666,
-              1060
-            ]
-          ]
-        },
-        "fallback": "same-garment-relaxed"
+        "fallback": "same-garment-relaxed",
+        "handLayers": {
+          "left": "upper_top_4_hand_left",
+          "right": "upper_top_4_hand_right"
+        }
       },
       "5": {
         "id": "top-5",
@@ -1802,45 +1632,11 @@
           "leftHand",
           "rightHand"
         ],
-        "handMasks": {
-          "left": [
-            [
-              278,
-              943
-            ],
-            [
-              375,
-              943
-            ],
-            [
-              392,
-              1060
-            ],
-            [
-              270,
-              1060
-            ]
-          ],
-          "right": [
-            [
-              678,
-              944
-            ],
-            [
-              756,
-              944
-            ],
-            [
-              790,
-              1060
-            ],
-            [
-              666,
-              1060
-            ]
-          ]
-        },
-        "fallback": "same-garment-relaxed"
+        "fallback": "same-garment-relaxed",
+        "handLayers": {
+          "left": "upper_top_5_hand_left",
+          "right": "upper_top_5_hand_right"
+        }
       },
       "6": {
         "id": "top-6",
@@ -1854,45 +1650,11 @@
           "leftHand",
           "rightHand"
         ],
-        "handMasks": {
-          "left": [
-            [
-              278,
-              943
-            ],
-            [
-              375,
-              943
-            ],
-            [
-              392,
-              1060
-            ],
-            [
-              270,
-              1060
-            ]
-          ],
-          "right": [
-            [
-              678,
-              944
-            ],
-            [
-              756,
-              944
-            ],
-            [
-              790,
-              1060
-            ],
-            [
-              666,
-              1060
-            ]
-          ]
-        },
-        "fallback": "same-garment-relaxed"
+        "fallback": "same-garment-relaxed",
+        "handLayers": {
+          "left": "upper_top_6_hand_left",
+          "right": "upper_top_6_hand_right"
+        }
       },
       "7": {
         "id": "top-7",
@@ -1906,45 +1668,11 @@
           "leftHand",
           "rightHand"
         ],
-        "handMasks": {
-          "left": [
-            [
-              278,
-              943
-            ],
-            [
-              375,
-              943
-            ],
-            [
-              392,
-              1060
-            ],
-            [
-              270,
-              1060
-            ]
-          ],
-          "right": [
-            [
-              678,
-              944
-            ],
-            [
-              756,
-              944
-            ],
-            [
-              790,
-              1060
-            ],
-            [
-              666,
-              1060
-            ]
-          ]
-        },
-        "fallback": "same-garment-relaxed"
+        "fallback": "same-garment-relaxed",
+        "handLayers": {
+          "left": "upper_top_7_hand_left",
+          "right": "upper_top_7_hand_right"
+        }
       },
       "8": {
         "id": "top-8",
@@ -1958,45 +1686,11 @@
           "leftHand",
           "rightHand"
         ],
-        "handMasks": {
-          "left": [
-            [
-              278,
-              943
-            ],
-            [
-              375,
-              943
-            ],
-            [
-              392,
-              1060
-            ],
-            [
-              270,
-              1060
-            ]
-          ],
-          "right": [
-            [
-              678,
-              944
-            ],
-            [
-              756,
-              944
-            ],
-            [
-              790,
-              1060
-            ],
-            [
-              666,
-              1060
-            ]
-          ]
-        },
-        "fallback": "same-garment-relaxed"
+        "fallback": "same-garment-relaxed",
+        "handLayers": {
+          "left": "upper_top_8_hand_left",
+          "right": "upper_top_8_hand_right"
+        }
       },
       "9": {
         "id": "top-9",
@@ -2010,46 +1704,12 @@
           "leftHand",
           "rightHand"
         ],
-        "handMasks": {
-          "left": [
-            [
-              278,
-              943
-            ],
-            [
-              375,
-              943
-            ],
-            [
-              392,
-              1060
-            ],
-            [
-              270,
-              1060
-            ]
-          ],
-          "right": [
-            [
-              678,
-              944
-            ],
-            [
-              756,
-              944
-            ],
-            [
-              790,
-              1060
-            ],
-            [
-              666,
-              1060
-            ]
-          ]
-        },
         "fallback": "same-garment-relaxed",
-        "preferredPose": "hoodie-pocket"
+        "preferredPose": "hoodie-pocket",
+        "handLayers": {
+          "left": "upper_top_9_hand_left",
+          "right": "upper_top_9_hand_right"
+        }
       },
       "10": {
         "id": "top-10",
@@ -2063,45 +1723,11 @@
           "leftHand",
           "rightHand"
         ],
-        "handMasks": {
-          "left": [
-            [
-              278,
-              943
-            ],
-            [
-              375,
-              943
-            ],
-            [
-              392,
-              1060
-            ],
-            [
-              270,
-              1060
-            ]
-          ],
-          "right": [
-            [
-              678,
-              944
-            ],
-            [
-              756,
-              944
-            ],
-            [
-              790,
-              1060
-            ],
-            [
-              666,
-              1060
-            ]
-          ]
-        },
-        "fallback": "same-garment-relaxed"
+        "fallback": "same-garment-relaxed",
+        "handLayers": {
+          "left": "upper_top_10_hand_left",
+          "right": "upper_top_10_hand_right"
+        }
       },
       "11": {
         "id": "top-11",
@@ -2115,46 +1741,12 @@
           "leftHand",
           "rightHand"
         ],
-        "handMasks": {
-          "left": [
-            [
-              278,
-              943
-            ],
-            [
-              375,
-              943
-            ],
-            [
-              392,
-              1060
-            ],
-            [
-              270,
-              1060
-            ]
-          ],
-          "right": [
-            [
-              678,
-              944
-            ],
-            [
-              756,
-              944
-            ],
-            [
-              790,
-              1060
-            ],
-            [
-              666,
-              1060
-            ]
-          ]
-        },
         "fallback": "same-garment-relaxed",
-        "preferredPose": "coat-collar"
+        "preferredPose": "coat-collar",
+        "handLayers": {
+          "left": "upper_top_11_hand_left",
+          "right": "upper_top_11_hand_right"
+        }
       },
       "12": {
         "id": "top-12",
@@ -2168,45 +1760,11 @@
           "leftHand",
           "rightHand"
         ],
-        "handMasks": {
-          "left": [
-            [
-              278,
-              943
-            ],
-            [
-              375,
-              943
-            ],
-            [
-              392,
-              1060
-            ],
-            [
-              270,
-              1060
-            ]
-          ],
-          "right": [
-            [
-              678,
-              944
-            ],
-            [
-              756,
-              944
-            ],
-            [
-              790,
-              1060
-            ],
-            [
-              666,
-              1060
-            ]
-          ]
-        },
-        "fallback": "same-garment-relaxed"
+        "fallback": "same-garment-relaxed",
+        "handLayers": {
+          "left": "upper_top_12_hand_left",
+          "right": "upper_top_12_hand_right"
+        }
       },
       "13": {
         "id": "top-13",
@@ -2220,45 +1778,11 @@
           "leftHand",
           "rightHand"
         ],
-        "handMasks": {
-          "left": [
-            [
-              278,
-              943
-            ],
-            [
-              375,
-              943
-            ],
-            [
-              392,
-              1060
-            ],
-            [
-              270,
-              1060
-            ]
-          ],
-          "right": [
-            [
-              678,
-              944
-            ],
-            [
-              756,
-              944
-            ],
-            [
-              790,
-              1060
-            ],
-            [
-              666,
-              1060
-            ]
-          ]
-        },
-        "fallback": "same-garment-relaxed"
+        "fallback": "same-garment-relaxed",
+        "handLayers": {
+          "left": "upper_top_13_hand_left",
+          "right": "upper_top_13_hand_right"
+        }
       },
       "14": {
         "id": "top-14",
@@ -2272,45 +1796,11 @@
           "leftHand",
           "rightHand"
         ],
-        "handMasks": {
-          "left": [
-            [
-              278,
-              943
-            ],
-            [
-              375,
-              943
-            ],
-            [
-              392,
-              1060
-            ],
-            [
-              270,
-              1060
-            ]
-          ],
-          "right": [
-            [
-              678,
-              944
-            ],
-            [
-              756,
-              944
-            ],
-            [
-              790,
-              1060
-            ],
-            [
-              666,
-              1060
-            ]
-          ]
-        },
-        "fallback": "same-garment-relaxed"
+        "fallback": "same-garment-relaxed",
+        "handLayers": {
+          "left": "upper_top_14_hand_left",
+          "right": "upper_top_14_hand_right"
+        }
       },
       "15": {
         "id": "top-15",
@@ -2324,45 +1814,11 @@
           "leftHand",
           "rightHand"
         ],
-        "handMasks": {
-          "left": [
-            [
-              278,
-              943
-            ],
-            [
-              375,
-              943
-            ],
-            [
-              392,
-              1060
-            ],
-            [
-              270,
-              1060
-            ]
-          ],
-          "right": [
-            [
-              678,
-              944
-            ],
-            [
-              756,
-              944
-            ],
-            [
-              790,
-              1060
-            ],
-            [
-              666,
-              1060
-            ]
-          ]
-        },
-        "fallback": "same-garment-relaxed"
+        "fallback": "same-garment-relaxed",
+        "handLayers": {
+          "left": "upper_top_15_hand_left",
+          "right": "upper_top_15_hand_right"
+        }
       },
       "16": {
         "id": "top-16",
@@ -2376,45 +1832,11 @@
           "leftHand",
           "rightHand"
         ],
-        "handMasks": {
-          "left": [
-            [
-              278,
-              943
-            ],
-            [
-              375,
-              943
-            ],
-            [
-              392,
-              1060
-            ],
-            [
-              270,
-              1060
-            ]
-          ],
-          "right": [
-            [
-              678,
-              944
-            ],
-            [
-              756,
-              944
-            ],
-            [
-              790,
-              1060
-            ],
-            [
-              666,
-              1060
-            ]
-          ]
-        },
-        "fallback": "same-garment-relaxed"
+        "fallback": "same-garment-relaxed",
+        "handLayers": {
+          "left": "upper_top_16_hand_left",
+          "right": "upper_top_16_hand_right"
+        }
       },
       "17": {
         "id": "top-17",
@@ -2428,45 +1850,11 @@
           "leftHand",
           "rightHand"
         ],
-        "handMasks": {
-          "left": [
-            [
-              278,
-              943
-            ],
-            [
-              375,
-              943
-            ],
-            [
-              392,
-              1060
-            ],
-            [
-              270,
-              1060
-            ]
-          ],
-          "right": [
-            [
-              678,
-              944
-            ],
-            [
-              756,
-              944
-            ],
-            [
-              790,
-              1060
-            ],
-            [
-              666,
-              1060
-            ]
-          ]
-        },
-        "fallback": "same-garment-relaxed"
+        "fallback": "same-garment-relaxed",
+        "handLayers": {
+          "left": "upper_top_17_hand_left",
+          "right": "upper_top_17_hand_right"
+        }
       }
     },
     "bottom": {
@@ -2525,11 +1913,13 @@
         "id": "bottom-5",
         "type": "posed-lower",
         "layer": "bottom_5",
-        "poseId": "garden-crossed",
+        "poseId": "relaxed",
         "covers": [
           "hips"
         ],
-        "fallback": "same-garment-relaxed"
+        "fallback": "same-garment-relaxed",
+        "preferredPose": "garden-crossed",
+        "adaptation": "pose_lower_garden"
       },
       "6": {
         "id": "bottom-6",
@@ -2795,7 +2185,9 @@
     "headRegistration": "All painted masters intentionally share the approved head/neck origin; no moving faces.",
     "poseFallback": "Same garment/shoe ordinary painting; never delete options.",
     "ownership": "Each body region has exactly one painted owner; full suit replaces all body regions.",
-    "sourceMasks": "Anatomical contour selections only, no silhouette-scaled garments or global body row truncation."
+    "sourceMasks": "Anatomical contour selections only, no silhouette-scaled garments or global body row truncation.",
+    "missingAsset": "Declared layers are required; empty choices explicitly list zero layers.",
+    "bodyOwnership": "Clothing, anatomy, hair and footwear have separate native selections. Hand partitions preserve exact pixel union."
   },
   "handLayers": {
     "upper_top_0": {
@@ -2936,7 +2328,8 @@
       },
       "9": {
         "boots": "bootsOverLegs",
-        "low": "exposedAnkle"
+        "low": "exposedAnkle",
+        "hosiery": "over"
       },
       "12": {
         "boots": "pantsOverBoots",
@@ -3129,7 +2522,432 @@
           ]
         ]
       ]
-    }
+    },
+    "shoeExposureRegions": {
+      "1": [
+        [
+          [
+            300,
+            1430
+          ],
+          [
+            390,
+            1430
+          ],
+          [
+            430,
+            1420
+          ],
+          [
+            475,
+            1421
+          ],
+          [
+            514,
+            1418
+          ],
+          [
+            548,
+            1426
+          ],
+          [
+            560,
+            1438
+          ],
+          [
+            560,
+            1535
+          ],
+          [
+            300,
+            1535
+          ]
+        ],
+        [
+          [
+            560,
+            1433
+          ],
+          [
+            605,
+            1433
+          ],
+          [
+            650,
+            1434
+          ],
+          [
+            690,
+            1434
+          ],
+          [
+            723,
+            1431
+          ],
+          [
+            820,
+            1431
+          ],
+          [
+            820,
+            1535
+          ],
+          [
+            560,
+            1535
+          ]
+        ]
+      ],
+      "8": [
+        [
+          [
+            300,
+            1433
+          ],
+          [
+            390,
+            1433
+          ],
+          [
+            432,
+            1423
+          ],
+          [
+            480,
+            1427
+          ],
+          [
+            517,
+            1425
+          ],
+          [
+            560,
+            1435
+          ],
+          [
+            560,
+            1535
+          ],
+          [
+            300,
+            1535
+          ]
+        ],
+        [
+          [
+            560,
+            1436
+          ],
+          [
+            610,
+            1436
+          ],
+          [
+            650,
+            1435
+          ],
+          [
+            695,
+            1434
+          ],
+          [
+            725,
+            1434
+          ],
+          [
+            820,
+            1434
+          ],
+          [
+            820,
+            1535
+          ],
+          [
+            560,
+            1535
+          ]
+        ]
+      ],
+      "12": [
+        [
+          [
+            280,
+            1415
+          ],
+          [
+            350,
+            1415
+          ],
+          [
+            400,
+            1420
+          ],
+          [
+            450,
+            1424
+          ],
+          [
+            500,
+            1430
+          ],
+          [
+            543,
+            1434
+          ],
+          [
+            560,
+            1429
+          ],
+          [
+            580,
+            1429
+          ],
+          [
+            580,
+            1535
+          ],
+          [
+            280,
+            1535
+          ]
+        ],
+        [
+          [
+            560,
+            1434
+          ],
+          [
+            590,
+            1435
+          ],
+          [
+            610,
+            1440
+          ],
+          [
+            645,
+            1433
+          ],
+          [
+            695,
+            1435
+          ],
+          [
+            755,
+            1436
+          ],
+          [
+            815,
+            1425
+          ],
+          [
+            850,
+            1425
+          ],
+          [
+            850,
+            1535
+          ],
+          [
+            560,
+            1535
+          ]
+        ]
+      ]
+    },
+    "shoeToeRegions": {
+      "0": [
+        [
+          [
+            300,
+            1335
+          ],
+          [
+            425,
+            1335
+          ],
+          [
+            466,
+            1377
+          ],
+          [
+            550,
+            1407
+          ],
+          [
+            565,
+            1535
+          ],
+          [
+            300,
+            1535
+          ]
+        ],
+        [
+          [
+            585,
+            1390
+          ],
+          [
+            765,
+            1390
+          ],
+          [
+            790,
+            1535
+          ],
+          [
+            575,
+            1535
+          ]
+        ]
+      ],
+      "1": [
+        [
+          [
+            320,
+            1370
+          ],
+          [
+            445,
+            1370
+          ],
+          [
+            480,
+            1400
+          ],
+          [
+            565,
+            1405
+          ],
+          [
+            565,
+            1535
+          ],
+          [
+            320,
+            1535
+          ]
+        ],
+        [
+          [
+            590,
+            1400
+          ],
+          [
+            780,
+            1400
+          ],
+          [
+            800,
+            1535
+          ],
+          [
+            570,
+            1535
+          ]
+        ]
+      ],
+      "2": [
+        [
+          [
+            320,
+            1370
+          ],
+          [
+            445,
+            1370
+          ],
+          [
+            480,
+            1400
+          ],
+          [
+            565,
+            1405
+          ],
+          [
+            565,
+            1535
+          ],
+          [
+            320,
+            1535
+          ]
+        ],
+        [
+          [
+            590,
+            1400
+          ],
+          [
+            780,
+            1400
+          ],
+          [
+            800,
+            1535
+          ],
+          [
+            570,
+            1535
+          ]
+        ]
+      ],
+      "8": [
+        [
+          [
+            320,
+            1370
+          ],
+          [
+            445,
+            1370
+          ],
+          [
+            480,
+            1400
+          ],
+          [
+            565,
+            1405
+          ],
+          [
+            565,
+            1535
+          ],
+          [
+            320,
+            1535
+          ]
+        ],
+        [
+          [
+            590,
+            1400
+          ],
+          [
+            780,
+            1400
+          ],
+          [
+            800,
+            1535
+          ],
+          [
+            570,
+            1535
+          ]
+        ]
+      ]
+    },
+    "coveredFootShoes": [
+      0,
+      1,
+      2,
+      7,
+      8
+    ]
   },
   "frontLayers": {
     "pose_upper_pocket": [
@@ -3138,5 +2956,226 @@
     "pose_upper_coat": [
       "pose_upper_coat_sleeves_front"
     ]
+  },
+  "appearances": {
+    "hair": {
+      "0": {
+        "back": [
+          "hair_back_0"
+        ],
+        "front": [
+          "hair_front_0"
+        ]
+      },
+      "1": {
+        "back": [
+          "hair_back_1"
+        ],
+        "front": []
+      },
+      "2": {
+        "back": [
+          "hair_back_2"
+        ],
+        "front": []
+      },
+      "3": {
+        "back": [
+          "hair_back_3"
+        ],
+        "front": []
+      },
+      "4": {
+        "back": [
+          "hair_back_4"
+        ],
+        "front": [
+          "hair_front_4"
+        ]
+      },
+      "5": {
+        "back": [
+          "hair_back_5"
+        ],
+        "front": [
+          "hair_front_5"
+        ]
+      },
+      "6": {
+        "back": [
+          "hair_back_6"
+        ],
+        "front": []
+      },
+      "7": {
+        "back": [
+          "hair_back_7"
+        ],
+        "front": []
+      },
+      "8": {
+        "back": [
+          "hair_back_8"
+        ],
+        "front": []
+      },
+      "9": {
+        "back": [
+          "hair_back_9"
+        ],
+        "front": [
+          "hair_front_9"
+        ]
+      }
+    },
+    "hat": {
+      "0": [],
+      "1": [
+        "hat_1"
+      ],
+      "2": [
+        "hat_2"
+      ],
+      "3": [
+        "hat_3"
+      ],
+      "4": [
+        "hat_4"
+      ],
+      "5": [
+        "hat_5"
+      ],
+      "6": [
+        "hat_6"
+      ],
+      "7": [
+        "hat_7"
+      ]
+    },
+    "accessory": {
+      "0": {
+        "back": [],
+        "front": [],
+        "wrist": [],
+        "heldSides": [],
+        "slot": "held"
+      },
+      "1": {
+        "back": [],
+        "front": [
+          "accessory_front_1"
+        ],
+        "wrist": [
+          "accessory_wrist_1"
+        ],
+        "heldSides": [
+          "left"
+        ],
+        "slot": "held"
+      },
+      "2": {
+        "back": [],
+        "front": [
+          "accessory_front_2"
+        ],
+        "wrist": [],
+        "heldSides": [],
+        "slot": "worn"
+      },
+      "3": {
+        "back": [],
+        "front": [
+          "accessory_front_3"
+        ],
+        "wrist": [],
+        "heldSides": [],
+        "slot": "worn"
+      },
+      "4": {
+        "back": [],
+        "front": [
+          "accessory_front_4"
+        ],
+        "wrist": [],
+        "heldSides": [],
+        "slot": "worn"
+      },
+      "5": {
+        "back": [],
+        "front": [
+          "accessory_front_5"
+        ],
+        "wrist": [],
+        "heldSides": [],
+        "slot": "worn"
+      },
+      "6": {
+        "back": [],
+        "front": [
+          "accessory_front_6"
+        ],
+        "wrist": [],
+        "heldSides": [],
+        "slot": "held"
+      },
+      "7": {
+        "back": [],
+        "front": [
+          "accessory_front_7"
+        ],
+        "wrist": [],
+        "heldSides": [],
+        "slot": "worn"
+      },
+      "8": {
+        "back": [],
+        "front": [
+          "accessory_front_8"
+        ],
+        "wrist": [
+          "accessory_wrist_8"
+        ],
+        "heldSides": [
+          "left"
+        ],
+        "slot": "held"
+      },
+      "9": {
+        "back": [],
+        "front": [
+          "accessory_front_9"
+        ],
+        "wrist": [],
+        "heldSides": [
+          "left",
+          "right"
+        ],
+        "slot": "held"
+      },
+      "10": {
+        "back": [
+          "accessory_back_10"
+        ],
+        "front": [
+          "accessory_front_10"
+        ],
+        "wrist": [],
+        "heldSides": [],
+        "slot": "worn"
+      },
+      "11": {
+        "back": [],
+        "front": [
+          "accessory_front_11"
+        ],
+        "wrist": [
+          "accessory_wrist_11"
+        ],
+        "heldSides": [
+          "right"
+        ],
+        "slot": "held"
+      }
+    }
   }
 }

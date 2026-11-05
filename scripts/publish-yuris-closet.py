@@ -25,8 +25,23 @@ if args.source:
     if args.check:parser.error('Sync with --source, then verify with --check separately')
     game=args.source.resolve()
     build=json.loads((game/'art/production/build.json').read_text())
-    audit=json.loads((game/'qa/repair/current-build.json').read_text())
+    evidence=game/'qa/visual-regression'
+    audit=json.loads((evidence/'current/browser-build.json').read_text())
     if build!=audit:raise ValueError('Run the final browser audit for this build before publishing')
+    gate=json.loads((evidence/'release-gate.json').read_text())
+    assert gate['approved'] and gate['version']==build['version'],'Final visual/functional release gate is not approved'
+    assert gate['buildSHA256']==sha(game/'art/production/build.json'),'Release gate refers to another build'
+    report=json.loads((evidence/'current/after-report.json').read_text())
+    review=json.loads((evidence/'visual-review.json').read_text())['pages']
+    for page in report['pages']:
+        name='current/'+page['file']
+        assert review[name]['sha256']==sha(evidence/name),'Final visual review is missing/stale: '+name
+    for name in ['comparison-current.json','comparison-repeat.json']:
+        check=json.loads((evidence/name).read_text())
+        assert check['looks']==len(report['cases']),'Incomplete regression coverage'
+        if name=='comparison-current.json':assert gate['reviewedComparisonSHA256']==sha(evidence/name),'Unreviewed intentional change'
+        else:assert check['changedPixels']==0,'Repeat capture is unstable'
+    assert all(json.loads((evidence/'current/functional.json').read_text()).values()),'Functional regression failed'
     for rel,digest in build['files'].items():
         file=game/rel
         assert file.resolve().is_relative_to(game) and sha(file)==digest,'Stale build: '+rel
@@ -51,14 +66,14 @@ if args.source:
     (SRC/'poses.json').write_text(json.dumps(poses,ensure_ascii=False,indent=2)+'\n')
     # Cover comes from the audited game canvas; only the display size is reduced.
     from PIL import Image
-    capture=Image.open(game/'qa/repair/preset-0.png').convert('RGBA')
+    capture=Image.open(evidence/'current/after-native-preset-0.png').convert('RGBA')
     assert capture.size==(1024,1536)
     cover=Image.new('RGBA',(800,500),'#f4efe8')
     cover.alpha_composite(capture.resize((256,384),Image.Resampling.NEAREST),(272,58))
     cover.convert('RGB').save(ROOT/'assets/images/projects/yuris-closet/cover.png')
 
 spec=json.loads((SRC/'runtime.json').read_text())
-assert spec['canvas']==[1024,1536] and spec['version']=='8.1-region-ownership'
+assert spec['canvas']==[1024,1536] and spec['version']=='8.2.1-final-regression'
 assert spec['poseSystem']==json.loads((SRC/'poses.json').read_text())
 assert not {'body_base','hair_nape','hand_left','hand_right'} & set(spec['layers'])
 assert {p.name for p in LAYERS.glob('*.png')}=={key+'.png' for key in spec['layers']},'Unlisted game PNGs in public output'
